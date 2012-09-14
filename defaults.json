@@ -1,0 +1,12 @@
+{
+    "domain": "http://localhost",
+    "port": 3000,
+    "authPort": 3000,
+    "authUrl": "https://browserid.org",
+    "name": "argent",
+    "sessions": true,
+    "session_cookie": "session_mycoolapp",
+    "session_secret": "secret",
+    "redis": true,
+    "redis_key": 1
+}

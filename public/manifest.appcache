@@ -1,0 +1,32 @@
+CACHE MANIFEST
+# Jow78hR9QrVDF7iTsAsUkNt/WVo=
+
+CACHE:
+/
+css/app.css
+css/bootstrap.css
+css/bootstrap-responsive.css
+css/defaults.css
+css/flags.css
+js/app.js
+js/lib/ejs.js
+js/lib/install.js
+js/lib/jquery.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+js/lib/modernizr-2.5.3.min.js
+js/lib/require.js
+views/currency-list.ejs
+views/currency-switcher.ejs
+views/denomination-list.ejs
+
+# catch-all for anything else
+NETWORK:
+*
+http://*
+https://*
+
+# FALLBACK:
+# /main.py /static.html
+# images/large/ images/offline.jpg
+# *.html /offline.html

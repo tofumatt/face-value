@@ -1,0 +1,172 @@
+@import "defaults.css";
+
+/* Uncomment these to use Twitter Bootstrap */
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+
+/* Your styles here */
+@import "flags.css";
+
+body {
+    font-size: .95em;
+}
+
+p, dl, ul, ol {
+    margin-right: 38%;
+}
+
+a, a:visited, a:active {
+  color: #0088cc;
+}
+
+.clear {
+    clear: both;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#currency-switcher {
+    text-align: center;
+}
+
+#currency-list-first li, #currency-list-second li {
+    list-style: none;
+}
+
+#currency-list-first {
+    float: left;
+}
+
+#currency-list-second {
+    float: right;
+}
+
+.denomination-list {
+    clear: both;
+    padding: 0 0 10px;
+}
+
+.denomination {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.coins .symbol {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: 10%;
+}
+
+.coins {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    font-size: 28px;
+    height: 61px;
+    margin: 0 auto;
+    padding: 39px 0 0;
+    text-align: center;
+    width: 100px;
+}
+
+.notes {
+    border: 1px solid black;
+    display: block;
+    font-size: 28px;
+    height: 51px;
+    margin: 0 auto;
+    padding: 29px 35px 0;
+    text-align: center;
+    width: 100px;
+}
+
+.subtitle {
+    clear: both;
+    text-align: center;
+}
+
+.flag {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding: 0 0 0 18px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.brass {
+    background-color: #804000;
+}
+
+.brass-silver {
+    background: radial-gradient(ellipse at center, #cccccc 50%,
+                                                   #804000 100%);
+}
+
+.brown {
+    background-color: #804000;
+}
+
+.copper {
+    background-color: #ffb000;
+}
+
+.copper-silver {
+    background: radial-gradient(ellipse at center, #cccccc 50%,
+                                                   #ffb000 100%);
+}
+
+.green {
+    background-color: green;
+}
+
+.gold {
+    background-color: #ffb000;
+}
+
+.gold-silver {
+    background: radial-gradient(ellipse at center, #cccccc 50%,
+                                                   #ffb000 100%);
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.red {
+    background-color: red;
+}
+
+.silver {
+    background-color: #cccccc;
+}
+
+.silver-brass {
+    background: radial-gradient(ellipse at center, #804000 50%,
+                                                   #cccccc 100%);
+}
+
+.silver-copper {
+    background: radial-gradient(ellipse at center, #ffb000 0%,
+                                                   #cccccc 70%);
+}
+
+.silver-gold {
+    background: radial-gradient(ellipse at center, #ffb000 0%,
+                                                   #cccccc 70%);
+}
+
+.teal {
+    background-color: teal;
+}
+
+.yellow {
+    background-color: yellow;
+}

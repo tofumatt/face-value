@@ -1,0 +1,360 @@
+{
+    "AUD": {
+        "after": false,
+        "coins": [
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "gold"},
+            {"2.00": "gold"}
+        ],
+        "fraction": "cent",
+        "name": "Australian Dollar",
+        "notes": [
+            {"5":   "purple"},
+            {"10":  "blue"},
+            {"20":  "red"},
+            {"50":  "yellow"},
+            {"100": "green"}
+        ],
+        "symbol": "$",
+        "whole": "dollar",
+        "worth": {}
+    },
+    "BRL": {
+        "after": false,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "brass"},
+            {"0.25": "brass"},
+            {"0.50": "silver"},
+            {"1.00": "brass-silver"}
+        ],
+        "fraction": "centavo",
+        "name": "Brazilian Real",
+        "notes": [
+            {"2":   "blue"},
+            {"5":   "purple"},
+            {"10":  "red"},
+            {"20":  "yellow"},
+            {"50":  "brown"},
+            {"100": "teal"}
+        ],
+        "symbol": "R$",
+        "whole": "real",
+        "worth": {}
+    },
+    "CAD": {
+        "after": false,
+        "coins": [
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.25": "silver"},
+            {"1.00": "gold"},
+            {"2.00": "silver-gold"}
+        ],
+        "fraction": "cent",
+        "name": "Canadian Dollar",
+        "notes": [
+            {"5":   "blue"},
+            {"10":  "purple"},
+            {"20":  "green"},
+            {"50":  "red"},
+            {"100": "brown"}
+        ],
+        "symbol": "$",
+        "whole": "dollar",
+        "worth": {}
+    },
+    "CHF": {
+        "after": false,
+        "coins": [
+            {"0.05": "gold"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "silver"},
+            {"2.00": "silver"},
+            {"5.00": "silver"}
+        ],
+        "fraction": "centime",
+        "name": "Swiss Franc",
+        "notes": [
+            {"10":   "yellow"},
+            {"20":   "red"},
+            {"50":   "green"},
+            {"100":  "blue"},
+            {"200":  "brown"},
+            {"1000": "purple"}
+        ],
+        "symbol": "SFr.",
+        "whole": "franc",
+        "worth": {}
+    },
+    "CNY": {
+        "after": false,
+        "coins": [
+            {"0.10": "silver"},
+            {"0.50": "gold"},
+            {"1.00": "silver"}
+        ],
+        "fraction": "jiǎo",
+        "name": "Chinese Yuan",
+        "notes": [
+            {"1":    "brown"},
+            {"2":    "green"},
+            {"5":    "brown"},
+            {"10":   "silver"},
+            {"20":   "yellow"},
+            {"50":   "teal"},
+            {"100":  "red"}
+        ],
+        "symbol": "¥",
+        "whole": "yuán",
+        "worth": {}
+    },
+    "EUR": {
+        "after": false,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.02": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "gold"},
+            {"0.20": "gold"},
+            {"0.50": "gold"},
+            {"1.00": "gold-silver"},
+            {"2.00": "silver-gold"}
+        ],
+        "fraction": "cent",
+        "name": "Euro",
+        "notes": [
+            {"5":   "teal"},
+            {"10":  "red"},
+            {"20":  "blue"},
+            {"50":  "orange"},
+            {"100": "green"},
+            {"200": "yellow"},
+            {"500": "purple"}
+        ],
+        "symbol": "€",
+        "whole": "euro",
+        "worth": {}
+    },
+    "GBP": {
+        "after": false,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.02": "copper"},
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "gold-silver"},
+            {"2.00": "silver-gold"}
+        ],
+        "fraction": "pence",
+        "name": "Pound Sterling",
+        "notes": [
+            {"5":   "teal"},
+            {"10":  "gold"},
+            {"20":  "purple"},
+            {"50":  "red"}
+        ],
+        "symbol": "£",
+        "whole": "pound",
+        "worth": {}
+    },
+    "ILS": {
+        "after": false,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "copper"},
+            {"0.50": "copper"},
+            {"1":    "silver"},
+            {"2":    "silver"},
+            {"5":    "silver"},
+            {"10":   "silver-copper"}
+        ],
+        "fraction": "agorot",
+        "name": "Israeli Shekel",
+        "notes": [
+            {"20":  "green"},
+            {"50":  "purple"},
+            {"100": "brown"},
+            {"200": "red"}
+        ],
+        "symbol": "₪",
+        "whole": "shekel",
+        "worth": {}
+    },
+    "INR": {
+        "after": false,
+        "coins": [
+            {"0.10": "silver"},
+            {"0.25": "silver"},
+            {"0.50": "silver"},
+            {"1":    "silver"},
+            {"2":    "silver"},
+            {"5":    "silver"}
+        ],
+        "fraction": "paisa",
+        "name": "Indian Rupee",
+        "notes": [
+            {"5":   "green"},
+            {"10":   "orange"},
+            {"20":   "red"},
+            {"50":  "purple"},
+            {"100":  "teal"},
+            {"500":  "yellow"},
+            {"1000":  "red"}
+        ],
+        "symbol": "₹",
+        "whole": "rupee",
+        "worth": {}
+    },
+    "JPY": {
+        "after": false,
+        "coins": [
+            {"1":   "silver"},
+            {"5":   "gold"},
+            {"10":  "copper"},
+            {"50":  "silver"},
+            {"100": "silver"},
+            {"500": "silver"}
+        ],
+        "fraction": null,
+        "name": "Japanese Yen",
+        "notes": [
+            {"1000":   "yellow"},
+            {"2000":   "yellow"},
+            {"5000":   "yellow"},
+            {"10000":  "yellow"}
+        ],
+        "symbol": "¥",
+        "whole": "yen",
+        "worth": {}
+    },
+    "MXN": {
+        "after": false,
+        "coins": [
+            {"0.25":  "copper"},
+            {"0.50":  "copper"},
+            {"1.00":  "silver-gold"},
+            {"2.00":  "silver-gold"},
+            {"5.00":  "silver-gold"},
+            {"10.00": "copper-silver"}
+        ],
+        "fraction": "centavo",
+        "name": "Mexican Peso",
+        "notes": [
+            {"20":   "blue"},
+            {"50":   "red"},
+            {"100":  "yellow"},
+            {"200":  "green"},
+            {"500":  "brown"},
+            {"1000": "purple"}
+        ],
+        "symbol": "$",
+        "whole": "peso",
+        "worth": {}
+    },
+    "PLN": {
+        "after": true,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.02": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "silver"},
+            {"2.00": "copper-silver"},
+            {"5.00": "silver-copper"}
+        ],
+        "fraction": "groszy",
+        "name": "Polish Złoty",
+        "notes": [
+            {"10":   "brown"},
+            {"20":   "purple"},
+            {"50":   "blue"},
+            {"100":  "green"},
+            {"200":  "brown"}
+        ],
+        "symbol": "zł",
+        "whole": "złoty",
+        "worth": {}
+    },
+    "THB": {
+        "after": false,
+        "coins": [
+            {"0.10":  "silver"},
+            {"0.25":  "copper"},
+            {"0.50":  "copper"},
+            {"1.00":  "silver"},
+            {"2.00":  "gold"},
+            {"5.00":  "silver"},
+            {"10.00": "silver-gold"}
+        ],
+        "fraction": "satang",
+        "name": "Thai Baht",
+        "notes": [
+            {"20":   "green"},
+            {"50":   "blue"},
+            {"100":  "red"},
+            {"500":  "purple"},
+            {"1000": "brown"}
+        ],
+        "symbol": "฿",
+        "whole": "baht",
+        "worth": {}
+    },
+    "USD": {
+        "after": false,
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.25": "silver"}
+        ],
+        "fraction": "cent",
+        "name": "US Dollar",
+        "notes": [
+            {"1":   "green"},
+            {"2":   "green"},
+            {"5":   "green"},
+            {"10":  "green"},
+            {"20":  "green"},
+            {"50":  "green"},
+            {"100": "green"}
+        ],
+        "symbol": "$",
+        "whole": "dollar",
+        "worth": {}
+    },
+    "ZAR": {
+        "after": false,
+        "coins": [
+            {"0.10": "gold"},
+            {"0.20": "gold"},
+            {"0.50": "gold"},
+            {"1.00": "silver"},
+            {"2.00": "silver"},
+            {"5.00": "silver-gold"}
+        ],
+        "fraction": "cent",
+        "name": "South African Rand",
+        "notes": [
+            {"10":  "teal"},
+            {"20":  "yellow"},
+            {"50":  "purple"},
+            {"100": "blue"},
+            {"200": "brown"}
+        ],
+        "symbol": "R ",
+        "whole": "rand",
+        "worth": {}
+    }
+}

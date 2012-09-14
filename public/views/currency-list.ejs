@@ -1,0 +1,12 @@
+<ul>
+  <% for (var i in currencies) { %>
+    <% if ((i !== getCurrencies()[0]) &&
+           (i !== getCurrencies()[1])) { %>
+      <li>
+        <a href="#<%= (firstCurrency) ? i + ',' + getCurrencies()[1] : getCurrencies()[0] + ',' + i %>" class="flag <%= i %>-flag">
+          <%= currencies[i].name %>
+        </a>
+      </li>
+    <% } %>
+  <% } %>
+</ul>

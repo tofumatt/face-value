@@ -64,6 +64,7 @@
             {"50":  "red"},
             {"100": "brown"}
         ],
+        "range": [1, 100],
         "symbol": "$",
         "whole": "dollar",
         "worth": {}
@@ -138,6 +139,7 @@
             {"200": "yellow"},
             {"500": "purple"}
         ],
+        "range": [1, 500],
         "symbol": "€",
         "whole": "euro",
         "worth": {}
@@ -162,6 +164,7 @@
             {"20":  "purple"},
             {"50":  "red"}
         ],
+        "range": [0.50, 50],
         "symbol": "£",
         "whole": "pound",
         "worth": {}
@@ -233,6 +236,7 @@
             {"5000":   "yellow"},
             {"10000":  "yellow"}
         ],
+        "range": [10, 10000],
         "symbol": "¥",
         "whole": "yen",
         "worth": {}
@@ -307,6 +311,7 @@
             {"500":  "purple"},
             {"1000": "brown"}
         ],
+        "range": [20, 1000],
         "symbol": "฿",
         "whole": "baht",
         "worth": {}

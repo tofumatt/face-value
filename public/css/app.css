@@ -59,12 +59,6 @@ h1, h2 {
 }
 */
 
-.coins .symbol {
-    display: inline-block;
-    font-size: 50%;
-    vertical-align: 35%;
-}
-
 .coins {
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -87,14 +81,54 @@ h1, h2 {
     width: 100%;
 }
 
+.coins .symbol {
+    display: inline-block;
+    font-size: 50%;
+    vertical-align: 35%;
+}
+
 .notes {
-    border: 1px solid black;
-    display: block;
-    font-size: 28px;
-    height: 92px;
+    background-image: url(../img/bill.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 87px;
     margin: 0 auto;
+    position: relative;
     text-align: center;
+    vertical-align: middle;
     width: 140px;
+}
+
+.notes .color {
+    left: 0;
+    height: 87px;
+    opacity: .35;
+    position: absolute;
+    top: 0;
+    width: 140px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .notes {
+        background-image: url(../img/bill@2x.png);
+    }
+}
+
+.notes .inner {
+    color: rgba(244, 244, 244, 1);
+    font-size: 40px;
+    height: 1em;
+    margin: -.475em 0 0 -4px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.notes .symbol {
+    display: inline-block;
+    font-size: 50%;
+    vertical-align: 35%;
 }
 
 .subtitle {
@@ -169,69 +203,34 @@ h1, h2 {
 }
 
 /** Colour styles for notes */
-.blue {
+.notes .color.blue {
     background-color: blue;
 }
 
-.brown {
+.notes .color.brown {
     background-color: #804000;
 }
 
-.green {
+.notes .color.green {
     background-color: green;
 }
 
-.orange {
+.notes .color.orange {
     background-color: orange;
 }
 
-.purple {
+.notes .color.purple {
     background-color: purple;
 }
 
-.red {
+.notes .color.red {
     background-color: red;
 }
 
-.teal {
+.notes .color.teal {
     background-color: teal;
 }
 
-.yellow {
+.notes .color.yellow {
     background-color: yellow;
-}
-
-/* Retina versions */
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
-    .blue {
-        background-color: blue;
-    }
-
-    .brown {
-        background-color: #804000;
-    }
-
-    .green {
-        background-color: green;
-    }
-
-    .orange {
-        background-color: orange;
-    }
-
-    .purple {
-        background-color: purple;
-    }
-
-    .red {
-        background-color: red;
-    }
-
-    .teal {
-        background-color: teal;
-    }
-
-    .yellow {
-        background-color: yellow;
-    }
 }

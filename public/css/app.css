@@ -44,6 +44,18 @@ h1, h2 {
     text-align: center;
 }
 
+
+
+
+
+
+/* -------- HEADER ------- */
+/*
+/* Top bar with flag, currently-converting currencies, and currency switcher.
+/*
+/* ----------------------- */
+
+
 #header {
     background-color: #e7e4e0;
     background-position: -35px 100%;
@@ -119,6 +131,20 @@ h1, h2 {
 }
 */
 
+
+
+
+
+
+
+/* -------- MAIN CONTENT ------- */
+/*
+/* Graphical representations of coins and bills, along with corresponding conversions.
+/*
+/* ----------------------- */
+
+
+
 .coins {
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -132,18 +158,22 @@ h1, h2 {
 }
 
 .coins .inner {
-    color: rgba(244, 244, 244, 1);
-    font-size: 40px;
+    color: rgba(230, 230, 240, 1);
+    font-size: 70px;
     height: 1em;
-    margin: -.475em 0 0 -4px;
+    letter-spacing: -.08em;
+    margin: 0 0 0 -7px;
     position: absolute;
-    top: 50%;
-    width: 100%;
+    text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
+    top: 17%;
+    width: 100%; 
 }
 
 .coins .symbol {
     display: inline-block;
+    letter-spacing: 0;
     font-size: 50%;
+    font-weight: normal;
     vertical-align: 35%;
 }
 
@@ -175,18 +205,22 @@ h1, h2 {
 }
 
 .notes .inner {
-    color: rgba(244, 244, 244, 1);
-    font-size: 40px;
+    color: rgba(230, 230, 240, 1);
+    font-size: 70px;
     height: 1em;
-    margin: -.475em 0 0 -4px;
+    letter-spacing: -.08em;
+    margin: 0 0 0 -4px;
     position: absolute;
-    top: 50%;
-    width: 100%;
+    text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
+    top: 5%;
+    width: 100%; 
 }
 
 .notes .symbol {
     display: inline-block;
     font-size: 50%;
+    font-weight: normal;
+    letter-spacing: 0;
     vertical-align: 35%;
 }
 

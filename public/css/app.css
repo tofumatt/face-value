@@ -4,9 +4,16 @@
 @import "flags.css";
 
 body {
+    background: url(../img/bg-compassrose.png) 0 0 no-repeat fixed;
     font-family: Helvetica;
     font-size: .95em;
     margin: 5px 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    body {
+        background-image: url(../img/bg-compassrose@2x.png);
+    }
 }
 
 p, dl, ul, ol {
@@ -27,6 +34,12 @@ a, a:visited, a:active {
 
 h1, h2 {
     text-align: center;
+}
+
+#header {
+    border-bottom: 1px solid #a7adad;
+    height: 52px;
+    margin: 0 0 10px;
 }
 
 #currency-switcher {
@@ -103,7 +116,6 @@ h1, h2 {
 .notes .color {
     left: 0;
     height: 87px;
-    opacity: .35;
     position: absolute;
     top: 0;
     width: 140px;

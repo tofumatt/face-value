@@ -88,7 +88,7 @@ h1, h2 {
 }
 
 .notes {
-    background-image: url(../img/bill.png);
+    background-image: url(../img/note.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -111,7 +111,7 @@ h1, h2 {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
     .notes {
-        background-image: url(../img/bill@2x.png);
+        background-image: url(../img/note@2x.png);
     }
 }
 

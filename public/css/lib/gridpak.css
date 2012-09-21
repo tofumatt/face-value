@@ -67,7 +67,7 @@
     @media screen and (min-width: 320px) and (max-width: 489px) {
         
         .col {
-            margin-left:1%;
+            margin-left:2%;
         	padding:0 0.5%;
         }
         
@@ -78,7 +78,7 @@
         
         
         .span_1 {
-            width:49.5%;
+            width:49.0%;
         }
         .span_2 {
             margin-left:0;

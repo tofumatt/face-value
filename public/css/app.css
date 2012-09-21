@@ -5,7 +5,7 @@
 @import "../fonts/bitter/stylesheet.css";
 
 body {
-    background: url(../img/bg-compassrose.png) 0 0 no-repeat fixed;
+    background: url(../img/bg-compassrose.png) 0 58px no-repeat fixed;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 0;
@@ -38,11 +38,13 @@ h1, h2 {
 }
 
 #header {
+    background-image: none !important;
     background-color: #e7e4e0;
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 130px 75px;
-    border-bottom: 1px solid #a7adad;
+    border-bottom: 1px solid rgba(88, 82, 82, 1);
+    box-shadow: 0px 3px 5px rgba(88, 82, 82, 0.75);
     font-size: 14px;
     height: 58px;
     left: 0;

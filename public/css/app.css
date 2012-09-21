@@ -69,12 +69,12 @@ h1, h2 {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height: 150px;
+    height: 125px;
     margin: 0 auto;
     position: relative;
     text-align: center;
     vertical-align: middle;
-    width: 150px;
+    width: 125px;
 }
 
 .coins .inner {
@@ -91,11 +91,10 @@ h1, h2 {
     border: 1px solid black;
     display: block;
     font-size: 28px;
-    height: 36px;
+    height: 92px;
     margin: 0 auto;
-    padding: 19px 25px 0;
     text-align: center;
-    width: 80px;
+    width: 140px;
 }
 
 .subtitle {
@@ -138,8 +137,38 @@ h1, h2 {
     background-image: url(../img/coins/silver-gold.png);
 }
 
-/** Colour styles for notes */
+/* Retina versions */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .coins.copper {
+        background-image: url(../img/coins/copper@2x.png);
+    }
 
+    .coins.copper-silver {
+        background-image: url(../img/coins/copper-silver@2x.png);
+    }
+
+    .coins.gold {
+        background-image: url(../img/coins/gold@2x.png);
+    }
+
+    .coins.gold-silver {
+        background-image: url(../img/coins/gold-silver@2x.png);
+    }
+
+    .coins.silver {
+        background-image: url(../img/coins/silver@2x.png);
+    }
+
+    .coins.silver-copper {
+        background-image: url(../img/coins/silver-copper@2x.png);
+    }
+
+    .coins.silver-gold {
+        background-image: url(../img/coins/silver-gold@2x.png);
+    }
+}
+
+/** Colour styles for notes */
 .blue {
     background-color: blue;
 }
@@ -170,4 +199,39 @@ h1, h2 {
 
 .yellow {
     background-color: yellow;
+}
+
+/* Retina versions */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .blue {
+        background-color: blue;
+    }
+
+    .brown {
+        background-color: #804000;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .orange {
+        background-color: orange;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .teal {
+        background-color: teal;
+    }
+
+    .yellow {
+        background-color: yellow;
+    }
 }

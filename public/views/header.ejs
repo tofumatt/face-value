@@ -1,5 +1,8 @@
-<div id="currency-switcher">
+<div id="currency-selector">
   What <%= getPluralName(getCurrencies()[0], 'are my <strong class="first-currency">', 'is my <strong class="first-currency">') %></strong>
   worth<br> in <strong class="second-currency"><%= getPluralName(getCurrencies()[1]) %></strong>?
 </div>
+<a id="currency-switcher" href="#<%= getCurrencies()[1] + ',' + getCurrencies()[0] %>">
+  <span class="off-screen"><%= getCurrencies()[1] + ' &lt;=&gt; ' + getCurrencies()[0] %></span>
+</a>
 <div class="clear"></div>

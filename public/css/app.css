@@ -6,6 +6,7 @@
 
 body {
     background: url(../img/bg-compassrose.png) 0 58px no-repeat fixed;
+    background-size: cover;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 0;
@@ -33,6 +34,12 @@ a, a:visited, a:active {
     display: none;
 }
 
+.off-screen {
+    left: -9999px;
+    position: absolute;
+    top: 0;
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -53,12 +60,31 @@ h1, h2 {
     z-index: 1000;
 }
 
-#currency-switcher {
-    float: right;
+#currency-selector {
+    float: left;
     line-height: 1em;
-    margin: 10px 50px 0 20px;
+    margin: 10px 0 0 20px;
     max-width: 265px;
     width: auto;
+}
+
+#currency-switcher {
+    background: url(../img/switch.png) 0 0 no-repeat;
+    background-size: auto 100%;
+    float: right;
+    height: 60px;
+    margin: -2.5px 0 0;
+    width: 60px;
+}
+
+#currency-switcher:active {
+    background-position: -60px 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    #currency-switcher {
+        background-image: url(../img/switch@2x.png);
+    }
 }
 
 #header strong {

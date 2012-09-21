@@ -179,7 +179,7 @@
             {"1":    "silver"},
             {"2":    "silver"},
             {"5":    "silver"},
-            {"10":   "silver-copper"}
+            {"10":   "silver-gold"}
         ],
         "fraction": "agorot",
         "name": "Israeli Shekel",
@@ -249,7 +249,7 @@
             {"1.00":  "silver-gold"},
             {"2.00":  "silver-gold"},
             {"5.00":  "silver-gold"},
-            {"10.00": "copper-silver"}
+            {"10.00": "gold-silver"}
         ],
         "fraction": "centavo",
         "name": "Mexican Peso",
@@ -275,8 +275,8 @@
             {"0.20": "silver"},
             {"0.50": "silver"},
             {"1.00": "silver"},
-            {"2.00": "copper-silver"},
-            {"5.00": "silver-copper"}
+            {"2.00": "gold-silver"},
+            {"5.00": "silver-gold"}
         ],
         "fraction": "groszy",
         "name": "Polish Złoty",

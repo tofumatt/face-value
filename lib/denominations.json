@@ -27,10 +27,10 @@
         "coins": [
             {"0.01": "copper"},
             {"0.05": "copper"},
-            {"0.10": "brass"},
-            {"0.25": "brass"},
+            {"0.10": "copper"},
+            {"0.25": "copper"},
             {"0.50": "silver"},
-            {"1.00": "brass-silver"}
+            {"1.00": "gold-silver"}
         ],
         "fraction": "centavo",
         "name": "Brazilian Real",

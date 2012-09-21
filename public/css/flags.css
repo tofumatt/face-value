@@ -2,59 +2,164 @@
     background-image: url(/img/flags/AUD.png);
 }
 
+#header.AUD-flag {
+    background-image: url(/img/header-flags/AUD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.AUD-flag {
+    background-image: url(/img/header-flags/AUD@2x.png);
+}}
+
 .BRL-flag {
     background-image: url(/img/flags/BRL.png);
 }
+
+#header.BRL-flag {
+    background-image: url(/img/header-flags/BRL.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.BRL-flag {
+    background-image: url(/img/header-flags/BRL@2x.png);
+}}
 
 .CAD-flag {
     background-image: url(/img/flags/CAD.png);
 }
 
+#header.CAD-flag {
+    background-image: url(/img/header-flags/CAD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CAD-flag {
+    background-image: url(/img/header-flags/CAD@2x.png);
+}}
+
 .CHF-flag {
     background-image: url(/img/flags/CHF.png);
 }
+
+#header.CHF-flag {
+    background-image: url(/img/header-flags/CHF.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CHF-flag {
+    background-image: url(/img/header-flags/CHF@2x.png);
+}}
 
 .CNY-flag {
     background-image: url(/img/flags/CNY.png);
 }
 
+#header.CNY-flag {
+    background-image: url(/img/header-flags/CNY.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CNY-flag {
+    background-image: url(/img/header-flags/CNY@2x.png);
+}}
+
 .EUR-flag {
     background-image: url(/img/flags/EUR.png);
 }
+
+#header.EUR-flag {
+    background-image: url(/img/header-flags/EUR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.EUR-flag {
+    background-image: url(/img/header-flags/EUR@2x.png);
+}}
 
 .GBP-flag {
     background-image: url(/img/flags/GBP.png);
 }
 
+#header.GBP-flag {
+    background-image: url(/img/header-flags/GBP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.GBP-flag {
+    background-image: url(/img/header-flags/GBP@2x.png);
+}}
+
 .ILS-flag {
     background-image: url(/img/flags/ILS.png);
 }
+
+#header.ILS-flag {
+    background-image: url(/img/header-flags/ILS.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.ILS-flag {
+    background-image: url(/img/header-flags/ILS@2x.png);
+}}
 
 .INR-flag {
     background-image: url(/img/flags/INR.png);
 }
 
+#header.INR-flag {
+    background-image: url(/img/header-flags/INR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.INR-flag {
+    background-image: url(/img/header-flags/INR@2x.png);
+}}
+
 .JPY-flag {
     background-image: url(/img/flags/JPY.png);
 }
+
+#header.JPY-flag {
+    background-image: url(/img/header-flags/JPY.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.JPY-flag {
+    background-image: url(/img/header-flags/JPY@2x.png);
+}}
 
 .MXN-flag {
     background-image: url(/img/flags/MXN.png);
 }
 
+#header.MXN-flag {
+    background-image: url(/img/header-flags/MXN.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.MXN-flag {
+    background-image: url(/img/header-flags/MXN@2x.png);
+}}
+
 .PLN-flag {
     background-image: url(/img/flags/PLN.png);
 }
+
+#header.PLN-flag {
+    background-image: url(/img/header-flags/PLN.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.PLN-flag {
+    background-image: url(/img/header-flags/PLN@2x.png);
+}}
 
 .THB-flag {
     background-image: url(/img/flags/THB.png);
 }
 
+#header.THB-flag {
+    background-image: url(/img/header-flags/THB.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.THB-flag {
+    background-image: url(/img/header-flags/THB@2x.png);
+}}
+
 .USD-flag {
     background-image: url(/img/flags/USD.png);
 }
 
+#header.USD-flag {
+    background-image: url(/img/header-flags/USD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.USD-flag {
+    background-image: url(/img/header-flags/USD@2x.png);
+}}
+
 .ZAR-flag {
     background-image: url(/img/flags/ZAR.png);
 }
+
+#header.ZAR-flag {
+    background-image: url(/img/header-flags/ZAR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.ZAR-flag {
+    background-image: url(/img/header-flags/ZAR@2x.png);
+}}
 

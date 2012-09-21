@@ -8,4 +8,5 @@ This program is free software; it is distributed under an [MIT License](http://g
 
 ---
 
-Copyright (c) 2012 [Matthew Riley MacPherson](http://lonelyvegan.com).
+Copyright (c) 2012 [Matthew Riley MacPherson](http://lonelyvegan.com) and
+[sarah ✈ semark](http://triggersandsparks.com).

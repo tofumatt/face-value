@@ -49,7 +49,6 @@ define("app", function(require) {
         renderCurrencies()
         renderHeader()
         renderLists()
-        // renderSwitcher()
     }
 
     function firstRun() {
@@ -107,19 +106,38 @@ define("app", function(require) {
         }))
     }
 
-    // function renderSwitcher() {
-    //     $('#currency-switcher').html(new EJS({url: '/views/currency-switcher.ejs'}).render({
-    //         getCurrencies: getCurrencies
-    //     }))
-    // }
-
     function setupListeners() {
-        $(window).on('hashchange', function(event) {
-            updateCurrencies()
-            renderCurrencies()
-            renderHeader()
-            renderLists()
-            // renderSwitcher()
+        $(function() {
+            $(window).on('hashchange', function(event) {
+                updateCurrencies()
+                renderCurrencies()
+                renderHeader()
+                renderLists()
+                // renderSwitcher()
+            })
+
+            $('#first-currency').on('click', function(event) {
+                $('#first-select').addClass('show').trigger('focus')
+                event.preventDefault()
+            })
+
+            $('#second-currency').on('click', function(event) {
+                $('#second-select').addClass('show').trigger('focus')
+                event.preventDefault()
+            })
+
+            $('#first-select').on('blur', function(event) {
+                $(this).removeClass('show')
+            })
+
+            $('#second-select').on('blur', function(event) {
+                $(this).removeClass('show')
+            })
+
+            $('#first-select,#second-select').on('change', function(event) {
+                $(this).trigger('blur')
+                window.location.hash = event.target.value
+            })
         })
 
         // $('#select-first-currency').on('click', function(event) {

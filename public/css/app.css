@@ -72,12 +72,33 @@ h1, h2 {
     z-index: 1000;
 }
 
+#first-select.show, #second-select.show {
+    left: 25px;
+    position: fixed;
+    top: 10px;
+    z-index: 10000;
+}
+
+#second-select.show {
+    top: 26px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    #first-select.show, #second-select.show {
+        opacity: 0;
+    }
+}
+
 #currency-selector {
     float: left;
     line-height: 1em;
     margin: 10px 0 0 20px;
     max-width: 265px;
     width: auto;
+}
+
+#currency-selector strong {
+    display: inline-block;
 }
 
 #currency-switcher {

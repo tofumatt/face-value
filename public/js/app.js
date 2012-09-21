@@ -11,6 +11,8 @@ require.config({
              'jquery']},
 });
 
+var valueFormatted;
+
 // When you write javascript in separate files, list them as
 // dependencies along with jquery
 define("app", function(require) {
@@ -20,6 +22,7 @@ define("app", function(require) {
     // }
 
     var $ = require('jquery')
+    // require('gridpak')
     // var EJS = require('ejs')
     // console.log(EJS)
 
@@ -32,6 +35,21 @@ define("app", function(require) {
 
     // START HERE: Put your js code here
     function init() {
+        if (ls.ranInit !== '1') {
+            firstRun()
+        }
+
+        setupListeners()
+
+        getCurrencies()
+        updateCurrencies()
+        updateCurrencyInfo()
+        renderCurrencies()
+        renderLists()
+        renderSwitcher()
+    }
+
+    function firstRun() {
         ls.currentCurrencies = '[]'
         ls.currencies = '{}'
         ls.ranInit = '1'
@@ -81,6 +99,29 @@ define("app", function(require) {
         }))
     }
 
+    function setupListeners() {
+        $(window).on('hashchange', function(event) {
+            updateCurrencies()
+            renderCurrencies()
+            renderLists()
+            renderSwitcher()
+        })
+
+        // $('#select-first-currency').on('click', function(event) {
+        //     $('#select-first-currency').popover({
+        //         content: $('#currency-list-first').html(),
+        //         placement: 'bottom',
+        //         trigger: 'manual'
+        //     })
+        //     $('#select-first-currency').popover('toggle')
+        //     event.preventDefault()
+        //     return false
+        // })
+        // $('#select-first-currency').popover({
+        //     content: $('#currency-list-first').html()
+        // })
+    }
+
     function updateCurrencies() {
         ls.currentCurrencies = JSON.stringify(getCurrencies())
     }
@@ -96,26 +137,17 @@ define("app", function(require) {
                 console.log('failed')
             }
         })
-
     }
 
-    if (ls.ranInit !== '1') {
-        init()
+    valueFormatted = function(amount) {
+        if (amount >= 1 && parseFloat(amount) === parseFloat(Math.round(Number(amount)))) {
+            return parseInt(amount, 10)
+        } else {
+            return amount
+        }
     }
 
-    getCurrencies()
-    updateCurrencies()
-    updateCurrencyInfo()
-    renderCurrencies()
-    renderLists()
-    renderSwitcher()
-
-    $(window).on('hashchange', function(event) {
-        updateCurrencies()
-        renderCurrencies()
-        renderLists()
-        renderSwitcher()
-    })
+    init()
 
     // Hook up the installation button, feel free to customize how
     // this works
@@ -154,7 +186,6 @@ define("app", function(require) {
             msg.hide();
         }, 8000);
     });
-
 });
 
 // Include the in-app payments API, and if it fails to load handle it

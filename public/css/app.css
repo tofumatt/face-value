@@ -1,14 +1,12 @@
-@import "defaults.css";
-
-/* Uncomment these to use Twitter Bootstrap */
-@import "bootstrap.css";
-@import "bootstrap-responsive.css";
+@import "lib/gridpak.css";
 
 /* Your styles here */
 @import "flags.css";
 
 body {
+    font-family: Helvetica;
     font-size: .95em;
+    margin: 5px 0;
 }
 
 p, dl, ul, ol {
@@ -23,6 +21,10 @@ a, a:visited, a:active {
     clear: both;
 }
 
+.hide {
+    display: none;
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -35,6 +37,7 @@ h1, h2 {
     list-style: none;
 }
 
+/*
 #currency-list-first {
     float: left;
 }
@@ -42,44 +45,57 @@ h1, h2 {
 #currency-list-second {
     float: right;
 }
+*/
 
+/*
 .denomination-list {
     clear: both;
-    padding: 0 0 10px;
 }
 
 .denomination {
     float: left;
-    margin: 0 20px 0 0;
+    height: 100px;
+    width: 50%;
 }
+*/
 
 .coins .symbol {
     display: inline-block;
-    font-size: 20px;
-    vertical-align: 10%;
+    font-size: 50%;
+    vertical-align: 35%;
 }
 
 .coins {
-    border: 1px solid black;
-    border-radius: 50%;
-    display: block;
-    font-size: 28px;
-    height: 61px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 150px;
     margin: 0 auto;
-    padding: 39px 0 0;
+    position: relative;
     text-align: center;
-    width: 100px;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.coins .inner {
+    color: rgba(244, 244, 244, 1);
+    font-size: 40px;
+    height: 1em;
+    margin: -.475em 0 0 -4px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
 
 .notes {
     border: 1px solid black;
     display: block;
     font-size: 28px;
-    height: 51px;
+    height: 36px;
     margin: 0 auto;
-    padding: 29px 35px 0;
+    padding: 19px 25px 0;
     text-align: center;
-    width: 100px;
+    width: 80px;
 }
 
 .subtitle {
@@ -93,43 +109,47 @@ h1, h2 {
     padding: 0 0 0 18px;
 }
 
+/** Colour styles for coins */
+.coins.copper {
+    background-image: url(../img/coins/copper.png);
+}
+
+.coins.copper-silver {
+    background-image: url(../img/coins/copper-silver.png);
+}
+
+.coins.gold {
+    background-image: url(../img/coins/gold.png);
+}
+
+.coins.gold-silver {
+    background-image: url(../img/coins/gold-silver.png);
+}
+
+.coins.silver {
+    background-image: url(../img/coins/silver.png);
+}
+
+.coins.silver-copper {
+    background-image: url(../img/coins/silver-copper.png);
+}
+
+.coins.silver-gold {
+    background-image: url(../img/coins/silver-gold.png);
+}
+
+/** Colour styles for notes */
+
 .blue {
     background-color: blue;
-}
-
-.brass {
-    background-color: #804000;
-}
-
-.brass-silver {
-    background: radial-gradient(ellipse at center, #cccccc 50%,
-                                                   #804000 100%);
 }
 
 .brown {
     background-color: #804000;
 }
 
-.copper {
-    background-color: #ffb000;
-}
-
-.copper-silver {
-    background: radial-gradient(ellipse at center, #cccccc 50%,
-                                                   #ffb000 100%);
-}
-
 .green {
     background-color: green;
-}
-
-.gold {
-    background-color: #ffb000;
-}
-
-.gold-silver {
-    background: radial-gradient(ellipse at center, #cccccc 50%,
-                                                   #ffb000 100%);
 }
 
 .orange {
@@ -142,25 +162,6 @@ h1, h2 {
 
 .red {
     background-color: red;
-}
-
-.silver {
-    background-color: #cccccc;
-}
-
-.silver-brass {
-    background: radial-gradient(ellipse at center, #804000 50%,
-                                                   #cccccc 100%);
-}
-
-.silver-copper {
-    background: radial-gradient(ellipse at center, #ffb000 0%,
-                                                   #cccccc 70%);
-}
-
-.silver-gold {
-    background: radial-gradient(ellipse at center, #ffb000 0%,
-                                                   #cccccc 70%);
 }
 
 .teal {

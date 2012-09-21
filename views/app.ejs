@@ -1,9 +1,13 @@
-<h1><%= app.conf.get('name') %></h1>
-<h2>Currency conversion using actual denominations.</h2>
+<h1 class="hide"><%= app.conf.get('name') %></h1>
+<h2 class="hide">Currency conversion using actual denominations.</h2>
 
-<div id="currency-switcher"></div>
-<div id="currency-list-first"></div>
-<div id="currency-list-second"></div>
+<div id="currencies" class="hide">
+  <a href="#select-first-currency" id="select-first-currency">USD</a>
+</div>
+
+<div id="currency-switcher" class="hide"></div>
+<div id="currency-list-first" class="hide"></div>
+<div id="currency-list-second" class="hide"></div>
 
 <div id="coins"></div>
 <div id="notes"></div>

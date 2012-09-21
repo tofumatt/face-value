@@ -1,8 +1,8 @@
-<div class="denomination-list">
+<div class="denomination-list row">
   <% currencies[i][type].forEach(function(denomination) { %>
     <% if (!currencies[i]['range'] || ((!currencies[i]['range'][0] || currencies[i]['range'][0] <= Object.keys(denomination)[0]) && (!currencies[i]['range'][1] || currencies[i]['range'][1] >= Object.keys(denomination)[0]))) { %>
-      <div class="denomination">
-        <div class="<%= denomination[Object.keys(denomination)[0]] %> <%= type %>"><% if (!currencies[i]['after']) { %><span class="symbol"><%= currencies[i]['symbol'] %></span><% } %><%= Object.keys(denomination)[0] %><% if (currencies[i]['after']) { %><span class="symbol"><%= currencies[i]['symbol'] %></span><% } %><!-- (<%= currencies[i]['name'] %>) -->
+      <div class="denomination col span_1">
+        <div class="<%= denomination[Object.keys(denomination)[0]] %> <%= type %>"><div class="inner"><% if (!currencies[i]['after']) { %><span class="symbol"><%= currencies[i]['symbol'] %></span><% } %><%= valueFormatted(Object.keys(denomination)[0]) %><% if (currencies[i]['after']) { %><span class="symbol"><%= currencies[i]['symbol'] %></span><% } %><!-- (<%= currencies[i]['name'] %>) --></div>
         </div>
         <div class="subtitle"><% if (!currencies[j]['after']) { %><span class="symbol"><%= currencies[j]['symbol'] %></span><% } %><%= (Object.keys(denomination)[0] * currencies[i].worth[j]).toFixed(2) !== '0.00' ? (Object.keys(denomination)[0] * currencies[i].worth[j]).toFixed(2) : '0.01' %><% if (currencies[j]['after']) { %><span class="symbol"><%= currencies[j]['symbol'] %></span><% } %>
         </div>

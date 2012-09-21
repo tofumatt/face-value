@@ -2,10 +2,11 @@
 
 /* Your styles here */
 @import "flags.css";
+@import "fonts/bitter/stylesheet.css";
 
 body {
     background: url(../img/bg-compassrose.png) 0 0 no-repeat fixed;
-    font-family: Helvetica;
+    font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 0;
 }

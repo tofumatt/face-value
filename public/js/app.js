@@ -45,8 +45,9 @@ define("app", function(require) {
         updateCurrencies()
         updateCurrencyInfo()
         renderCurrencies()
+        renderHeader()
         renderLists()
-        renderSwitcher()
+        // renderSwitcher()
     }
 
     function firstRun() {
@@ -64,6 +65,12 @@ define("app", function(require) {
         return window.location.hash.replace('#', '').split(',')
     }
 
+    function getName(code) {
+        var currency = JSON.parse(ls.currencies)[code]
+
+        return currency.pluralName ? currency.pluralName : currency.name
+    }
+
     function renderCurrencies(first, second) {
         $('#coins').html(new EJS({url: '/views/denomination-list.ejs'}).render({
             currencies: JSON.parse(ls.currencies),
@@ -76,6 +83,13 @@ define("app", function(require) {
             i: first || JSON.parse(ls.currentCurrencies)[0],
             j: second || JSON.parse(ls.currentCurrencies)[1],
             type: 'notes'
+        }))
+    }
+
+    function renderHeader() {
+        $('#header').html(new EJS({url: '/views/header.ejs'}).render({
+            getCurrencies: getCurrencies,
+            getName: getName
         }))
     }
 
@@ -93,18 +107,19 @@ define("app", function(require) {
         }))
     }
 
-    function renderSwitcher() {
-        $('#currency-switcher').html(new EJS({url: '/views/currency-switcher.ejs'}).render({
-            getCurrencies: getCurrencies
-        }))
-    }
+    // function renderSwitcher() {
+    //     $('#currency-switcher').html(new EJS({url: '/views/currency-switcher.ejs'}).render({
+    //         getCurrencies: getCurrencies
+    //     }))
+    // }
 
     function setupListeners() {
         $(window).on('hashchange', function(event) {
             updateCurrencies()
             renderCurrencies()
+            renderHeader()
             renderLists()
-            renderSwitcher()
+            // renderSwitcher()
         })
 
         // $('#select-first-currency').on('click', function(event) {

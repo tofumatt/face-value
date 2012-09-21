@@ -204,33 +204,33 @@ h1, h2 {
 
 /** Colour styles for notes */
 .notes .color.blue {
-    background-color: blue;
+    background-color: rgba(80, 131, 201, .4);
 }
 
 .notes .color.brown {
-    background-color: #804000;
+    background-color: rgba(87, 57, 9, .4);
 }
 
 .notes .color.green {
-    background-color: green;
+    background-color: rgba(80, 128, 38, .4);
 }
 
 .notes .color.orange {
-    background-color: orange;
+    background-color: rgba(222, 150, 55, .4);
 }
 
 .notes .color.purple {
-    background-color: purple;
+    background-color: rgba(197, 131, 211, .4);
 }
 
 .notes .color.red {
-    background-color: red;
+    background-color: rgba(128, 26, 26, .4);
 }
 
 .notes .color.teal {
-    background-color: teal;
+    background-color: rgba(60, 128, 93, .4);
 }
 
 .notes .color.yellow {
-    background-color: yellow;
+    background-color: rgba(235, 202, 73, .4);
 }

@@ -335,6 +335,7 @@
             {"50":  "green"},
             {"100": "green"}
         ],
+        "range": [1, 100],
         "symbol": "$",
         "whole": "dollar",
         "worth": {}

@@ -11,7 +11,9 @@ require.config({
              'jquery']},
 });
 
-var valueFormatted;
+var getCurrencies
+var getPluralName
+var valueFormatted
 
 // When you write javascript in separate files, list them as
 // dependencies along with jquery
@@ -56,7 +58,7 @@ define("app", function(require) {
         ls.ranInit = '1'
     }
 
-    function getCurrencies() {
+    getCurrencies = function() {
         if (window.location.hash === '#' ||
             window.location.hash === '' ||
             !window.location.hash) {
@@ -65,10 +67,13 @@ define("app", function(require) {
         return window.location.hash.replace('#', '').split(',')
     }
 
-    function getName(code) {
+    getPluralName = function(code, pluralPrefix, singularPrefix) {
         var currency = JSON.parse(ls.currencies)[code]
+        pluralPrefix = pluralPrefix ? pluralPrefix : ''
+        singularPrefix = singularPrefix ? singularPrefix : ''
 
-        return currency.pluralName ? currency.pluralName : currency.name
+        return currency.pluralName ? pluralPrefix + currency.pluralName :
+                                     singularPrefix + currency.name
     }
 
     function renderCurrencies(first, second) {
@@ -87,23 +92,18 @@ define("app", function(require) {
     }
 
     function renderHeader() {
-        $('#header').html(new EJS({url: '/views/header.ejs'}).render({
-            getCurrencies: getCurrencies,
-            getName: getName
-        }))
+        $('#header').html(new EJS({url: '/views/header.ejs'}).render({}))
     }
 
     function renderLists() {
         $('#currency-list-first').html(new EJS({url: '/views/currency-list.ejs'}).render({
             currencies: JSON.parse(ls.currencies),
-            firstCurrency: true,
-            getCurrencies: getCurrencies
+            firstCurrency: true
         }))
 
         $('#currency-list-second').html(new EJS({url: '/views/currency-list.ejs'}).render({
             currencies: JSON.parse(ls.currencies),
-            firstCurrency: false,
-            getCurrencies: getCurrencies
+            firstCurrency: false
         }))
     }
 

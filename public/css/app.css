@@ -2,13 +2,13 @@
 
 /* Your styles here */
 @import "flags.css";
-@import "fonts/bitter/stylesheet.css";
+@import "../fonts/bitter/stylesheet.css";
 
 body {
     background: url(../img/bg-compassrose.png) 0 0 no-repeat fixed;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
-    margin: 0;
+    margin: 79px 0 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
@@ -22,7 +22,7 @@ p, dl, ul, ol {
 }
 
 a, a:visited, a:active {
-  color: #0088cc;
+    color: #0088cc;
 }
 
 .clear {
@@ -42,18 +42,24 @@ h1, h2 {
     border-bottom: 1px solid #a7adad;
     font-size: 14px;
     height: 68px;
-    margin: 0 0 10px;
+    left: 0;
+    margin: 0 0 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 #currency-switcher {
     float: right;
+    line-height: 1.2em;
     margin: 10px 20px 0 0;
     min-width: 265px;
     width: auto;
 }
 
 #header strong {
-    font-size: 20px;
+    font-size: 18px;
     font-variant: small-caps;
     text-transform: lowercase;
 }

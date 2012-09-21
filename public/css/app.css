@@ -38,9 +38,8 @@ h1, h2 {
 }
 
 #header {
-    background-image: none !important;
     background-color: #e7e4e0;
-    background-position: bottom left;
+    background-position: -35px 100%;
     background-repeat: no-repeat;
     background-size: 130px 75px;
     border-bottom: 1px solid rgba(88, 82, 82, 1);

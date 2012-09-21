@@ -1,3 +1,6 @@
+public/css/flags.css
+
+# Generic node stuff
 lib-cov
 *.seed
 *.log

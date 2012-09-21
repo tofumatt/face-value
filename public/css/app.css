@@ -180,13 +180,13 @@ h1, h2 {
 
 .coins .inner {
     color: rgba(230, 230, 240, 1);
-    font-size: 70px;
+    font-size: 60px;
     height: 1em;
     letter-spacing: -.08em;
     margin: 0 0 0 -7px;
     position: absolute;
     text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
-    top: 17%;
+    top: 22%;
     width: 100%; 
 }
 
@@ -227,13 +227,13 @@ h1, h2 {
 
 .notes .inner {
     color: rgba(230, 230, 240, 1);
-    font-size: 70px;
+    font-size: 60px;
     height: 1em;
     letter-spacing: -.08em;
     margin: 0 0 0 -4px;
     position: absolute;
     text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
-    top: 5%;
+    top: 10%;
     width: 100%; 
 }
 
@@ -246,8 +246,19 @@ h1, h2 {
 }
 
 .subtitle {
+    background: url("../img/translated-currency-bg.png") no-repeat scroll 0 0 transparent;
     clear: both;
+    color: #264F71;
+    height: 29px;
+    font-size: 16px;
+    margin: 5px auto 10px;
+    padding: 5px 0 0;
     text-align: center;
+    width: 117px;
+}
+.subtitle .symbol {
+	font-size: 75%;
+	vertical-align: 20%;
 }
 
 .flag {

@@ -18,6 +18,7 @@
             {"50":  "yellow"},
             {"100": "green"}
         ],
+        "pluralName": "Australian Dollars",
         "symbol": "$",
         "whole": "dollar",
         "worth": {}
@@ -42,6 +43,7 @@
             {"50":  "brown"},
             {"100": "teal"}
         ],
+        "pluralName": "Brazilian Reals",
         "symbol": "R$",
         "whole": "real",
         "worth": {}
@@ -64,6 +66,7 @@
             {"50":  "red"},
             {"100": "brown"}
         ],
+        "pluralName": "Canadian Dollars",
         "range": [1, 100],
         "symbol": "$",
         "whole": "dollar",
@@ -139,6 +142,7 @@
             {"200": "yellow"},
             {"500": "purple"}
         ],
+        "pluralName": "Euros",
         "range": [1, 500],
         "symbol": "€",
         "whole": "euro",
@@ -164,6 +168,7 @@
             {"20":  "purple"},
             {"50":  "red"}
         ],
+        "pluralName": "British Pounds",
         "range": [0.50, 50],
         "symbol": "£",
         "whole": "pound",
@@ -214,6 +219,7 @@
             {"500":  "yellow"},
             {"1000":  "red"}
         ],
+        "pluralName": "Indian Rupees",
         "symbol": "₹",
         "whole": "rupee",
         "worth": {}
@@ -261,6 +267,7 @@
             {"500":  "brown"},
             {"1000": "purple"}
         ],
+        "pluralName": "Mexican Pesos",
         "symbol": "$",
         "whole": "peso",
         "worth": {}
@@ -287,6 +294,7 @@
             {"100":  "green"},
             {"200":  "brown"}
         ],
+        "pluralName": "Polish Złotys",
         "symbol": "zł",
         "whole": "złoty",
         "worth": {}
@@ -335,6 +343,7 @@
             {"50":  "green"},
             {"100": "green"}
         ],
+        "pluralName": "US Dollars",
         "range": [1, 100],
         "symbol": "$",
         "whole": "dollar",

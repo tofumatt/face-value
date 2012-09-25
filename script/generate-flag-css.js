@@ -12,3 +12,13 @@ for (var i in denominations) {
     }))
   }
 }
+
+console.log('/** Flag list:\n')
+for (var i in denominations) {
+  if (denominations.hasOwnProperty(i)) {
+    console.log('{code}'.format({
+        code: i
+    }))
+  }
+}
+console.log('\n*/')

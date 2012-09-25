@@ -4,6 +4,9 @@ test:
 css:
 	node script/generate-flag-css.js > public/css/flags.css
 
+flags:
+	node script/generate-flag-css.js
+
 install: submodules npm_install mortar
 	echo 'Installed!'
 

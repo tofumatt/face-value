@@ -1,7 +1,8 @@
+/*global describe:true it:true */
 'use strict';
 
-var app = require('../app').app;
-var request = require('supertest');
+var app = require('../app').app
+var request = require('supertest')
 
 describe('The router', function() {
   describe('index page',  function() {
@@ -10,6 +11,6 @@ describe('The router', function() {
         .get('/')
         .set('Accept', 'application/html')
         .expect(200, done);
-    });
-  });
-});
+    })
+  })
+})

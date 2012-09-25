@@ -44,6 +44,7 @@
             {"100": "teal"}
         ],
         "pluralName": "Brazilian Reals",
+        "range": [1, 100],
         "symbol": "R$",
         "whole": "real",
         "worth": {}
@@ -94,6 +95,7 @@
             {"1000": "purple"}
         ],
         "pluralName": "Swiss Francs",
+        "range": [1, 1000],
         "symbol": "Fr.",
         "whole": "franc",
         "worth": {}
@@ -116,6 +118,7 @@
             {"50":   "teal"},
             {"100":  "red"}
         ],
+        "range": [1, 100],
         "symbol": "¥",
         "whole": "yuán",
         "worth": {}
@@ -196,6 +199,7 @@
             {"200": "red"}
         ],
         "pluralName": "Israeli Shekalim",
+        "range": [1, 200],
         "symbol": "₪",
         "whole": "shekel",
         "worth": {}
@@ -222,6 +226,7 @@
             {"1000":  "red"}
         ],
         "pluralName": "Indian Rupees",
+        "range": [1, 1000],
         "symbol": "₹",
         "whole": "rupee",
         "worth": {}
@@ -270,6 +275,7 @@
             {"1000": "purple"}
         ],
         "pluralName": "Mexican Pesos",
+        "range": [1, 1000],
         "symbol": "$",
         "whole": "peso",
         "worth": {}
@@ -297,6 +303,7 @@
             {"200":  "brown"}
         ],
         "pluralName": "Polish Złotys",
+        "range": [1, 200],
         "symbol": "zł",
         "whole": "złoty",
         "worth": {}
@@ -370,6 +377,7 @@
             {"100": "blue"},
             {"200": "brown"}
         ],
+        "range": [1, 200],
         "symbol": "R ",
         "whole": "rand",
         "worth": {}

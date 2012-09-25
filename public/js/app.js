@@ -54,11 +54,11 @@ define("app", function(require) {
 
     function bodyScrolling(state) {
         if (state === false) {
-            $('body').on('touchstart', function(event) {
+            $('body').on('touchstart', 'scrollOff', function(event) {
                 disablePopover()
             })
         } else {
-            $('body').off('touchstart')
+            $('body').off('touchstart', 'scrollOff')
         }
     }
 
@@ -150,6 +150,18 @@ define("app", function(require) {
                 disablePopover()
             })
 
+            $('body').on('touchmove', function(event) {
+                $('a').removeClass('active')
+            })
+
+            $('a').live('touchstart', function(event) {
+                $(this).addClass('active')
+            })
+
+            $('a').live('touchcancel,touchend,touchmove', function(event) {
+                $(this).removeClass('active')
+            })
+
             // $('#first-select,#second-select').on('change', function(event) {
             //     $('#first-select,#second-select').removeClass('show')
             //     $('#first-currency,#second-currency').trigger('blur')
@@ -204,40 +216,40 @@ define("app", function(require) {
     // Hook up the installation button, feel free to customize how
     // this works
     
-    var install = require('install');
+    // var install = require('install');
 
-    function updateInstallButton() {
-        $(function() {
-            var btn = $('.install-btn');
-            if(install.state == 'uninstalled') {
-                btn.show();
-            }
-            else if(install.state == 'installed' || install.state == 'unsupported') {
-                btn.hide();
-            }
-        });
-    }
+    // function updateInstallButton() {
+    //     $(function() {
+    //         var btn = $('.install-btn');
+    //         if(install.state == 'uninstalled') {
+    //             btn.show();
+    //         }
+    //         else if(install.state == 'installed' || install.state == 'unsupported') {
+    //             btn.hide();
+    //         }
+    //     });
+    // }
 
-    $(function() {
-        $('.install-btn').click(install);        
-    });
+    // $(function() {
+    //     $('.install-btn').click(install);        
+    // });
 
-    install.on('change', updateInstallButton);
+    // install.on('change', updateInstallButton);
 
-    install.on('error', function(e, err) {
-        // Feel free to customize this
-        $('.install-error').text(err.toString()).show();
-    });
+    // install.on('error', function(e, err) {
+    //     // Feel free to customize this
+    //     $('.install-error').text(err.toString()).show();
+    // });
 
-    install.on('showiOSInstall', function() {
-        // Feel free to customize this
-        var msg = $('.install-ios-msg');
-        msg.show();
+    // install.on('showiOSInstall', function() {
+    //     // Feel free to customize this
+    //     var msg = $('.install-ios-msg');
+    //     msg.show();
         
-        setTimeout(function() {
-            msg.hide();
-        }, 8000);
-    });
+    //     setTimeout(function() {
+    //         msg.hide();
+    //     }, 8000);
+    // });
 });
 
 // Include the in-app payments API, and if it fails to load handle it

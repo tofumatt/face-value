@@ -161,6 +161,15 @@ h1, h2 {
     width: auto;
 }
 
+#currency-selector a {
+    color: inherit;
+    font-size: 16px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
 #currency-switcher {
     background: url(../img/switch.png) 0 0 no-repeat;
     background-size: 100px 50px;
@@ -173,7 +182,7 @@ h1, h2 {
     width: 50px;
 }
 
-#currency-switcher:active, #currency-switcher:focus {
+#currency-switcher:active, #currency-switcher.active {
     background-position: -50px 0;
     outline: 0;
 }
@@ -182,15 +191,6 @@ h1, h2 {
     #currency-switcher {
         background-image: url(../img/switch@2x.png);
     }
-}
-
-#header a {
-    color: inherit;
-    font-size: 16px;
-    font-variant: small-caps;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: lowercase;
 }
 
 #currency-list-first li, #currency-list-second li {

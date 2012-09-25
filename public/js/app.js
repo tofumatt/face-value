@@ -13,6 +13,9 @@ require.config({
     },
 })
 
+// American, fuck yeah!
+var DEFAULT_CURRENCIES = '#USD,EUR'
+
 var getCurrencies
 var getPluralName
 var valueFormatted
@@ -34,6 +37,8 @@ define("app", function(require) {
     function init() {
         if (ls.ranInit !== '1') {
             firstRun()
+        } else {
+            resume()
         }
 
         setupListeners()
@@ -70,9 +75,11 @@ define("app", function(require) {
     getCurrencies = function() {
         if (window.location.hash === '#' ||
             window.location.hash === '' ||
+            !window.location.hash.match(/#[A-Z]{3},[A-Z]{3}/g) ||
             !window.location.hash) {
             window.location.hash = '#USD,EUR'
         }
+
         return window.location.hash.replace('#', '').split(',')
     }
 
@@ -117,6 +124,11 @@ define("app", function(require) {
             currencies: JSON.parse(ls.currencies),
             firstCurrency: false
         }))
+    }
+
+    function resume() {
+        var currentCurrencies = JSON.parse(ls.currentCurrencies)
+        window.location.hash = '#' + currentCurrencies[0] + ',' + currentCurrencies[1]
     }
 
     function setupListeners() {

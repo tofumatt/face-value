@@ -93,6 +93,7 @@
             {"200":  "brown"},
             {"1000": "purple"}
         ],
+        "pluralName": "Swiss Francs",
         "symbol": "Fr.",
         "whole": "franc",
         "worth": {}
@@ -194,6 +195,7 @@
             {"100": "brown"},
             {"200": "red"}
         ],
+        "pluralName": "Israeli Shekalim",
         "symbol": "₪",
         "whole": "shekel",
         "worth": {}

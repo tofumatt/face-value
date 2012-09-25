@@ -205,6 +205,11 @@ define("app", function(require) {
     }
 
     valueFormatted = function(amount) {
+        console.log(amount)
+        if (amount < 1) {
+            amount = '<span class="fraction">' + amount + '</span>'
+        }
+
         if (amount >= 1 && parseFloat(amount) === parseFloat(Math.round(Number(amount)))) {
             amount = parseInt(amount, 10)
         }

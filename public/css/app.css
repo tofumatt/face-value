@@ -277,6 +277,12 @@ h1, h2 {
     vertical-align: 35%;
 }
 
+.coins .fraction {
+    font-size: 40%;
+    letter-spacing: 0.001em;
+    vertical-align: 45%;
+}
+
 .notes {
     background-image: url(../img/note.png);
     background-position: 0 0;

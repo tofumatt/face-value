@@ -1,5 +1,5 @@
 test:
-	@./node_modules/.bin/mocha --globals const
+	@NODE_ENV=test ./node_modules/.bin/mocha --globals const
 
 css:
 	node script/generate-flag-css.js > public/css/flags.css

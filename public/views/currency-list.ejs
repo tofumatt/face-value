@@ -1,10 +1,17 @@
-<select id="<%= (firstCurrency) ? 'first' : 'second' %>-select">
-  <% for (var i in currencies) { %>
-    <% if ((i !== getCurrencies()[0]) &&
-           (i !== getCurrencies()[1])) { %>
-      <option value="#<%= (firstCurrency) ? i + ',' + getCurrencies()[1] : getCurrencies()[0] + ',' + i %>" class="flag <%= i %>-flag">
-        <%= currencies[i].name %>
-      </option>
-    <% } %>
-  <% } %>
-</select>
+<div id="<%= (firstCurrency) ? 'first' : 'second' %>-select" class="hide popover">
+  <div class="popover-content scrollable">
+    <div class="arrow"><span></span></div>
+      <div class="popover-body">
+        <ul>
+          <% for (var i in currencies) { %>
+            <% if ((i !== getCurrencies()[0]) &&
+                   (i !== getCurrencies()[1])) { %>
+              <li data-currency="<%= i %>" class="flag <%= i %>-flag">
+                <a href="#<%= (firstCurrency) ? i + ',' + getCurrencies()[1] : getCurrencies()[0] + ',' + i %>"><%= currencies[i].name %></a>
+              </li>
+            <% } %>
+          <% } %>
+        </ul>
+    </div>
+  </div>
+</div>

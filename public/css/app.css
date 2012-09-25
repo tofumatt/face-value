@@ -1,4 +1,5 @@
 @import "lib/gridpak.css";
+@import "lib/popover.css";
 
 /* Your styles here */
 @import "flags.css";
@@ -47,7 +48,67 @@ h1, h2 {
 
 
 
+/* -------- POPOVER ------- */
+/*
+/* iOS-style popover select list for picking currencies.
+/*
+/* ----------------------- */
 
+#first-select, #second-select {
+    opacity: 1;
+    transition: all linear 150ms;
+}
+
+#first-select.hide, #second-select.hide {
+    display: block;
+    opacity: 0;
+    z-index: -50;
+}
+
+#first-select {
+    top: 37px;
+}
+
+#second-select {
+    left: 40%;
+    top: 50px;
+}
+
+#first-select .arrow {
+    left: 75px;
+}
+
+.popover {
+    position: fixed;
+    width: 225px;
+    z-index: 10010;
+}
+
+.popover .popover-content {
+    background-color: #e7e4e0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e4e0), to(#c7c4c0)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #e7e4e0, #c7c4c0); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #e7e4e0, #c7c4c0); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #e7e4e0, #c7c4c0); /* IE10 */
+    background-image:      -o-linear-gradient(top, #e7e4e0, #c7c4c0); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #e7e4e0, #c7c4c0);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e7e4e0', EndColorStr='#c7c4c0'); /* IE6-IE9 */
+}
+
+.popover .arrow span {
+    background: #e7e4e0;
+}
+
+.popover .popover-body {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.popover .popover-body ul li {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
 
 /* -------- HEADER ------- */
 /*
@@ -83,35 +144,38 @@ h1, h2 {
     top: 26px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (max-width: 760px) {
     #first-select.show, #second-select.show {
         opacity: 0;
     }
 }
 
 #currency-selector {
-    float: left;
+    background: rgba(231, 228, 224, 0.75);
+    border: 1px solid rgba(88, 82, 82, 1);
+    float: right;
     line-height: 1em;
-    margin: 10px 0 0 20px;
-    max-width: 220px;
+    margin: 10px 0 0;
+    padding: 0 2px 2px;
+    max-width: 230px;
     width: auto;
-}
-
-#currency-selector strong {
-    display: inline-block;
 }
 
 #currency-switcher {
     background: url(../img/switch.png) 0 0 no-repeat;
-    background-size: auto 100%;
+    background-size: 100px 50px;
     float: right;
-    height: 60px;
-    margin: -2.5px 0 0;
-    width: 60px;
+    height: 50px;
+    margin: 2.5px 0 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    width: 50px;
 }
 
-#currency-switcher:active {
-    background-position: -60px 0;
+#currency-switcher:active, #currency-switcher:focus {
+    background-position: -50px 0;
+    outline: 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
@@ -120,14 +184,29 @@ h1, h2 {
     }
 }
 
-#header strong {
-    font-size: 18px;
+#header a {
+    color: inherit;
+    font-size: 16px;
     font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
     text-transform: lowercase;
 }
 
 #currency-list-first li, #currency-list-second li {
+    background-position: 8px 50%;
+    line-height: 28px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#currency-list-first a, #currency-list-second a {
+    color: inherit;
+    display: block;
+    height: 26px;
+    padding: 0 0 0 28px;
+    text-decoration: none;
 }
 
 /*
@@ -237,10 +316,17 @@ h1, h2 {
     width: 100%; 
 }
 
+.zeros {
+    display: inline-block;
+    font-size: 40%;
+    font-weight: normal;
+    letter-spacing: 0;
+    vertical-align: 75%;
+}
+
 .notes .symbol {
     display: inline-block;
     font-size: 50%;
-    font-weight: normal;
     letter-spacing: 0;
     vertical-align: 35%;
 }

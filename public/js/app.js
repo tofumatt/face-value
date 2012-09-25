@@ -5,10 +5,12 @@
 // http://requirejs.org/docs/api.html#define
 
 require.config({
-    baseUrl: 'js/lib',
-    paths: {'jquery':
-            ['//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min',
-             'jquery']},
+    baseUrl: 'js',
+    paths: {
+        'ejs': ['lib/ejs'],
+        'jquery': ['lib/jquery'],
+        'install': ['lib/install']
+    },
 });
 
 var getCurrencies
@@ -24,16 +26,9 @@ define("app", function(require) {
     // }
 
     var $ = require('jquery')
-    // require('gridpak')
-    // var EJS = require('ejs')
-    // console.log(EJS)
-
+    require('ejs')
+    var EJS = window.EJS
     var ls = window.localStorage
-
-    // If using Twitter Bootstrap, you need to require all the
-    // components that you use, like so:
-    // require('bootstrap/dropdown');
-    // require('bootstrap/alert');
 
     // START HERE: Put your js code here
     function init() {
@@ -55,6 +50,21 @@ define("app", function(require) {
         ls.currentCurrencies = '[]'
         ls.currencies = '{}'
         ls.ranInit = '1'
+    }
+
+    function bodyScrolling(state) {
+        if (state === false) {
+            $('body').on('touchstart', function(event) {
+                disablePopover()
+            })
+        } else {
+            $('body').off('touchstart')
+        }
+    }
+
+    function disablePopover() {
+        bodyScrolling(true)
+        $('#first-select,#second-select').addClass('hide')
     }
 
     getCurrencies = function() {
@@ -116,28 +126,35 @@ define("app", function(require) {
                 // renderSwitcher()
             })
 
-            $('#first-currency').on('click', function(event) {
-                $('#first-select').addClass('show').trigger('focus')
+            $('#first-currency').live('click', function(event) {
+                bodyScrolling(false)
+                $('#first-select').removeClass('hide')
                 event.preventDefault()
+
+                return false
             })
 
-            $('#second-currency').on('click', function(event) {
-                $('#second-select').addClass('show').trigger('focus')
+            $('#second-currency').live('click', function(event) {
+                bodyScrolling(false)
+                $('#second-select').removeClass('hide')
                 event.preventDefault()
+
+                return false
             })
 
-            $('#first-select').on('blur', function(event) {
-                $(this).removeClass('show')
+            $('#first-select,#second-select').on('blur', function(event) {
+                disablePopover()
             })
 
-            $('#second-select').on('blur', function(event) {
-                $(this).removeClass('show')
+            $('body').on('click', function(event) {
+                disablePopover()
             })
 
-            $('#first-select,#second-select').on('change', function(event) {
-                $(this).trigger('blur')
-                window.location.hash = event.target.value
-            })
+            // $('#first-select,#second-select').on('change', function(event) {
+            //     $('#first-select,#second-select').removeClass('show')
+            //     $('#first-currency,#second-currency').trigger('blur')
+            //     window.location.hash = event.target.value
+            // })
         })
 
         // $('#select-first-currency').on('click', function(event) {
@@ -174,10 +191,12 @@ define("app", function(require) {
 
     valueFormatted = function(amount) {
         if (amount >= 1 && parseFloat(amount) === parseFloat(Math.round(Number(amount)))) {
-            return parseInt(amount, 10)
-        } else {
-            return amount
+            amount = parseInt(amount, 10)
         }
+
+        amount = amount.toString().replace(/(0{2,})/g, '<span class="zeros">$1</span>')
+
+        return amount
     }
 
     init()

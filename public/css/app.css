@@ -7,7 +7,7 @@
 
 body {
     background: url(../img/bg-compassrose.png) 0 58px no-repeat fixed;
-    background-size: cover 100%;
+    background-size: cover;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 0;

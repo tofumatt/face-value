@@ -1,12 +1,12 @@
 {
-  "author": "Matthew Riley MacPherson <matt@lonelyvegan.com> (http://lonelyvegan.com)",
-  "name": "sutthisan",
-  "description": "A lightweight, node.js/express server for Open Web Apps.",
-  "version": "0.0.0",
-  "homepage": "https://github.com/tofumatt/sutthisan",
+  "author": "Matthew Riley MacPherson <matt@lonelyvegan.com> (http://lonelyvegan.com) and sarah ✈ semark <sarah@triggersandsparks.com> (triggersandsparks.com)",
+  "name": "Face Value",
+  "description": "Currency conversion using actual denominations.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tofumatt/face-value",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tofumatt/sutthisan.git"
+    "url": "git://github.com/tofumatt/face-value.git"
   },
   "scripts": {
     "test": "make test"

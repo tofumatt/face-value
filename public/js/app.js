@@ -11,7 +11,7 @@ require.config({
         'jquery': ['lib/jquery'],
         'install': ['lib/install']
     },
-});
+})
 
 var getCurrencies
 var getPluralName

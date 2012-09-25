@@ -2,20 +2,18 @@
 
 var express = require('express')
 var app = express.createServer()
-var redis = require('redis').createClient()
-// var client = redis.createClient();
 var conf = require('nconfs').load()
+var redis = process.env.REDISTOGO_URL ? require('redis-url').connect(process.env.REDISTOGO_URL) : require('redis').createClient()
 var settings = require('./settings')(app, conf, module.exports, express)
 
 // If redis is enabled, create a client connection.
 if (conf.get('redis')) {
-  redis.select(conf.get('redis'), function(errDb, res) {
-    // app.set('redis', redis)
-    console.log(process.env.NODE_ENV || 'dev' + ' database connection status: ', res)
+  redis.select(process.env.REDISTOGO_URL || conf.get('redis'), function(errDb, res) {
+    console.log((process.env.NODE_ENV || 'development') + ' database connection status: ', res)
   })
 }
 
-app.listen(conf.get('port'))
+app.listen(process.env.PORT ? process.env.PORT : conf.get('port'))
 console.log('Listening on port ' + conf.get('port'))
 
 // Actual app page, used to serve up the app's content.

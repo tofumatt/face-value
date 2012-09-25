@@ -8,5 +8,7 @@
     "session_cookie": "session_mycoolapp",
     "session_secret": "secret",
     "redis": true,
+    "redisURL": "127.0.0.1",
+    "redisPort": 6379,
     "redis_key": 1
 }

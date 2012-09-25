@@ -5,13 +5,13 @@ var FINANCE_URL = 'http://download.finance.yahoo.com/d/quotes.csv?e=.csv&f=sl1d1
 require(__dirname + '/../lib/string.js')
 var conf = require('nconfs').load(__dirname + '/../')
 var fs = require('fs')
-var redis = require('redis').createClient()
+var redis = process.env.REDISTOGO_URL ? require('redis-url').connect(process.env.REDISTOGO_URL) : require('redis').createClient()
 var rest = require('restler')
 
 var denominations = JSON.parse(fs.readFileSync('./lib/denominations.json', 'utf8'))
 
 redis.select(conf.get('redis'), function(errDb, res) {
-  console.log(process.env.NODE_ENV || 'dev' + ' database connection status: ', res)
+  console.log((process.env.NODE_ENV || 'development') + ' database connection status: ', res)
 })
 
 var denominationsCollected = 0

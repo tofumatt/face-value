@@ -271,9 +271,10 @@ h1, h2 {
 
 .coins .symbol {
     display: inline-block;
-    letter-spacing: 0;
     font-size: 50%;
     font-weight: normal;
+    letter-spacing: 0;
+    margin: 0 2px;
     vertical-align: 35%;
 }
 
@@ -333,7 +334,9 @@ h1, h2 {
 .notes .symbol {
     display: inline-block;
     font-size: 50%;
+    font-weight: normal;
     letter-spacing: 0;
+    margin: 0 2px;
     vertical-align: 35%;
 }
 

@@ -1,13 +1,60 @@
 CACHE MANIFEST
-# Jow78hR9QrVDF7iTsAsUkNt/WVo=
+# 27m1348550550
 
 CACHE:
 /
+css/lib/gridpak.css
+css/lib/popover.css
 css/app.css
-css/bootstrap.css
-css/bootstrap-responsive.css
-css/defaults.css
 css/flags.css
+fonts/bitter/Bitter-Bold-webfont.eot
+fonts/bitter/Bitter-Bold-webfont.svg
+fonts/bitter/Bitter-Bold-webfont.ttf
+fonts/bitter/Bitter-Bold-webfont.woff
+fonts/bitter/Bitter-Italic-webfont.eot
+fonts/bitter/Bitter-Italic-webfont.svg
+fonts/bitter/Bitter-Italic-webfont.ttf
+fonts/bitter/Bitter-Italic-webfont.woff
+fonts/bitter/Bitter-Regular-webfont.eot
+fonts/bitter/Bitter-Regular-webfont.svg
+fonts/bitter/Bitter-Regular-webfont.ttf
+fonts/bitter/Bitter-Regular-webfont.woff
+fonts/bitter/stylesheet.css
+img/coins/copper.png
+img/coins/copper@2x.png
+img/coins/gold-silver.png
+img/coins/gold-silver@2x.png
+img/coins/gold.png
+img/coins/gold@2x.png
+img/coins/silver-gold.png
+img/coins/silver-gold@2x.png
+img/coins/silver.png
+img/coins/silver@2x.png
+img/flags/AUD.png
+img/flags/BRL.png
+img/flags/CAD.png
+img/flags/CHF.png
+img/flags/CNY.png
+img/flags/EUR.png
+img/flags/GBP.png
+img/flags/ILS.png
+img/flags/INR.png
+img/flags/JPY.png
+img/flags/MXN.png
+img/flags/PLN.png
+img/flags/THB.png
+img/flags/USD.png
+img/flags/ZAR.png
+img/header-flags/EUR.png
+img/header-flags/EUR@2x.png
+img/bg-compassrose.png
+img/bg-compassrose@2x.png
+img/note.png
+img/note@2x.png
+img/switch.png
+img/switch@2x.png
+img/translated-currency-bg.png
+img/translated-currency-bg@2x.png
 js/app.js
 js/lib/ejs.js
 js/lib/install.js
@@ -17,8 +64,8 @@ https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 js/lib/modernizr-2.5.3.min.js
 js/lib/require.js
 views/currency-list.ejs
-views/currency-switcher.ejs
 views/denomination-list.ejs
+views/header.ejs
 
 # catch-all for anything else
 NETWORK:

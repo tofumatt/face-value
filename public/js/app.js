@@ -86,18 +86,21 @@ define("app", function(require) {
     }
 
     function renderCurrencies(first, second) {
-        $('#coins').html(new EJS({url: '/views/denomination-list.ejs'}).render({
-            currencies: JSON.parse(ls.currencies),
-            i: first || JSON.parse(ls.currentCurrencies)[0],
-            j: second || JSON.parse(ls.currentCurrencies)[1],
-            type: 'coins'
-        }))
-        $('#notes').html(new EJS({url: '/views/denomination-list.ejs'}).render({
-            currencies: JSON.parse(ls.currencies),
-            i: first || JSON.parse(ls.currentCurrencies)[0],
-            j: second || JSON.parse(ls.currentCurrencies)[1],
-            type: 'notes'
-        }))
+        $('#coins,#notes').fadeOut(200, function() {
+            $('#coins').html(new EJS({url: '/views/denomination-list.ejs'}).render({
+                currencies: JSON.parse(ls.currencies),
+                i: first || JSON.parse(ls.currentCurrencies)[0],
+                j: second || JSON.parse(ls.currentCurrencies)[1],
+                type: 'coins'
+            }))
+            $('#notes').html(new EJS({url: '/views/denomination-list.ejs'}).render({
+                currencies: JSON.parse(ls.currencies),
+                i: first || JSON.parse(ls.currentCurrencies)[0],
+                j: second || JSON.parse(ls.currentCurrencies)[1],
+                type: 'notes'
+            }))
+            $('#coins,#notes').fadeIn(200)
+        })
     }
 
     function renderHeader() {

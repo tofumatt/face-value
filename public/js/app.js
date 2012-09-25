@@ -111,6 +111,7 @@ define("app", function(require) {
     }
 
     function renderHeader() {
+    	$('#header').attr('class', getCurrencies()[0] + '-flag')
         $('#header').html(new EJS({url: '/views/header.ejs'}).render({}))
     }
 

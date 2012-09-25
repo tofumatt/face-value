@@ -13,7 +13,7 @@ require.config({
     },
 })
 
-// American, fuck yeah!
+// America, fuck yeah!
 var DEFAULT_CURRENCIES = '#USD,EUR'
 
 var getCurrencies

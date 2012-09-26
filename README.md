@@ -5,7 +5,7 @@ Currency conversion using actual denominations.
 ## Build Status ##
 
 Continuous integration tests for Face Value are run on the awesome
-[Travis CI](http://travis-ci.org): [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png)](http://travis-ci.org/tofumatt/face-value)
+[Travis CI](http://travis-ci.org): [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png?branch=master)](http://travis-ci.org/tofumatt/face-value)
 
 # License #
 

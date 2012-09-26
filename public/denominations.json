@@ -17,8 +17,8 @@
             {"5":   "green"},
             {"10":  "brown"},
             {"20":  "red"},
-            {"50":  "black"},
-            {"100": "purple"}
+            {"50":  "purple"},
+            {"100": "violet"}
         ],
         "pluralName": "Argentine Pesos",
         "range": [1, 100],
@@ -155,6 +155,32 @@
         "whole": "yuán",
         "wholeSymbol": "¥",
         "wholeSymbolAfter": false
+    },
+    "CZK": {
+        "after": true,
+        "coins": [
+            {"1.00":  "silver"},
+            {"2.00":  "silver"},
+            {"5.00":  "silver"},
+            {"10.00": "copper"},
+            {"20.00": "gold"},
+            {"50.00": "copper-gold"}
+        ],
+        "fraction": "haléř",
+        "name": "Czech Koruna",
+        "notes": [
+            {"100":    "teal"},
+            {"200":    "orange"},
+            {"500":    "violet"},
+            {"1000":   "purple"},
+            {"2000":   "green"},
+            {"5000":   "blue"}
+        ],
+        "pluralName": "Czech Korun",
+        "range": [1, 5000],
+        "symbol": "Kč",
+        "whole": "koruna",
+        "worth": {}
     },
     "EUR": {
         "coins": [

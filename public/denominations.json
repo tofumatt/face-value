@@ -1,4 +1,31 @@
- {
+{
+    "ARS": {
+        "after": false,
+        "coins": [
+            {"0.05": "copper"},
+            {"0.10": "copper"},
+            {"0.20": "silver"},
+            {"0.50": "gold"},
+            {"1.00": "silver-gold"}
+        ],
+        "fraction": "centavo",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
+        "name": "Argentine Peso",
+        "notes": [
+            {"2":   "blue"},
+            {"5":   "green"},
+            {"10":  "brown"},
+            {"20":  "red"},
+            {"50":  "black"},
+            {"100": "purple"}
+        ],
+        "pluralName": "Argentine Pesos",
+        "range": [1, 100],
+        "whole": "peso",
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
+    },
     "AUD": {
         "coins": [
             {"0.05": "silver"},

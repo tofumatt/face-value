@@ -19,6 +19,7 @@
             {"100": "green"}
         ],
         "pluralName": "Australian Dollars",
+        "range": [1, 100],
         "symbol": "$",
         "whole": "dollar",
         "worth": {}

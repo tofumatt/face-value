@@ -95,7 +95,7 @@
             {"200":  "brown"},
             {"1000": "purple"}
         ],
-        "pluralName": "Swiss Francs",
+        "pluralName": "Francs",
         "range": [1, 1000],
         "symbol": "Fr.",
         "whole": "franc",
@@ -119,6 +119,7 @@
             {"50":   "teal"},
             {"100":  "red"}
         ],
+        "pluralName": "Yuan",
         "range": [1, 100],
         "symbol": "¥",
         "whole": "yuán",
@@ -250,6 +251,7 @@
             {"5000":   "yellow"},
             {"10000":  "yellow"}
         ],
+        "pluralName": "Yen",
         "range": [10, 10000],
         "symbol": "¥",
         "whole": "yen",
@@ -303,7 +305,7 @@
             {"100":  "green"},
             {"200":  "brown"}
         ],
-        "pluralName": "Polish Złotys",
+        "pluralName": "Złotys",
         "range": [1, 200],
         "symbol": "zł",
         "whole": "złoty",
@@ -329,6 +331,7 @@
             {"500":  "purple"},
             {"1000": "brown"}
         ],
+        "pluralName": "Baht",
         "range": [20, 1000],
         "symbol": "฿",
         "whole": "baht",
@@ -378,6 +381,7 @@
             {"100": "blue"},
             {"200": "brown"}
         ],
+        "pluralName": "Rand",
         "range": [1, 200],
         "symbol": "R ",
         "whole": "rand",

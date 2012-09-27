@@ -155,7 +155,7 @@ h1, h2 {
     border: 1px solid rgba(88, 82, 82, 1);
     border-right: none;
     float: right;
-    line-height: 1em;
+    line-height: 1.2em;
     height: 36px;
     margin: 10px 15px 0 0;
     padding: 0 2px 2px;
@@ -163,17 +163,20 @@ h1, h2 {
     width: 225px;
 }
 
-#currency-selector:before {
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid rgba(88, 82, 82, 1);
-    border-top: 20px solid transparent;
+#currency-selector:before, #currency-selector:after {
     content: "";
     display: block;
     height: 0;
     position: absolute;
+    width: 0;
+}
+
+#currency-selector:before {
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(88, 82, 82, 1);
+    border-top: 20px solid transparent;
     right: -20px;
     top: 0;
-    width: 0;
 }
 
 #currency-selector:after {

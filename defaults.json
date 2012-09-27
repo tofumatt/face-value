@@ -4,7 +4,7 @@
     "authPort": 3000,
     "authUrl": "https://browserid.org",
     "name": "Face Value",
-    "sessions": true,
+    "sessions": false,
     "session_cookie": "session_mycoolapp",
     "session_secret": "secret",
     "redis": true,

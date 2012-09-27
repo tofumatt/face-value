@@ -218,7 +218,6 @@ define("app", function(require) {
     }
 
     valueFormatted = function(amount) {
-        console.log(amount)
         if (amount < 1) {
             amount = '<span class="fraction">' + amount + '</span>'
         }

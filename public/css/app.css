@@ -153,12 +153,40 @@ h1, h2 {
 #currency-selector {
     background: rgba(231, 228, 224, 0.75);
     border: 1px solid rgba(88, 82, 82, 1);
+    border-right: none;
     float: right;
     line-height: 1em;
-    margin: 10px 0 0;
+    height: 36px;
+    margin: 10px 15px 0 0;
     padding: 0 2px 2px;
-    max-width: 230px;
-    width: auto;
+    position: relative;
+    width: 225px;
+}
+
+#currency-selector:before {
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(88, 82, 82, 1);
+    border-top: 20px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+}
+
+#currency-selector:after {
+    border-bottom: 19px solid transparent;
+    border-left: 19px solid #e7e4e0;
+    border-top: 19px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -19px;
+    top: 1px;
+    width: 0;
 }
 
 #currency-selector a {
@@ -209,6 +237,7 @@ h1, h2 {
     text-decoration: none;
 }
 
+
 /*
 #currency-list-first {
     float: left;
@@ -244,6 +273,11 @@ h1, h2 {
 /* ----------------------- */
 
 
+
+.denomination.only-item {
+    margin-left: 0;
+    width: 100%;
+}
 
 .coins {
     background-position: 0 0;

@@ -96,7 +96,7 @@ module.exports = function(app, conf, configurations, express) {
     },
     // For CSRF protection.
     csrf_token: function(req, res) {
-      return req.session._csrf;
+      return req.session ? req.session._csrf : undefined;
     }
   });
 

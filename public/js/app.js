@@ -107,6 +107,15 @@ define('app', function(require) {
                 j: second || JSON.parse(ls.currentCurrencies)[1],
                 type: 'notes'
             }))
+
+            if ($('#coins .denomination').length % 2) {
+                $('#coins .denomination:last').removeClass('span_1')
+                                              .addClass('span_2')
+            }
+            if ($('#notes .denomination').length % 2) {
+                $('#notes .denomination:last').removeClass('span_1')
+                                              .addClass('span_2')
+            }
             $('#coins,#notes').fadeIn(200)
         })
     }

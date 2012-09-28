@@ -8,7 +8,7 @@ require.config({
     paths: {
         'ejs': ['lib/ejs'],
         'jquery': ['lib/jquery']
-    },
+    }
 })
 
 // We make these globals so EJS can use them like helpers.
@@ -111,11 +111,11 @@ define('app', function(require) {
 
             if ($('#coins .denomination').length % 2) {
                 $('#coins .denomination:last').removeClass('span_1')
-                                              .addClass('span_2')
+                                              .addClass('span_2 span_3 span_4')
             }
             if ($('#notes .denomination').length % 2) {
                 $('#notes .denomination:last').removeClass('span_1')
-                                              .addClass('span_2')
+                                              .addClass('span_2 span_3 span_4')
             }
 
             $('#coins,#notes').removeClass('hidden')

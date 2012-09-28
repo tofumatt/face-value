@@ -94,7 +94,8 @@ define('app', function(require) {
     }
 
     function renderCurrencies(first, second) {
-        $('#coins,#notes').fadeOut(200, function() {
+        $('#coins,#notes').addClass('hidden')
+        setTimeout(function() {
             $('#coins').html(new EJS({url: '/views/denomination-list.ejs'}).render({
                 currencies: JSON.parse(ls.currencies),
                 i: first || JSON.parse(ls.currentCurrencies)[0],
@@ -116,8 +117,9 @@ define('app', function(require) {
                 $('#notes .denomination:last').removeClass('span_1')
                                               .addClass('span_2')
             }
-            $('#coins,#notes').fadeIn(200)
-        })
+
+            $('#coins,#notes').removeClass('hidden')
+        }, 200)
     }
 
     function renderHeader() {

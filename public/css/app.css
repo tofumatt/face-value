@@ -129,6 +129,7 @@ h1, h2 {
     left: 0;
     position: fixed;
     top: 0;
+    transition: all linear 500ms;
     width: 100%;
     z-index: 1000;
 }
@@ -313,6 +314,15 @@ h1, h2 {
 /* ----------------------- */
 
 
+
+#coins, #notes {
+    opacity: 1;
+    transition: all linear 200ms;
+}
+
+#coins.hidden, #notes.hidden {
+    opacity: 0;
+}
 
 .denomination.only-item {
     margin-left: 0;

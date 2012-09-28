@@ -1,5 +1,6 @@
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha --globals const
+	@NODE_ENV=test node app.js & ./vendor/casperjs/bin/casperjs test ./test/front-end/test.*.js
 
 css:
 	node script/generate-flag-css.js > public/css/flags.css

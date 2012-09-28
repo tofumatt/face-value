@@ -122,8 +122,8 @@ h1, h2 {
     background-position: -35px 100%;
     background-repeat: no-repeat;
     background-size: 130px 75px;
-    border-bottom: 1px solid rgba(88, 82, 82, 1);
-    box-shadow: 0px 3px 5px rgba(88, 82, 82, 0.75);
+    border-bottom: 1px solid rgba(255,255,255, .25);
+	box-shadow: 0 1px 2px rgba(0,0,0,.23); 
     font-size: 14px;
     height: 58px;
     left: 0;
@@ -151,16 +151,19 @@ h1, h2 {
 }
 
 #currency-selector {
-    background: rgba(231, 228, 224, 0.75);
-    border: 1px solid rgba(88, 82, 82, 1);
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(72, 57, 10, .2);
     border-right: none;
     float: right;
+    letter-spacing: -.25px;
     line-height: 1.2em;
-    height: 36px;
-    margin: 10px 15px 0 0;
-    padding: 0 2px 2px;
+    height: 38px;
+    margin: 5px 0px 0 0;
+    padding: 4px 0px 4px 8px;
     position: relative;
-    width: 225px;
+    width: 220px;
+    color: #48390a;
+    z-index: -10050;
 }
 
 #currency-selector:before, #currency-selector:after {
@@ -171,23 +174,25 @@ h1, h2 {
     width: 0;
 }
 
+/* triangle border */
 #currency-selector:before {
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid rgba(88, 82, 82, 1);
-    border-top: 20px solid transparent;
-    right: -20px;
+    border-bottom: 24px solid transparent;
+    border-left: 24px solid #cec9be;
+    border-top: 24px solid transparent;
+    right: -24px;
     top: 0;
 }
 
+/* inside triangle */
 #currency-selector:after {
-    border-bottom: 19px solid transparent;
-    border-left: 19px solid #e7e4e0;
-    border-top: 19px solid transparent;
+    border-bottom: 23px solid transparent;
+    border-left: 23px solid #f0eeec;
+    border-top: 23px solid transparent;
     content: "";
     display: block;
     height: 0;
     position: absolute;
-    right: -19px;
+    right: -23px;
     top: 1px;
     width: 0;
 }
@@ -195,6 +200,7 @@ h1, h2 {
 #currency-selector a {
     color: inherit;
     font-size: 16px;
+    letter-spacing: .25px;
     font-variant: small-caps;
     font-weight: bold;
     text-decoration: none;

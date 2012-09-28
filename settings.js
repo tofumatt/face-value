@@ -54,18 +54,20 @@ module.exports = function(app, conf, configurations, express) {
     functions yourself, move them to app.js, or simply tweak the 403.ejs,
     404.ejs, and/or 500.ejs files in the views/ folder.
   */
-  app.use(function(req, res, next) {
-    res.status(403)
 
-    res.render('403', {
+  // Note: 404 must be first or you'll always get a 403 error!
+  app.use(function(req, res, next) {
+    res.status(404)
+
+    res.render('404', {
       url: req.url
     })
   })
 
   app.use(function(req, res, next) {
-    res.status(404)
+    res.status(403)
 
-    res.render('404', {
+    res.render('403', {
       url: req.url
     })
   })

@@ -9,8 +9,34 @@ describe('The router', function() {
     it('should return HTTP 200 OK', function(done) {
       request(app)
         .get('/')
-        .set('Accept', 'application/html')
-        .expect(200, done);
+        .set('Accept', 'text/html')
+        .expect('Content-Type', 'text/html; charset=utf-8')
+        .expect(200, done)
+    })
+
+    it("should contain the current app's URL in the <body> tag", function(done) {
+      request(app)
+        .get('/')
+        .set('Accept', 'text/html')
+        .expect('Content-Type', 'text/html; charset=utf-8')
+        .expect(200, /<body data-url="http:\/\/[^/]+">/, done)
+    })
+  })
+
+  describe('404 page',  function() {
+    it('should return HTTP 404 Not Found', function(done) {
+      request(app)
+        .get('/404')
+        .set('Accept', 'text/html')
+        .expect('Content-Type', 'text/html; charset=utf-8')
+        .expect(404, done)
+    })
+
+    it('should contain the URL not found in the page', function(done) {
+      request(app)
+        .get('/404')
+        .set('Accept', 'text/html')
+        .expect(404, /<div id="url-requested">\/404<\/div>/, done)
     })
   })
 })

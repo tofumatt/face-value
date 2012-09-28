@@ -14,7 +14,7 @@ redis.select(conf.get('redis'))
 var denominations = JSON.parse(fs.readFileSync('./lib/denominations.json', 'utf8'))
 for (var i in denominations) {
   if (denominations.hasOwnProperty(i) &&
-    i !== 'CAD' && i !== 'THB' && i !== 'USD') {
+    i !== 'THB' && i !== 'USD' && i !== 'EUR') {
       delete denominations[i]
   }
 }

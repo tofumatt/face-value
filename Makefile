@@ -8,6 +8,9 @@ test:
 css:
 	node script/generate-flag-css.js > public/css/flags.css
 
+deploy:
+	git push heroku master
+
 flags:
 	node script/generate-flag-css.js
 

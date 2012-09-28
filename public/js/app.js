@@ -21,7 +21,7 @@ var valueFormatted
 // dependencies along with jquery
 define('app', function(require) {
     // America, fuck yeah!
-    var DEFAULT_CURRENCIES = '#USD,EUR'
+    var DEFAULT_CURRENCIES = '#EUR,USD'
 
     // TODO: Don't use jQuery? Maybe something more lightweight, or just
     // straight-up JS?

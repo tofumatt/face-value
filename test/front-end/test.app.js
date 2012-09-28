@@ -14,15 +14,15 @@ casper.start('http://localhost:3001/', function () {
 casper.waitForSelector('.notes', function() {
   casper.test.info('Testing denominations loaded on first run')
 
-  this.test.assert(this.getCurrentUrl() === 'http://localhost:3001/#USD,EUR',
-                   'USD and EUR are the default currencies')
+  this.test.assert(this.getCurrentUrl() === 'http://localhost:3001/#EUR,USD',
+                   'EUR and USD are the default currencies')
 
   this.test.assertEval(function() {
-    return !$('.coins').length
-  }, 'USD should display no coins by default')
+    return $('.coins').length > 0
+  }, 'Euros should display coins by default')
   this.test.assertEval(function() {
     return $('.notes').length > 0
-  }, 'USD should display notes by default')
+  }, 'Euros should display notes by default')
 })
 
 casper.waitForSelector('#first-select', function() {
@@ -45,13 +45,16 @@ casper.waitForSelector('#currency-switcher', function() {
   this.click('#currency-switcher')
 })
 
-casper.waitForSelector('#header.EUR-flag', function() {
+casper.waitForSelector('#header.USD-flag', function() {
   this.test.assert(originalURL !== this.getCurrentUrl(),
                    'URL should change after swapping currencies')
 
   this.test.assertEval(function() {
-    return $('.coins').length > 0
-  }, 'Euros should display coins by default')
+    return !$('.coins').length
+  }, 'USD should display no coins by default')
+  this.test.assertEval(function() {
+    return $('.notes').length > 0
+  }, 'USD should display notes by default')
 })
 
 casper.run(function () {

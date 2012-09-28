@@ -5,6 +5,10 @@ casper.test.comment('Face Value - Fonts')
 
 casper.start('http://localhost:3001/', function () {
   casper.test.info('Testing for Bitter fonts')
+
+  this.test.assertEval(function() {
+    return $('body').css('font-family').match(/^Bitter/g) !== null
+  }, '<body> font should be Bitter')
 })
 
 casper.waitForResource('Bitter-Regular-webfont.ttf', function() {

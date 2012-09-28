@@ -95,7 +95,7 @@
             {"200":  "brown"},
             {"1000": "purple"}
         ],
-        "pluralName": "Francs",
+        "pluralName": "Swiss Francs",
         "range": [1, 1000],
         "symbol": "Fr.",
         "whole": "franc",

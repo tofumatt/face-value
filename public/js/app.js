@@ -150,21 +150,21 @@ define('app', function(require) {
             renderLists()
         })
 
-        $('#first-currency').live('click', function(event) {
+        $('.first-currency').live('click', function(event) {
             bodyScrolling(false)
             $('#first-select').removeClass('hide')
 
             return false
         })
 
-        $('#second-currency').live('click', function(event) {
+        $('.second-currency').live('click', function(event) {
             bodyScrolling(false)
             $('#second-select').removeClass('hide')
 
             return false
         })
 
-        $('#first-select,#second-select').on('blur', function(event) {
+        $('.first-select,.second-select').on('blur', function(event) {
             disablePopover()
         })
 

@@ -166,6 +166,10 @@ h1, h2 {
     z-index: -10050;
 }
 
+#currency-selector .small {
+    display: none;
+}
+
 #currency-selector:before, #currency-selector:after {
     content: "";
     display: block;
@@ -188,13 +192,8 @@ h1, h2 {
     border-bottom: 23px solid transparent;
     border-left: 23px solid #f0eeec;
     border-top: 23px solid transparent;
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
     right: -23px;
     top: 1px;
-    width: 0;
 }
 
 #currency-selector a {
@@ -205,6 +204,38 @@ h1, h2 {
     font-weight: bold;
     text-decoration: none;
     text-transform: lowercase;
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px) {
+    #currency-selector {
+        height: 17px;
+        margin: 18px 7px 0 0;
+        width: auto;
+    }
+
+    #currency-selector .regular {
+        display: none;
+    }
+
+    #currency-selector .small {
+        display: block;
+    }
+
+    #currency-selector:before {
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid rgba(88, 82, 82, 1);
+        border-top: 10px solid transparent;
+        right: -10px;
+        top: 0;
+    }
+
+    #currency-selector:after {
+        border-bottom: 9px solid transparent;
+        border-left: 9px solid #e7e4e0;
+        border-top: 9px solid transparent;
+        right: -9px;
+        top: 1px;
+    }
 }
 
 #currency-switcher {

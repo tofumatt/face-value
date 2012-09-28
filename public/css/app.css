@@ -425,7 +425,7 @@ h1, h2 {
 }
 
 .subtitle {
-    background: url("../img/translated-currency-bg.png") no-repeat scroll 0 0 transparent;
+    background: url(../img/translated-currency-bg.png) no-repeat scroll 0 0 transparent;
     clear: both;
     color: #264F71;
     height: 29px;
@@ -435,6 +435,7 @@ h1, h2 {
     text-align: center;
     width: 117px;
 }
+
 .subtitle .symbol {
 	font-size: 75%;
 	vertical-align: 20%;

@@ -9,10 +9,17 @@ var redis = process.env.REDISTOGO_URL ? require('redis-url').connect(process.env
 var rest = require('restler')
 
 var denominations = JSON.parse(fs.readFileSync('./lib/denominations.json', 'utf8'))
+// In the test environment, we only expect/use three currencies.
+if (process.env.NODE_ENV === 'test') {
+  for (var i in denominations) {
+    if (denominations.hasOwnProperty(i) &&
+      i !== 'CAD' && i !== 'THB' && i !== 'USD') {
+        delete denominations[i]
+    }
+  }
+}
 
-redis.select(conf.get('redis'), function(errDb, res) {
-  console.log((process.env.NODE_ENV || 'development') + ' database connection status: ', res)
-})
+redis.select(conf.get('redis'))
 
 var denominationsCollected = 0
 

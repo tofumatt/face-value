@@ -1,10 +1,10 @@
 /*global describe:true it:true */
-/*jshint expr:true */
+/*jshint expr:true, sub:true */
 'use strict';
 
 require(__dirname + '/../lib/string.js')
 var assert = require('should')
-var conf = require('nconfs').load()
+var conf = require('nconfs').load(__dirname + '/../')
 var fs = require('fs')
 var denominations = JSON.parse(fs.readFileSync('./lib/denominations.json', 'utf8'))
 

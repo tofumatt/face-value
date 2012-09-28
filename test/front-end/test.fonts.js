@@ -17,11 +17,6 @@ casper.waitForResource('Bitter-Bold-webfont.ttf', function() {
                                  'Bitter Bold font loaded properly')
 })
 
-casper.waitForResource('Bitter-Italic-webfont.ttf', function() {
-  this.test.assertResourceExists('Bitter-Italic-webfont.ttf',
-                                 'Bitter Italic font loaded properly')
-})
-
 casper.run(function () {
   this.test.done()
 })

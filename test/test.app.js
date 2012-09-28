@@ -19,7 +19,7 @@ describe('The router', function() {
         .get('/')
         .set('Accept', 'text/html')
         .expect('Content-Type', 'text/html; charset=utf-8')
-        .expect(200, /<body data-url="http:\/\/[^/]+">/, done)
+        .expect(200, /<body data-url="https?:\/\/[^/]+">/, done)
     })
   })
 

@@ -6,7 +6,7 @@
 @import "../fonts/bitter/stylesheet.css";
 
 body {
-    background: url(../img/bg-compassrose.png) 0 58px no-repeat fixed;
+    background: url(../img/bg-compassrose.jpg) 0 58px no-repeat fixed;
     background-size: cover;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
@@ -15,7 +15,7 @@ body {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
     body {
-        background-image: url(../img/bg-compassrose@2x.png);
+        background-image: url(../img/bg-compassrose@2x.jpg);
     }
 }
 

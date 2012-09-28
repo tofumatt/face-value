@@ -23,6 +23,10 @@ casper.waitForSelector('.notes', function() {
   this.test.assertEval(function() {
     return $('.notes').length > 0
   }, 'USD should display notes by default')
+})
+
+casper.waitForSelector('#first-select', function() {
+  casper.test.info('Testing currency selection list')
 
   this.test.assertEval(function() {
     return !$('#first-select .USD-flag').length

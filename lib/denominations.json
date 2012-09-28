@@ -44,7 +44,7 @@
             {"50":  "brown"},
             {"100": "teal"}
         ],
-        "pluralName": "Brazilian Reais",
+        "pluralName": "Reais",
         "range": [1, 100],
         "symbol": "R$",
         "whole": "real",

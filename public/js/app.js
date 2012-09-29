@@ -78,7 +78,7 @@ define('app', function(require) {
             window.location.hash === '' ||
             !window.location.hash.match(/#[A-Z]{3},[A-Z]{3}/g) ||
             !window.location.hash) {
-            window.location.hash = '#USD,EUR'
+            window.location.hash = DEFAULT_CURRENCIES
         }
 
         return window.location.hash.replace('#', '').split(',')

@@ -1,7 +1,7 @@
 test:
 	- rm ./test.pid
 	@NODE_ENV=test ./node_modules/.bin/mocha --globals const
-	@NODE_ENV=test node app.js & echo $$! > ./test.pid & ./vendor/casperjs/bin/casperjs --local-storage-path=/dev/null test ./test/front-end/test.*.js
+	@NODE_ENV=test node app.js & echo $$! > ./test.pid & ./vendor/casperjs/bin/casperjs test --pre=./test/init.js ./test/front-end/
 	kill `cat ./test.pid`
 	rm ./test.pid
 

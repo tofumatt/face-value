@@ -25,7 +25,7 @@ casper.waitForSelector('.notes', function() {
   }, 'Euros should display notes by default')
 })
 
-casper.waitForSelector('#first-select', function() {
+casper.then(function() {
   casper.test.info('Testing currency selection list')
 
   this.test.assertEval(function() {
@@ -37,7 +37,7 @@ casper.waitForSelector('#first-select', function() {
   }, 'Thai Baht appears in currency selection list when inactive')
 })
 
-casper.waitForSelector('#currency-switcher', function() {
+casper.then(function() {
   originalURL = this.getCurrentUrl()
 
   casper.test.info('Testing currency switcher')
@@ -50,7 +50,7 @@ casper.waitForSelector('#header.USD-flag', function() {
                    'URL should change after swapping currencies')
 
   this.test.assertEval(function() {
-    return !$('.coins').length
+    return $('.coins').length === 0
   }, 'USD should display no coins by default')
   this.test.assertEval(function() {
     return $('.notes').length > 0

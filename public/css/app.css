@@ -13,7 +13,7 @@ body {
     margin: 69px 0 0;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     body {
         background-image: url(../img/bg-compassrose@2x.jpg);
     }
@@ -256,7 +256,7 @@ h1, h2 {
     outline: 0;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #currency-switcher {
         background-image: url(../img/switch@2x.png);
     }
@@ -389,7 +389,7 @@ h1, h2 {
     width: 140px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .notes {
         background-image: url(../img/note@2x.png);
     }
@@ -477,7 +477,7 @@ h1, h2 {
 }
 
 /* Retina versions */
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .coins.copper {
         background-image: url(../img/coins/copper@2x.png);
     }

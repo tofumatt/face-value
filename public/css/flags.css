@@ -5,7 +5,7 @@
 #header.AUD-flag {
     background-image: url(/img/header-flags/AUD.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.AUD-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.AUD-flag {
     background-image: url(/img/header-flags/AUD@2x.png);
 }}
 
@@ -16,7 +16,7 @@
 #header.BRL-flag {
     background-image: url(/img/header-flags/BRL.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.BRL-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.BRL-flag {
     background-image: url(/img/header-flags/BRL@2x.png);
 }}
 
@@ -27,7 +27,7 @@
 #header.CAD-flag {
     background-image: url(/img/header-flags/CAD.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CAD-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.CAD-flag {
     background-image: url(/img/header-flags/CAD@2x.png);
 }}
 
@@ -38,7 +38,7 @@
 #header.CHF-flag {
     background-image: url(/img/header-flags/CHF.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CHF-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.CHF-flag {
     background-image: url(/img/header-flags/CHF@2x.png);
 }}
 
@@ -49,7 +49,7 @@
 #header.CNY-flag {
     background-image: url(/img/header-flags/CNY.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.CNY-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.CNY-flag {
     background-image: url(/img/header-flags/CNY@2x.png);
 }}
 
@@ -60,7 +60,7 @@
 #header.EUR-flag {
     background-image: url(/img/header-flags/EUR.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.EUR-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.EUR-flag {
     background-image: url(/img/header-flags/EUR@2x.png);
 }}
 
@@ -71,7 +71,7 @@
 #header.GBP-flag {
     background-image: url(/img/header-flags/GBP.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.GBP-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.GBP-flag {
     background-image: url(/img/header-flags/GBP@2x.png);
 }}
 
@@ -82,7 +82,7 @@
 #header.ILS-flag {
     background-image: url(/img/header-flags/ILS.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.ILS-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.ILS-flag {
     background-image: url(/img/header-flags/ILS@2x.png);
 }}
 
@@ -93,7 +93,7 @@
 #header.INR-flag {
     background-image: url(/img/header-flags/INR.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.INR-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.INR-flag {
     background-image: url(/img/header-flags/INR@2x.png);
 }}
 
@@ -104,7 +104,7 @@
 #header.JPY-flag {
     background-image: url(/img/header-flags/JPY.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.JPY-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.JPY-flag {
     background-image: url(/img/header-flags/JPY@2x.png);
 }}
 
@@ -115,7 +115,7 @@
 #header.MXN-flag {
     background-image: url(/img/header-flags/MXN.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.MXN-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.MXN-flag {
     background-image: url(/img/header-flags/MXN@2x.png);
 }}
 
@@ -126,7 +126,7 @@
 #header.PLN-flag {
     background-image: url(/img/header-flags/PLN.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.PLN-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.PLN-flag {
     background-image: url(/img/header-flags/PLN@2x.png);
 }}
 
@@ -137,7 +137,7 @@
 #header.THB-flag {
     background-image: url(/img/header-flags/THB.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.THB-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.THB-flag {
     background-image: url(/img/header-flags/THB@2x.png);
 }}
 
@@ -148,7 +148,7 @@
 #header.USD-flag {
     background-image: url(/img/header-flags/USD.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.USD-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.USD-flag {
     background-image: url(/img/header-flags/USD@2x.png);
 }}
 
@@ -159,7 +159,7 @@
 #header.ZAR-flag {
     background-image: url(/img/header-flags/ZAR.png);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {#header.ZAR-flag {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.ZAR-flag {
     background-image: url(/img/header-flags/ZAR@2x.png);
 }}
 

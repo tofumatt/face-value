@@ -13,7 +13,7 @@ body {
     margin: 69px 0 0;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2) {
     body {
         background-image: url(../img/bg-compassrose@2x.jpg);
     }

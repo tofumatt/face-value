@@ -9,6 +9,10 @@ casper.start('http://localhost:3001/', function () {
   casper.test.info('Testing main app page')
 
   this.test.assertTitle('Face Value', 'Homepage has the correct title')
+
+  this.test.assertEval(function() {
+    return !$('html').attr('manifest')
+  }, 'No appcache manifest should be present in test environment')
 })
 
 casper.waitForSelector('.notes', function() {

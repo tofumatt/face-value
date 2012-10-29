@@ -80,7 +80,7 @@
         .span_1 {
             width:49.0%;
         }
-        .span_2 {
+        .span_2, .odd.last {
             margin-left:0;
             width:100%;
         }
@@ -114,7 +114,7 @@
         .span_2 {
             width:66.0%;
         }
-        .span_3 {
+        .span_3, .odd.last:first-child {
             margin-left:0;
             width:100%;
         }
@@ -152,7 +152,7 @@
         .span_3 {
             width:74.5%;
         }
-        .span_4 {
+        .span_4, .odd.last:first-child {
             margin-left:0;
             width:100%;
         }

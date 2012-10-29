@@ -65,6 +65,7 @@ h1, h2 {
     z-index: -50;
 }
 
+/*
 #first-select {
     top: 37px;
 }
@@ -77,11 +78,21 @@ h1, h2 {
 #first-select .arrow {
     left: 75px;
 }
+*/
 
 .popover {
+    background: rgba(6, 6, 6, .8);
+    height: 100%;
+    left: 0;
+    margin: 0;
     position: fixed;
-    width: 225px;
+    top: 0;
+    width: 100%;
     z-index: 10010;
+}
+
+.popover .arrow {
+    display: none;
 }
 
 .popover .popover-content {
@@ -93,6 +104,7 @@ h1, h2 {
     background-image:      -o-linear-gradient(top, #e7e4e0, #c7c4c0); /* Opera 11.10+ */
     background-image:         linear-gradient(top, #e7e4e0, #c7c4c0);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e7e4e0', EndColorStr='#c7c4c0'); /* IE6-IE9 */
+    margin: 10% 5%;
 }
 
 .popover .arrow span {

@@ -1,6 +1,5 @@
-{
+ {
     "AUD": {
-        "after": false,
         "coins": [
             {"0.05": "silver"},
             {"0.10": "silver"},
@@ -10,6 +9,8 @@
             {"2.00": "gold"}
         ],
         "fraction": "cent",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "Australian Dollar",
         "notes": [
             {"5":   "purple"},
@@ -20,14 +21,12 @@
         ],
         "pluralName": "AU Dollars",
         "range": [1, 100],
-        "symbol": "$",
         "whole": "dollar",
-        "worth": {}
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
     },
     "BRL": {
-        "after": false,
         "coins": [
-            {"0.01": "copper"},
             {"0.05": "copper"},
             {"0.10": "copper"},
             {"0.25": "copper"},
@@ -35,6 +34,8 @@
             {"1.00": "gold-silver"}
         ],
         "fraction": "centavo",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "Brazilian Real",
         "notes": [
             {"2":   "blue"},
@@ -46,12 +47,11 @@
         ],
         "pluralName": "Reais",
         "range": [1, 100],
-        "symbol": "R$",
         "whole": "real",
-        "worth": {}
+        "wholeSymbol": "R$",
+        "wholeSymbolAfter": false
     },
     "CAD": {
-        "after": false,
         "coins": [
             {"0.05": "silver"},
             {"0.10": "silver"},
@@ -60,6 +60,8 @@
             {"2.00": "silver-gold"}
         ],
         "fraction": "cent",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "Canadian Dollar",
         "notes": [
             {"5":   "blue"},
@@ -70,12 +72,11 @@
         ],
         "pluralName": "CA Dollars",
         "range": [1, 100],
-        "symbol": "$",
         "whole": "dollar",
-        "worth": {}
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
     },
     "CHF": {
-        "after": false,
         "coins": [
             {"0.05": "gold"},
             {"0.10": "silver"},
@@ -86,6 +87,8 @@
             {"5.00": "silver"}
         ],
         "fraction": "centime",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "Swiss Franc",
         "notes": [
             {"10":   "yellow"},
@@ -97,18 +100,19 @@
         ],
         "pluralName": "Swiss Francs",
         "range": [1, 1000],
-        "symbol": "Fr.",
         "whole": "franc",
-        "worth": {}
+        "wholeSymbol": "Fr.",
+        "wholeSymbolAfter": false
     },
     "CNY": {
-        "after": false,
         "coins": [
             {"0.10": "silver"},
             {"0.50": "gold"},
             {"1.00": "silver"}
         ],
         "fraction": "jiǎo",
+        "fractionSymbol": "角",
+        "fractionSymbolAfter": true,
         "name": "Chinese Yuan",
         "notes": [
             {"1":    "brown"},
@@ -121,12 +125,11 @@
         ],
         "pluralName": "Yuan",
         "range": [1, 100],
-        "symbol": "¥",
         "whole": "yuán",
-        "worth": {}
+        "wholeSymbol": "¥",
+        "wholeSymbolAfter": false
     },
     "EUR": {
-        "after": false,
         "coins": [
             {"0.01": "copper"},
             {"0.02": "copper"},
@@ -138,6 +141,8 @@
             {"2.00": "silver-gold"}
         ],
         "fraction": "cent",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
         "name": "Euro",
         "notes": [
             {"5":   "teal"},
@@ -150,12 +155,11 @@
         ],
         "pluralName": "Euros",
         "range": [1, 500],
-        "symbol": "€",
         "whole": "euro",
-        "worth": {}
+        "wholeSymbol": "€",
+        "wholeSymbolAfter": false
     },
     "GBP": {
-        "after": false,
         "coins": [
             {"0.01": "copper"},
             {"0.02": "copper"},
@@ -167,7 +171,9 @@
             {"2.00": "silver-gold"}
         ],
         "fraction": "pence",
-        "name": "Pound Sterling",
+        "fractionSymbol": "p",
+        "fractionSymbolAfter": true,
+        "name": "British Pound",
         "notes": [
             {"5":   "teal"},
             {"10":  "gold"},
@@ -176,12 +182,11 @@
         ],
         "pluralName": "British Pounds",
         "range": [0.50, 50],
-        "symbol": "£",
         "whole": "pound",
-        "worth": {}
+        "wholeSymbol": "£",
+        "wholeSymbolAfter": false
     },
     "ILS": {
-        "after": false,
         "coins": [
             {"0.01": "copper"},
             {"0.05": "copper"},
@@ -193,6 +198,9 @@
             {"10":   "silver-gold"}
         ],
         "fraction": "agorot",
+        "fractionSymbol": "agorot",
+        "fractionSymbolAfter": true,
+        "fraction": "agorot",
         "name": "Israeli Shekel",
         "notes": [
             {"20":  "green"},
@@ -202,12 +210,11 @@
         ],
         "pluralName": "Shekalim",
         "range": [1, 200],
-        "symbol": "₪",
         "whole": "shekel",
-        "worth": {}
+        "wholeSymbol": "₪",
+        "wholeSymbolAfter": false
     },
     "INR": {
-        "after": false,
         "coins": [
             {"0.10": "silver"},
             {"0.25": "silver"},
@@ -217,6 +224,8 @@
             {"5":    "silver"}
         ],
         "fraction": "paisa",
+        "fractionSymbol": "p",
+        "fractionSymbolAfter": true,
         "name": "Indian Rupee",
         "notes": [
             {"5":   "green"},
@@ -229,12 +238,11 @@
         ],
         "pluralName": "Indian Rupees",
         "range": [1, 1000],
-        "symbol": "₹",
         "whole": "rupee",
-        "worth": {}
+        "wholeSymbol": "₹",
+        "wholeSymbolAfter": false
     },
     "JPY": {
-        "after": false,
         "coins": [
             {"1":   "silver"},
             {"5":   "gold"},
@@ -244,6 +252,8 @@
             {"500": "silver"}
         ],
         "fraction": null,
+        "fractionSymbol": null,
+        "fractionSymbolAfter": null,
         "name": "Japanese Yen",
         "notes": [
             {"1000":   "yellow"},
@@ -253,12 +263,11 @@
         ],
         "pluralName": "Yen",
         "range": [10, 10000],
-        "symbol": "¥",
         "whole": "yen",
-        "worth": {}
+        "wholeSymbol": "¥",
+        "wholeSymbolAfter": false
     },
     "MXN": {
-        "after": false,
         "coins": [
             {"0.25":  "copper"},
             {"0.50":  "copper"},
@@ -268,6 +277,8 @@
             {"10.00": "gold-silver"}
         ],
         "fraction": "centavo",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "Mexican Peso",
         "notes": [
             {"20":   "blue"},
@@ -279,12 +290,11 @@
         ],
         "pluralName": "Mexican Pesos",
         "range": [1, 1000],
-        "symbol": "$",
         "whole": "peso",
-        "worth": {}
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
     },
     "PLN": {
-        "after": true,
         "coins": [
             {"0.01": "copper"},
             {"0.02": "copper"},
@@ -297,6 +307,8 @@
             {"5.00": "silver-gold"}
         ],
         "fraction": "groszy",
+        "fractionSymbol": " gr",
+        "fractionSymbolAfter": true,
         "name": "Polish Złoty",
         "notes": [
             {"10":   "brown"},
@@ -307,12 +319,11 @@
         ],
         "pluralName": "Złotys",
         "range": [1, 200],
-        "symbol": "zł",
         "whole": "złoty",
-        "worth": {}
+        "wholeSymbol": " zł",
+        "wholeSymbolAfter": true
     },
     "THB": {
-        "after": false,
         "coins": [
             {"0.10":  "silver"},
             {"0.25":  "copper"},
@@ -323,6 +334,8 @@
             {"10.00": "silver-gold"}
         ],
         "fraction": "satang",
+        "fractionSymbol": " satang",
+        "fractionSymbolAfter": true,
         "name": "Thai Baht",
         "notes": [
             {"20":   "green"},
@@ -333,12 +346,11 @@
         ],
         "pluralName": "Baht",
         "range": [20, 1000],
-        "symbol": "฿",
         "whole": "baht",
-        "worth": {}
+        "wholeSymbol": "฿",
+        "wholeSymbolAfter": false
     },
     "USD": {
-        "after": false,
         "coins": [
             {"0.01": "copper"},
             {"0.05": "silver"},
@@ -346,6 +358,8 @@
             {"0.25": "silver"}
         ],
         "fraction": "cent",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
         "name": "US Dollar",
         "notes": [
             {"1":   "green"},
@@ -358,12 +372,11 @@
         ],
         "pluralName": "US Dollars",
         "range": [1, 100],
-        "symbol": "$",
         "whole": "dollar",
-        "worth": {}
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
     },
     "ZAR": {
-        "after": false,
         "coins": [
             {"0.10": "gold"},
             {"0.20": "gold"},
@@ -373,6 +386,8 @@
             {"5.00": "silver-gold"}
         ],
         "fraction": "cent",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
         "name": "South African Rand",
         "notes": [
             {"10":  "teal"},
@@ -383,8 +398,8 @@
         ],
         "pluralName": "Rand",
         "range": [1, 200],
-        "symbol": "R ",
         "whole": "rand",
-        "worth": {}
+        "wholeSymbol": "R ",
+        "wholeSymbolAfter": false
     }
 }

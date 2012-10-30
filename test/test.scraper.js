@@ -37,7 +37,7 @@ describe('The scraper', function() {
     redis.get('denominations', function(err, results) {
       var redisDenominations = JSON.parse(results)
 
-      Object.keys(redisDenominations['USD']['worth']).length.should.be.ok
+      redisDenominations['EUR']['worth'].should.be.ok
 
       done()
     })

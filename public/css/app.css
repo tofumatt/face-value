@@ -85,6 +85,7 @@ h1, h2 {
     height: 100%;
     left: 0;
     margin: 0;
+    padding: 0 5%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -209,7 +210,7 @@ h1, h2 {
     top: 1px;
 }
 
-#currency-selector a {
+#currency-selector a, #currency-selector strong {
     color: inherit;
     font-size: 16px;
     letter-spacing: .25px;
@@ -274,7 +275,7 @@ h1, h2 {
     }
 }
 
-#currency-list-first li, #currency-list-second li {
+#maincontent .currency-list-selector li {
     background-position: 8px 50%;
     line-height: 28px;
     list-style: none;
@@ -282,7 +283,7 @@ h1, h2 {
     padding: 0;
 }
 
-#currency-list-first a, #currency-list-second a {
+.currency-list-selector a {
     color: inherit;
     display: block;
     height: 26px;
@@ -301,11 +302,13 @@ h1, h2 {
 }
 */
 
-/*
-.denomination-list {
+.row:after {
     clear: both;
+    content: '';
+    display: block;
 }
 
+/*
 .denomination {
     float: left;
     height: 100px;
@@ -341,7 +344,7 @@ h1, h2 {
     width: 100%;
 }
 
-.coins {
+.coin {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -353,7 +356,7 @@ h1, h2 {
     width: 125px;
 }
 
-.coins .inner {
+.coin .inner {
     color: rgba(230, 230, 240, 1);
     font-size: 60px;
     height: 1em;
@@ -365,7 +368,7 @@ h1, h2 {
     width: 100%; 
 }
 
-.coins .symbol {
+.coin .symbol {
     display: inline-block;
     font-size: 50%;
     font-weight: normal;
@@ -374,13 +377,13 @@ h1, h2 {
     vertical-align: 35%;
 }
 
-.coins .fraction {
-    font-size: 40%;
+.coin .fraction {
+    font-size: 80%;
     letter-spacing: 0.001em;
-    vertical-align: 45%;
+    vertical-align: 8%;
 }
 
-.notes {
+.note {
     background-image: url(../img/note.png);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -393,7 +396,7 @@ h1, h2 {
     width: 140px;
 }
 
-.notes .color {
+.note .color {
     left: 0;
     height: 87px;
     position: absolute;
@@ -402,12 +405,12 @@ h1, h2 {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .notes {
+    .note {
         background-image: url(../img/note@2x.png);
     }
 }
 
-.notes .inner {
+.note .inner {
     color: rgba(230, 230, 240, 1);
     font-size: 60px;
     height: 1em;
@@ -427,7 +430,7 @@ h1, h2 {
     vertical-align: 75%;
 }
 
-.notes .symbol {
+.note .symbol {
     display: inline-block;
     font-size: 50%;
     font-weight: normal;
@@ -460,94 +463,94 @@ h1, h2 {
 }
 
 /** Colour styles for coins */
-.coins.copper {
+.coin.copper {
     background-image: url(../img/coins/copper.png);
 }
 
-.coins.copper-silver {
+.coin.copper-silver {
     background-image: url(../img/coins/copper-silver.png);
 }
 
-.coins.gold {
+.coin.gold {
     background-image: url(../img/coins/gold.png);
 }
 
-.coins.gold-silver {
+.coin.gold-silver {
     background-image: url(../img/coins/gold-silver.png);
 }
 
-.coins.silver {
+.coin.silver {
     background-image: url(../img/coins/silver.png);
 }
 
-.coins.silver-copper {
+.coin.silver-copper {
     background-image: url(../img/coins/silver-copper.png);
 }
 
-.coins.silver-gold {
+.coin.silver-gold {
     background-image: url(../img/coins/silver-gold.png);
 }
 
 /* Retina versions */
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .coins.copper {
+    .coin.copper {
         background-image: url(../img/coins/copper@2x.png);
     }
 
-    .coins.copper-silver {
+    .coin.copper-silver {
         background-image: url(../img/coins/copper-silver@2x.png);
     }
 
-    .coins.gold {
+    .coin.gold {
         background-image: url(../img/coins/gold@2x.png);
     }
 
-    .coins.gold-silver {
+    .coin.gold-silver {
         background-image: url(../img/coins/gold-silver@2x.png);
     }
 
-    .coins.silver {
+    .coin.silver {
         background-image: url(../img/coins/silver@2x.png);
     }
 
-    .coins.silver-copper {
+    .coin.silver-copper {
         background-image: url(../img/coins/silver-copper@2x.png);
     }
 
-    .coins.silver-gold {
+    .coin.silver-gold {
         background-image: url(../img/coins/silver-gold@2x.png);
     }
 }
 
 /** Colour styles for notes */
-.notes .color.blue {
+.note .color.blue {
     background-color: rgba(80, 131, 201, .4);
 }
 
-.notes .color.brown {
+.note .color.brown {
     background-color: rgba(87, 57, 9, .4);
 }
 
-.notes .color.green {
+.note .color.green {
     background-color: rgba(80, 128, 38, .4);
 }
 
-.notes .color.orange {
+.note .color.orange {
     background-color: rgba(222, 150, 55, .4);
 }
 
-.notes .color.purple {
+.note .color.purple {
     background-color: rgba(197, 131, 211, .4);
 }
 
-.notes .color.red {
+.note .color.red {
     background-color: rgba(128, 26, 26, .4);
 }
 
-.notes .color.teal {
+.note .color.teal {
     background-color: rgba(60, 128, 93, .4);
 }
 
-.notes .color.yellow {
+.note .color.yellow {
     background-color: rgba(235, 202, 73, .4);
 }

@@ -1,6 +1,5 @@
 {
     "ARS": {
-        "after": false,
         "coins": [
             {"0.05": "copper"},
             {"0.10": "copper"},
@@ -157,7 +156,6 @@
         "wholeSymbolAfter": false
     },
     "CZK": {
-        "after": true,
         "coins": [
             {"1.00":  "silver"},
             {"2.00":  "silver"},
@@ -167,6 +165,8 @@
             {"50.00": "copper-gold"}
         ],
         "fraction": "haléř",
+        "fractionSymbol": "h",
+        "fractionSymbolAfter": true,
         "name": "Czech Koruna",
         "notes": [
             {"100":    "teal"},
@@ -178,9 +178,9 @@
         ],
         "pluralName": "Czech Korun",
         "range": [1, 5000],
-        "symbol": "Kč",
         "whole": "koruna",
-        "worth": {}
+        "wholeSymbol": "Kč",
+        "wholeSymbolAfter": false
     },
     "EUR": {
         "coins": [

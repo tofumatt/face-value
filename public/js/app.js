@@ -1,225 +1,162 @@
+/*global _:true, App:true, Backbone:true */
+/*jshint forin:false, plusplus:false, sub:true */
 'use strict';
 
-// The code below uses require.js, a module system for javscript:
-// http://requirejs.org/docs/api.html#define
+define([
+  'zepto',
+  'collections/currencies',
+  'collections/denominations',
+  'models/currency',
+  'models/denomination'
+], function($, CurrenciesCollection, DenominationsCollection, Currency, Denomination) {
+  if (!window._faceValueDataCache) {
+    window._faceValueDataCache = {}
+  }
 
-require.config({
-    baseUrl: 'js',
-    paths: {
-        'ejs': ['lib/ejs'],
-        'jquery': ['lib/jquery']
-    }
-})
+  var GLOBALS = {
+    DEFAULT_FOREIGN_CURRENCY: 'EUR',
+    DEFAULT_HOME_CURRENCY: 'USD',
+    TIME_TO_UPDATE: 3600
+  }
 
-// We make these globals so EJS can use them like helpers.
-// TODO: Make this better.
-var getCurrencies
-var getPluralName
-var valueFormatted
+  var dataCache = window._faceValueDataCache
 
-// When you write javascript in separate files, list them as
-// dependencies along with jquery
-define('app', function(require) {
-    // America, fuck yeah!
-    var DEFAULT_CURRENCIES = '#EUR,USD'
-
-    // TODO: Don't use jQuery? Maybe something more lightweight, or just
-    // straight-up JS?
-    var $ = require('jquery')
-    require('ejs')
-    var EJS = window.EJS
-    var ls = window.localStorage
-
-    // Run this code as soon as the document is ready.
-    function init() {
-        // TODO: Replace this with a version number and some way to do JS
-        // "upgrades".
-        if (ls.ranInit !== '1') {
-            firstRun()
-        } else {
-            resume()
-        }
-
-        setupListeners()
-
-        getCurrencies()
-        updateCurrencies()
-        updateCurrencyInfo()
-        renderCurrencies()
-        renderHeader()
-        renderLists()
-    }
-
-    function firstRun() {
-        // Initialize localStorage variables so we don't get undefined/type
-        // errors.
-        ls.currentCurrencies = '[]'
-        ls.currencies = '{}'
-        ls.ranInit = '1'
-    }
-
-    function bodyScrolling(state) {
-        if (state === false) {
-            $('body').on('touchstart', 'scrollOff', function(event) {
-                disablePopover()
-            })
-        } else {
-            $('body').off('touchstart', 'scrollOff')
-        }
-    }
-
-    function disablePopover() {
-        bodyScrolling(true)
-        $('#first-select,#second-select').addClass('hide')
-    }
-
-    getCurrencies = function() {
-        if (window.location.hash === '#' ||
-            window.location.hash === '' ||
-            !window.location.hash.match(/#[A-Z]{3},[A-Z]{3}/g) ||
-            !window.location.hash) {
-            window.location.hash = DEFAULT_CURRENCIES
-        }
-
-        return window.location.hash.replace('#', '').split(',')
-    }
-
-    getPluralName = function(code, pluralPrefix, singularPrefix) {
-        var currency = JSON.parse(ls.currencies)[code]
-        pluralPrefix = pluralPrefix ? pluralPrefix : ''
-        singularPrefix = singularPrefix ? singularPrefix : ''
-
-        return currency.pluralName ? pluralPrefix + currency.pluralName :
-                                     singularPrefix + currency.name
-    }
-
-    function renderCurrencies(first, second) {
-        $('#coins,#notes').addClass('hidden')
-        setTimeout(function() {
-            $('#coins').html(new EJS({url: '/views/denomination-list.ejs'}).render({
-                currencies: JSON.parse(ls.currencies),
-                i: first || JSON.parse(ls.currentCurrencies)[0],
-                j: second || JSON.parse(ls.currentCurrencies)[1],
-                type: 'coins'
-            }))
-            $('#notes').html(new EJS({url: '/views/denomination-list.ejs'}).render({
-                currencies: JSON.parse(ls.currencies),
-                i: first || JSON.parse(ls.currentCurrencies)[0],
-                j: second || JSON.parse(ls.currentCurrencies)[1],
-                type: 'notes'
-            }))
-
-            if ($('#coins .denomination').length % 2) {
-                $('#coins .denomination:last').removeClass('span_1')
-                                              .addClass('span_2 span_3 span_4')
-            }
-            if ($('#notes .denomination').length % 2) {
-                $('#notes .denomination:last').removeClass('span_1')
-                                              .addClass('span_2 span_3 span_4')
+  function initialize(callback) {
+    CurrenciesCollection.fetch({
+      success: function() {
+        DenominationsCollection.fetch({
+          success: function() {
+            if (!get('foreignCurrency')) {
+              set('foreignCurrency', GLOBALS.DEFAULT_FOREIGN_CURRENCY)
             }
 
-            $('#coins,#notes').removeClass('hidden')
-        }, 200)
-    }
-
-    function renderHeader() {
-        $('#header').attr('class', getCurrencies()[0] + '-flag')
-        $('#header').html(new EJS({url: '/views/header.ejs'}).render({}))
-    }
-
-    function renderLists() {
-        $('#currency-list-first').html(new EJS({url: '/views/currency-list.ejs'}).render({
-            currencies: JSON.parse(ls.currencies),
-            firstCurrency: true
-        }))
-
-        $('#currency-list-second').html(new EJS({url: '/views/currency-list.ejs'}).render({
-            currencies: JSON.parse(ls.currencies),
-            firstCurrency: false
-        }))
-    }
-
-    function resume() {
-        var currentCurrencies = JSON.parse(ls.currentCurrencies)
-        window.location.hash = '#' + currentCurrencies[0] + ',' + currentCurrencies[1]
-    }
-
-    function setupListeners() {
-        $(window).on('hashchange', function(event) {
-            updateCurrencies()
-            renderCurrencies()
-            renderHeader()
-            renderLists()
-        })
-
-        $('.first-currency').live('click', function(event) {
-            bodyScrolling(false)
-            $('#first-select').removeClass('hide')
-
-            return false
-        })
-
-        $('.second-currency').live('click', function(event) {
-            bodyScrolling(false)
-            $('#second-select').removeClass('hide')
-
-            return false
-        })
-
-        $('.first-select,.second-select').on('blur', function(event) {
-            disablePopover()
-        })
-
-        $('body').on('click', function(event) {
-            disablePopover()
-        })
-
-        $('body').on('touchmove', function(event) {
-            $('a').removeClass('active')
-        })
-
-        $('a').live('touchstart', function(event) {
-            $(this).addClass('active')
-        })
-
-        $('a').live('touchcancel,touchend,touchmove', function(event) {
-            $(this).removeClass('active')
-        })
-    }
-
-    function updateCurrencies() {
-        ls.currentCurrencies = JSON.stringify(getCurrencies())
-    }
-
-    function updateCurrencyInfo() {
-        $.ajax({
-            url: '/denominations.json',
-            dataType: 'json',
-            success: function(results) {
-                ls.currencies = JSON.stringify(results)
-            },
-            error: function() {
-                console.log('failed')
+            if (!get('homeCurrency')) {
+              set('homeCurrency', GLOBALS.DEFAULT_HOME_CURRENCY)
             }
+
+            // Update currency/denomination info every hour.
+            if (!get('lastTimeCurrencyDataUpdated') ||
+                timestamp() - get('lastTimeCurrencyDataUpdated') > GLOBALS.TIME_TO_UPDATE) {
+              fetchCurrencyData(callback)
+            } else {
+              callback()
+            }
+          }
         })
-    }
-
-    valueFormatted = function(amount) {
-        if (amount < 1) {
-            amount = '<span class="fraction">' + amount + '</span>'
-        }
-
-        if (amount >= 1 && parseFloat(amount) === parseFloat(Math.round(Number(amount)))) {
-            amount = parseInt(amount, 10)
-        }
-
-        amount = amount.toString().replace(/(0{2,})/g, '<span class="zeros">$1</span>')
-
-        return amount
-    }
-
-    // Let's do it!
-    $(function() {
-        init()
+      }
     })
+  }
+
+  function get(key, fallback) {
+    if (dataCache[key] !== undefined) {
+      // console.info('cache hit', '### ' + key + ' ###', dataCache[key])
+      return dataCache[key]
+    } else if (window.localStorage[key] !== undefined) {
+      dataCache[key] = JSON.parse(window.localStorage[key])
+      // console.info('cache miss', '### ' + key + ' ###', dataCache[key])
+      return dataCache[key]
+    } else {
+      // console.info('not found')
+      return fallback
+    }
+  }
+
+  function fetchCurrencyData(callback) {
+    $.ajax({
+      url: '/denominations.json',
+      dataType: 'json',
+      success: function(results) {
+        updateCurrencyData(results)
+
+        callback()
+      },
+      error: function() {
+        console.log('failed')
+      }
+    })
+  }
+
+  function set(key, value) {
+    window.localStorage[key] = JSON.stringify(value)
+    return dataCache[key] = value
+  }
+
+  function timestamp(date) {
+    if (!date) {
+      date = new Date()
+    }
+
+    return Math.round(date.getTime() / 1000)
+  }
+
+  function updateCurrencyData(currencyData) {
+    for (var i in currencyData) {
+      var currency = CurrenciesCollection.where({code: i})[0];
+
+      // This currency doesn't exist yet, so we'll create it.
+      if (!currency) {
+        currency = new Currency({code: i})
+        CurrenciesCollection.add(currency)
+      }
+
+      currency.set(_.pick(currencyData[i],
+        'fraction',
+        'fractionSymbol',
+        'fractionSymbolAfter',
+        'name',
+        'pluralName',
+        'range',
+        'whole',
+        'wholeSymbol',
+        'wholeSymbolAfter',
+        'worth'
+      ))
+
+      // console.log(i, currencyData[i])
+      // console.log(currency.toJSON())
+
+      currency.save()
+    }
+
+    // Update/create denomination data.
+    CurrenciesCollection.each(function(model) {
+      _(['coins', 'notes']).each(function(type) {
+        for (var i in currencyData[model.get('code')][type]) {
+          var denomination = DenominationsCollection.where({
+            currencyCode: model.get('code'),
+            value: parseFloat(_.keys(currencyData[model.get('code')][type][i])[0]),
+            type: type.slice(0, -1)
+          })[0];
+
+          // No denomination with these properties exists, so it's new.
+          if (!denomination) {
+            denomination = new Denomination({
+              currencyCode: model.get('code'),
+              style: _.values(currencyData[model.get('code')][type][i])[0],
+              type: type.slice(0, -1),
+              value: parseFloat(_.keys(currencyData[model.get('code')][type][i])[0]),
+            })
+
+            DenominationsCollection.add(denomination)
+          } else {
+            denomination.set({
+              style: _.values(currencyData[model.get('code')][type][i])[0]
+            })
+          }
+
+          denomination.save()
+        }
+      })
+    })
+
+    set('lastTimeCurrencyDataUpdated', timestamp())
+  }
+
+  return _(GLOBALS).extend({
+    get: get,
+    initialize: initialize,
+    set: set,
+    timestamp: timestamp,
+    updateCurrencyData: updateCurrencyData
+  })
 })

@@ -13,6 +13,11 @@ body {
     margin: 69px 0 0;
 }
 
+.ios {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     body {
         background-image: url(../img/bg-compassrose@2x.jpg);
@@ -106,6 +111,11 @@ h1, h2 {
     background-image:         linear-gradient(top, #e7e4e0, #c7c4c0);
               filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e7e4e0', EndColorStr='#c7c4c0'); /* IE6-IE9 */
     margin: 10% 5%;
+}
+
+.ios .popover .popover-content {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .popover .arrow span {

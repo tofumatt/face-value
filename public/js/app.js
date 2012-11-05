@@ -22,6 +22,10 @@ define([
   var dataCache = window._faceValueDataCache
 
   function initialize(callback) {
+    if (window.navigator.userAgent.match(/iPhone|iPod|iPad/i)) {
+      $('body').addClass('ios')
+    }
+
     CurrenciesCollection.fetch({
       success: function() {
         DenominationsCollection.fetch({

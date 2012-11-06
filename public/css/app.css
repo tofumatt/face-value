@@ -70,21 +70,6 @@ h1, h2 {
     z-index: -50;
 }
 
-/*
-#first-select {
-    top: 37px;
-}
-
-#second-select {
-    left: 40%;
-    top: 50px;
-}
-
-#first-select .arrow {
-    left: 75px;
-}
-*/
-
 .popover {
     background: rgba(6, 6, 6, .8);
     height: 100%;
@@ -301,32 +286,11 @@ h1, h2 {
     text-decoration: none;
 }
 
-
-/*
-#currency-list-first {
-    float: left;
-}
-
-#currency-list-second {
-    float: right;
-}
-*/
-
 .row:after {
     clear: both;
     content: '';
     display: block;
 }
-
-/*
-.denomination {
-    float: left;
-    height: 100px;
-    width: 50%;
-}
-*/
-
-
 
 
 
@@ -447,6 +411,42 @@ h1, h2 {
     letter-spacing: 0;
     margin: 0 2px;
     vertical-align: 35%;
+}
+
+/** Variable length CSS */
+/* TODO: Make this less hacky */
+
+.coin.length-4 .inner {
+    font-size: 48px;
+    top: 27%;
+}
+
+.note.length-1 .inner {
+    font-size: 60px;
+}
+
+.note.length-2 .inner {
+    font-size: 60px;
+}
+
+.note.length-3 .inner {
+    font-size: 56px;
+    top: 12.5%;
+}
+
+.note.length-4 .inner {
+    font-size: 52px;
+    top: 15%;
+}
+
+.note.length-5 .inner {
+    font-size: 44px;
+    top: 20%;
+}
+
+.note.length-6 .inner {
+    font-size: 36px;
+    top: 25%;
 }
 
 .subtitle {

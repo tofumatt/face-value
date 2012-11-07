@@ -1,4 +1,4 @@
-<div class="<%= denomination.get('style') %> <%= denomination.get('type') %> length-<%= denomination.valueCharacterLength() %>">
+<div class="<%= denomination.get('style') %> <%= denomination.get('type') %>">
   <div class="color <%= denomination.get('style') %>"></div>
   <div class="inner"><% if ((denomination.get('value') < 1 && !currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && !currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %><% if (denomination.get('value') < 1) { %><span class="fraction"><% } %><%= denomination.valueFormatted() %><% if (denomination.get('value') < 1) { %></span><% } %><% if ((denomination.get('value') < 1 && currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %>
   </div>

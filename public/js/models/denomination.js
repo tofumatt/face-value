@@ -20,17 +20,6 @@ define([
       return Currencies.where({code: this.get('currencyCode')})[0]
     },
 
-    valueCharacterLength: function() {
-      // TODO: Include the proper symbol in the character length.
-      // var currency = Currencies.where({code: this.get('currencyCode')})[0]
-      // currency.get('')
-      return this.valueFormatted().toString().length + 1
-    },
-
-    valueFormatted: function() {
-      return this.get('value') < 1 ? this.get('value').toFixed(DECIMAL_POINTS).toString().replace(/0\.0?(\d{1,2})/g, '$1') : this.get('value')
-    },
-
     worthIn: function(currency) {
       var Currencies = require('collections/currencies')
 

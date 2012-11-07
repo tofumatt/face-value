@@ -48,8 +48,7 @@ define([
       var view = new DenominationView({
         model: denomination
       })
-      $('#{type}s .denomination-list'.format({type: denomination.get('type')}))
-        .append(view.render().el)
+      $('#{type}s .denomination-list'.format({type: denomination.get('type')})).append(view.render().el)
 
       // This is some CSS magic snagged from @potch and the Gaia.
       var valueText = view.$el.find('.inner')[0]

@@ -41,7 +41,9 @@ define([
     closeSelection: function(event) {
       // Don't close the selection div if the user actually clicked on a
       // currency link in the list.
-      if (!$(event.originalTarget).hasClass('change-currency')) {
+      var targetElement = event.originalTarget || event.target
+
+      if (!$(targetElement).hasClass('change-currency')) {
         $('.currency-list-selector').addClass('hide')
 
         event.preventDefault()

@@ -11,7 +11,6 @@ define([
     routes:{
       'convert/:foreignCurrency-:homeCurrency': 'convert',
       '': 'index'
-      // '*filter': 'setFilter'
     },
 
     initialize: function() {

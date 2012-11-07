@@ -84,6 +84,7 @@ define([
           code: App.get('foreignCurrency')
         })[0]
       })
+
       var view = this
       Currencies.fetch({
         success: function(results) {

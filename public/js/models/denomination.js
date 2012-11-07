@@ -20,6 +20,10 @@ define([
       return Currencies.where({code: this.get('currencyCode')})[0]
     },
 
+    valueFormatted: function() {
+      return this.get('value') < 1 ? this.get('value').toFixed(DECIMAL_POINTS).toString().replace(/0\.0?(\d{1,2})/g, '$1') : this.get('value')
+    },
+
     worthIn: function(currency) {
       var Currencies = require('collections/currencies')
 

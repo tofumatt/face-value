@@ -318,6 +318,17 @@ h1, h2 {
     width: 100%;
 }
 
+.denomination .inner {
+    font-size: 60px;
+    left: 50%;
+    letter-spacing: -.08em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    top: 50%;
+}
+
 .coin {
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -332,18 +343,10 @@ h1, h2 {
 
 .coin .inner {
     color: rgba(230, 230, 240, 1);
-    font-size: 60px;
-    height: 1em;
-    letter-spacing: -.08em;
-    margin: 0 0 0 -7px;
-    position: absolute;
     text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
-    top: 22%;
-    width: 100%; 
 }
 
 .coin .symbol {
-    display: inline-block;
     font-size: 50%;
     font-weight: normal;
     letter-spacing: 0;
@@ -352,7 +355,6 @@ h1, h2 {
 }
 
 .coin .fraction {
-    font-size: 80%;
     letter-spacing: 0.001em;
     vertical-align: 8%;
 }
@@ -386,14 +388,7 @@ h1, h2 {
 
 .note .inner {
     color: rgba(230, 230, 240, 1);
-    font-size: 60px;
-    height: 1em;
-    letter-spacing: -.08em;
-    margin: 0 0 0 -4px;
-    position: absolute;
     text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
-    top: 10%;
-    width: 100%; 
 }
 
 .zeros {
@@ -405,48 +400,11 @@ h1, h2 {
 }
 
 .note .symbol {
-    display: inline-block;
     font-size: 50%;
     font-weight: normal;
     letter-spacing: 0;
     margin: 0 2px;
     vertical-align: 35%;
-}
-
-/** Variable length CSS */
-/* TODO: Make this less hacky */
-
-.coin.length-4 .inner {
-    font-size: 48px;
-    top: 27%;
-}
-
-.note.length-1 .inner {
-    font-size: 60px;
-}
-
-.note.length-2 .inner {
-    font-size: 60px;
-}
-
-.note.length-3 .inner {
-    font-size: 56px;
-    top: 12.5%;
-}
-
-.note.length-4 .inner {
-    font-size: 52px;
-    top: 15%;
-}
-
-.note.length-5 .inner {
-    font-size: 44px;
-    top: 20%;
-}
-
-.note.length-6 .inner {
-    font-size: 36px;
-    top: 25%;
 }
 
 .subtitle {

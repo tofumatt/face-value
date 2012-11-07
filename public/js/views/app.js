@@ -50,6 +50,15 @@ define([
       })
       $('#{type}s .denomination-list'.format({type: denomination.get('type')}))
         .append(view.render().el)
+
+      // This is some CSS magic snagged from @potch and the Gaia.
+      var valueText = view.$el.find('.inner')[0]
+      var valWidth = valueText.offsetWidth;
+      var maxWidth = valueText.parentNode.offsetWidth;
+      var scaleFactor = Math.min(1, (maxWidth - 25) / valWidth);
+      valueText.style.transform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
+      valueText.style.MozTransform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
+      valueText.style.WebkitTransform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
     },
 
     removeAllDenominations: function(currency) {

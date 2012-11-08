@@ -77,8 +77,8 @@ img/header-flags/USD.png
 img/header-flags/USD@2x.png
 img/header-flags/ZAR.png
 img/header-flags/ZAR@2x.png
-img/bg-compassrose.png
-img/bg-compassrose@2x.png
+img/bg-compassrose.jpg
+img/bg-compassrose@2x.jpg
 img/note.png
 img/note@2x.png
 img/switch.png
@@ -87,6 +87,7 @@ img/translated-currency-bg.png
 img/translated-currency-bg@2x.png
 js/main.built.js
 js/lib/require.js
+js/string.js
 
 # catch-all for anything else
 NETWORK:

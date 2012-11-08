@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <% if (app.ENV === 'production') { %>manifest="/manifest.appcache"<% } %> class="env-<%= app.ENV %>">
+<html <% if (app.ENV === 'production' || app.FORCE_MANIFEST) { %>manifest="/manifest.appcache"<% } %> class="env-<%= app.ENV %>">
   <head>
     <meta charset="utf-8">
 

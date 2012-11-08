@@ -10,6 +10,7 @@ module.exports = function(app, conf, configurations, express) {
   // Configuration.
   app.configure(function() {
     app.ENV = process.env.NODE_ENV || 'development'
+    app.FORCE_MANIFEST = process.env.FORCE_MANIFEST || false
     app.set('env', app.ENV)
     app.set('views', __dirname + '/views')
     app.set('view engine', 'ejs')

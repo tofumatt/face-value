@@ -16,14 +16,19 @@ define([
   var GLOBALS = {
     DEFAULT_FOREIGN_CURRENCY: 'EUR',
     DEFAULT_HOME_CURRENCY: 'USD',
-    TIME_TO_UPDATE: 3600
+    HAS: {
+      nativeScroll: (function() {
+        return 'WebkitOverflowScrolling' in window.document.createElement('div').style
+      })()
+    },
+    TIME_TO_UPDATE: 3600 * 24 // Update currencies/denominations every day
   }
 
   var dataCache = window._faceValueDataCache
 
   function initialize(callback) {
-    if (window.navigator.userAgent.match(/iPhone|iPod|iPad/i)) {
-      $('body').addClass('ios')
+    if (GLOBALS.HAS.nativeScroll) {
+      $('body').addClass('native-scroll')
     }
 
     CurrenciesCollection.fetch({

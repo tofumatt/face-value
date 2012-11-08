@@ -13,7 +13,7 @@ body {
     margin: 69px 0 0;
 }
 
-.ios {
+.native-scroll {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -101,7 +101,7 @@ h1, h2 {
     transform: translate(0, -50%);
 }
 
-.ios .popover .popover-content {
+.native-scroll .popover .popover-content {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }

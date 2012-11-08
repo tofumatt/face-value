@@ -9,7 +9,8 @@ module.exports = function(app, conf, configurations, express) {
 
   // Configuration.
   app.configure(function() {
-    app.set('env', process.env.NODE_ENV)
+    app.ENV = process.env.NODE_ENV || 'development'
+    app.set('env', app.ENV)
     app.set('views', __dirname + '/views')
     app.set('view engine', 'ejs')
 

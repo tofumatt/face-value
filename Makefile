@@ -26,6 +26,9 @@ mortar:
 npm_install:
 	npm install
 
+require:
+	cd public/js && node ../../node_modules/requirejs/bin/r.js -o optimize=none mainConfigFile=main.js name=main out=main.built.js
+
 submodules:
 	git submodule update --init --recursive
 

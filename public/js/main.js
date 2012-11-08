@@ -22,6 +22,9 @@ require.config({
     },
     'underscore': {
       exports: '_'
+    },
+    'zepto': {
+      exports: 'Zepto'
     }
   }
 })

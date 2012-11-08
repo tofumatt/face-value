@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 27m1348550550
+# v 0.1 / 3
 
 CACHE:
 /
@@ -30,6 +30,8 @@ img/coins/silver-gold.png
 img/coins/silver-gold@2x.png
 img/coins/silver.png
 img/coins/silver@2x.png
+# img/default.png
+# img/default@2x.png
 img/flags/AUD.png
 img/flags/BRL.png
 img/flags/CAD.png
@@ -83,17 +85,8 @@ img/switch.png
 img/switch@2x.png
 img/translated-currency-bg.png
 img/translated-currency-bg@2x.png
-js/app.js
-js/lib/ejs.js
-js/lib/install.js
-js/lib/jquery.js
-http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-js/lib/modernizr-2.5.3.min.js
+js/main.built.js
 js/lib/require.js
-views/currency-list.ejs
-views/denomination-list.ejs
-views/header.ejs
 
 # catch-all for anything else
 NETWORK:

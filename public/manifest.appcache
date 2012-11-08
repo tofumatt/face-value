@@ -2,7 +2,8 @@ CACHE MANIFEST
 # v 0.1 / 3
 
 CACHE:
-/
+/apple-touch-icon-57x57-precomposed.png
+/apple-touch-icon-114x114-precomposed.png
 /css/lib/gridpak.css
 /css/lib/popover.css
 /css/app.css

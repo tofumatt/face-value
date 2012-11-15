@@ -26,7 +26,11 @@
 
     <link rel="stylesheet" href="/css/app.css">
   </head>
-  <body data-url="<%= appURL %>">
+  <body data-url="<%= appURL %>" class="cache-loading">
+    <div id="loading-text">
+      <p>Loading...</p>
+    </div>
+
     <div id="maincontent" class="container">
       <!-- Add your site or application content here -->
       <%- body %>

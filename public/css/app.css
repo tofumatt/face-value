@@ -50,6 +50,31 @@ h1, h2 {
     text-align: center;
 }
 
+#loading-text {
+    display: none;
+}
+
+.cache-loading #loading-text {
+    background: rgba(6, 6, 6, 1);
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10010;
+}
+
+.cache-loading #loading-text p {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
 

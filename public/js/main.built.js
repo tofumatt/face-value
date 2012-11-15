@@ -3051,6 +3051,23 @@ define('app',[
       $('body').addClass('native-scroll')
     }
 
+    // OMG, this is how we cache bust for now.
+    window.applicationCache.addEventListener('cached', function() {
+      cacheReady()
+      window.location.reload()
+    })
+
+    window.applicationCache.addEventListener('updateready', function() {
+      cacheReady()
+      window.location.reload()
+    })
+
+    if (get('cacheReady')) {
+      $('body').removeClass('cache-loading')
+    } else {
+      $('#loading-text').animate({opacity: 1})
+    }
+
     CurrenciesCollection.fetch({
       success: function() {
         DenominationsCollection.fetch({
@@ -3074,6 +3091,11 @@ define('app',[
         })
       }
     })
+  }
+
+  function cacheReady() {
+    $('body').removeClass('cache-loading')
+    set('cacheReady', true)
   }
 
   function get(key, fallback) {

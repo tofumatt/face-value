@@ -33,11 +33,13 @@ require([
   'app',
   'routers/app'
 ], function(App, AppRouter) {
-  App.initialize(function() {
+  function init() {
     // Initialize routing and start Backbone.history()
     var router = new AppRouter()
     router.initialize()
 
     Backbone.history.start()
-  })
+  }
+
+  App.initialize(init)
 })

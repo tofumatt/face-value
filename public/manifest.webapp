@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "name": "Argent",
+  "name": "Face Value",
   "description": "Currency conversion using actual denominations.",
   "icons": {
     "16": "/img/icons/mortar-16.png",
@@ -11,7 +11,7 @@
     "name": "Matthew Riley MacPherson (tofumatt)",
     "url": "http://argent.lonelyvegan.com/"
   },
-  "launch_path": "/app",
+  "launch_path": "/",
   "installs_allowed_from": ["*"],
   "appcache_path": "/manifest.appcache",
   "locales": {

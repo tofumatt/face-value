@@ -25,7 +25,7 @@ describe("The app assets'", function() {
       request(app)
         .get('/')
         .set('Accept', 'text/html')
-        .expect('Content-Type', 'text/html; charset=utf-8')
+        .expect('Content-Type', 'text/html; charset=UTF-8')
         .expect(200, /rel="apple-touch-icon-precomposed" sizes="57x57" href="\/apple-touch-icon-57x57-precomposed.png"/, done)
     })
 
@@ -40,7 +40,7 @@ describe("The app assets'", function() {
       request(app)
         .get('/')
         .set('Accept', 'text/html')
-        .expect('Content-Type', 'text/html; charset=utf-8')
+        .expect('Content-Type', 'text/html; charset=UTF-8')
         .expect(200, /rel="apple-touch-icon-precomposed" sizes="114x114" href="\/apple-touch-icon-114x114-precomposed.png"/, done)
     })
   })

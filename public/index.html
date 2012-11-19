@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html <% if (app.ENV === 'production' || app.FORCE_MANIFEST) { %>manifest="manifest.appcache"<% } %> class="env-<%= app.ENV %>">
+<html manifest="manifest.appcache">
   <head>
     <meta charset="utf-8">
 
-    <title><%= app.conf.get('name') %>
-           <%= typeof(title) !== 'undefined' ? ': ' + title : '' %></title>
+    <title>Face Value</title>
     <meta name="description" content="Currency conversion using actual denominations.">
 
     <!-- iOS-specific meta information; for homescreen web app capabilities -->
@@ -26,18 +25,45 @@
 
     <link rel="stylesheet" href="/css/app.css">
   </head>
-  <body data-url="<%= appURL %>" class="cache-loading">
+  <body class="cache-loading">
     <div id="loading-text">
       <p>Loading...</p>
     </div>
 
     <div id="maincontent" class="container">
-      <!-- Add your site or application content here -->
-      <%- body %>
+      <h1 class="hide">Face Value</h1>
+      <h2 class="hide">Currency conversion using actual denominations.</h2>
+
+      <div id="foreign-select" class="currency-list-selector hide popover">
+        <div class="popover-content">
+          <div class="arrow"><span></span></div>
+            <div class="popover-body">
+              <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div id="home-select" class="currency-list-selector hide popover">
+        <div class="popover-content">
+          <div class="arrow"><span></span></div>
+            <div class="popover-body">
+              <ul></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header"></div>
+
+      <div id="denominations">
+        <div id="coins">
+          <div class="denomination-list row"></div>
+        </div>
+        <div id="notes">
+          <div class="denomination-list row"></div>
+        </div>
+      </div>
     </div>
 
     <script src="/js/string.js"></script>
-    <script data-main="/js/<%= (app.ENV === 'production' || app.FORCE_MANIFEST) ? 'main.built' : 'main' %>"
-            src="/js/lib/require.js"></script>
+    <script data-main="/js/main" src="/js/lib/require.js"></script>
   </body>
 </html>

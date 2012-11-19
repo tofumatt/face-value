@@ -2,5 +2,3 @@
  node_js:
    - "0.8"
    - "0.6"
-services:
-  - redis-server

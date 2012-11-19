@@ -2,43 +2,32 @@
 
 var express = require('express')
 var app = express.createServer()
-var conf = require('nconfs').load()
-var redis = process.env.REDISTOGO_URL ? require('redis-url').connect(process.env.REDISTOGO_URL) : require('redis').createClient()
-var settings = require('./settings')(app, conf, module.exports, express)
+var port = process.env.PORT ? process.env.PORT : 3000
 
-// If redis is enabled, create a client connection.
-if (conf.get('redis')) {
-  redis.select(process.env.REDISTOGO_URL || conf.get('redis'), function(errDb, res) {
-    console.log((process.env.NODE_ENV || 'development') + ' database connection status: ', res)
-  })
-}
+// Configuration.
+app.configure(function() {
+  app.use(express.bodyParser())
+  app.use(express.methodOverride())
 
-app.listen(process.env.PORT ? process.env.PORT : conf.get('port'))
-console.log('Listening on port ' + conf.get('port'))
+  app.use(app.router)
 
-// Actual app page, used to serve up the app's content.
-app.get('/', function(req, res) {
-  // Send all data from redis.
-  redis.get('denominations', function(err, results) {
-    // Template context; put any variables you want to access in your template
-    // in this object.
-    var context = {
-      currencies: JSON.parse(results),
-      title: undefined
-    }
+  // Public/static files directory. If you add more folders here,
+  // they'll also be served statically from the root URL.
+  app.use(express.static(__dirname + '/public'))
 
-    // Render the index template and send it to the browser.
-    res.render('app', context)
-  })
+  if (!process.env.NODE_ENV) {
+    app.use(express.logger('dev'))
+  }
 })
 
-// Return all current denomination data in JSON format. This data should be
-// locally cached by any app using it.
-app.get('/denominations.json', function(req, res) {
-  // Send all data from redis.
-  redis.get('denominations', function(err, results) {
-    res.json(JSON.parse(results))
-  })
+app.configure(function() {
+  app.use(express.errorHandler({
+    dumpExceptions: true,
+    showStack: true
+  }))
 })
+
+app.listen(port)
+console.log('Listening on port ' + port)
 
 exports.app = app

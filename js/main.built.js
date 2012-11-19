@@ -2959,7 +2959,7 @@ define('models/denomination',[
     worthIn: function(currency) {
       var Currencies = require('collections/currencies')
 
-      var worth = this.get('value') *
+      var worth = this.get('value') /
         Currencies.where({code: this.get('currencyCode')})[0].get('worth') /
         (currency instanceof String ? Currencies.where({code: currency})[0].get('worth') : currency.get('worth'))
 

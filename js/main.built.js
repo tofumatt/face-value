@@ -3078,7 +3078,7 @@ define('app',[
 
   var GLOBALS = {
     DEFAULT_FOREIGN_CURRENCY: 'EUR',
-    DEFAULT_HOME_CURRENCY: 'USD',
+    DEFAULT_HOME_CURRENCY: 'CAD',
     HAS: {
       nativeScroll: (function() {
         return 'WebkitOverflowScrolling' in window.document.createElement('div').style

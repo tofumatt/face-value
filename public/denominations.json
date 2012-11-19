@@ -51,6 +51,34 @@
         "wholeSymbol": "$",
         "wholeSymbolAfter": false
     },
+    "BGN": {
+        "coins": [
+            {"0.01": "copper"},
+            {"0.02": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "gold-silver"}
+        ],
+        "fraction": "stotinka",
+        "fractionSymbol": "s",
+        "fractionSymbolAfter": true,
+        "name": "Bulgarian Lev",
+        "notes": [
+            {"2":   "violet"},
+            {"5":   "red"},
+            {"10":  "green"},
+            {"20":  "blue"},
+            {"50":  "brown"},
+            {"100": "green"}
+        ],
+        "pluralName": "Bulgarian Leva",
+        "range": [1, 100],
+        "whole": "lev",
+        "wholeSymbol": "лв",
+        "wholeSymbolAfter": true
+    },
     "BRL": {
         "coins": [
             {"0.05": "copper"},
@@ -267,6 +295,33 @@
         "wholeSymbol": "₪",
         "wholeSymbolAfter": false
     },
+    "HUF": {
+        "coins": [
+            {"5":    "copper"},
+            {"10":   "silver"},
+            {"20":   "gold"},
+            {"50":   "silver"},
+            {"100":  "silver-gold"},
+            {"200":  "gold-silver"}
+        ],
+        "fraction": "fillér",
+        "fractionSymbol": "f",
+        "fractionSymbolAfter": true,
+        "name": "Hungarian Forint",
+        "notes": [
+            {"500":   "red"},
+            {"1000":  "blue"},
+            {"2000":  "brown"},
+            {"5000":  "purple"},
+            {"10000": "red"},
+            {"20000": "green"}
+        ],
+        "pluralName": "Forint",
+        "range": [5, 20000],
+        "whole": "forint",
+        "wholeSymbol": "Ft",
+        "wholeSymbolAfter": false
+    },
     "INR": {
         "coins": [
             {"0.10": "silver"},
@@ -375,6 +430,59 @@
         "whole": "złoty",
         "wholeSymbol": " zł",
         "wholeSymbolAfter": true
+    },
+    "RON": {
+        "coins": [
+            {"0.10":  "silver"},
+            {"0.50":  "gold"}
+        ],
+        "fraction": "ban",
+        "fractionSymbol": " bani",
+        "fractionSymbolAfter": true,
+        "name": "Romanian Leu",
+        "notes": [
+            {"1":    "green"},
+            {"5":    "violet"},
+            {"10":   "red"},
+            {"50":   "yellow"},
+            {"100":  "blue"},
+            {"200":  "orange"},
+            {"500":  "purple"}
+        ],
+        "pluralName": "Romanian lei",
+        "range": [0.10, 200],
+        "whole": "leu",
+        "wholeSymbol": " lei",
+        "wholeSymbolAfter": true
+    },
+    "RSD": {
+        "coins": [
+            {"1":  "gold"},
+            {"2":  "silver"},
+            {"5":  "silver"},
+            {"10": "silver"},
+            {"20": "silver"}
+        ],
+        "fraction": "para",
+        "fractionSymbol": "para",
+        "fractionSymbolAfter": true,
+        "name": "Serbian Dinar",
+        "notes": [
+            {"10":     "brown"},
+            {"20":     "green"},
+            {"50":     "violet"},
+            {"100":    "blue"},
+            {"200":    "orange"},
+            {"500":    "teal"},
+            {"1000":   "red"},
+            {"2000":   "yellow"},
+            {"5000":   "purple"}
+        ],
+        "pluralName": "Serbian Dinara",
+        "range": [1, 1000],
+        "whole": "lev",
+        "wholeSymbol": "лв",
+        "wholeSymbolAfter": false
     },
     "THB": {
         "coins": [

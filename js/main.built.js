@@ -2963,6 +2963,8 @@ define('models/denomination',[
         Currencies.where({code: this.get('currencyCode')})[0].get('worth') /
         (currency instanceof String ? Currencies.where({code: currency})[0].get('worth') : currency.get('worth'))
 
+      console.log(worth)
+
       return worth.toFixed(DECIMAL_POINTS) !== 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
     }
   })

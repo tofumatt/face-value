@@ -6,7 +6,7 @@ require(__dirname + '/../lib/string.js')
 var assert = require('should')
 var conf = require('nconfs').load(__dirname + '/../')
 var fs = require('fs')
-var denominations = JSON.parse(fs.readFileSync('./lib/denominations.json', 'utf8'))
+var denominations = JSON.parse(fs.readFileSync('./public/denominations.json', 'utf8'))
 
 describe('Each denomination', function() {
   describe('has a flag',  function() {

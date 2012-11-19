@@ -4,11 +4,12 @@
 
 define([
   'zepto',
+  'currency-data',
   'collections/currencies',
   'collections/denominations',
   'models/currency',
   'models/denomination'
-], function($, CurrenciesCollection, DenominationsCollection, Currency, Denomination) {
+], function($, CurrencyData, CurrenciesCollection, DenominationsCollection, Currency, Denomination) {
   if (!window._faceValueDataCache) {
     window._faceValueDataCache = {}
   }
@@ -30,6 +31,10 @@ define([
     if (GLOBALS.HAS.nativeScroll) {
       $('body').addClass('native-scroll')
     }
+
+    // TODO: Improve this.
+    // This is a hacky cache-bust thing while I figure out a better way...
+    cacheReady()
 
     // OMG, this is how we cache bust for now.
     window.applicationCache.addEventListener('cached', function() {
@@ -63,7 +68,11 @@ define([
             // Update currency/denomination info every hour.
             if (!get('lastTimeCurrencyDataUpdated') ||
                 timestamp() - get('lastTimeCurrencyDataUpdated') > GLOBALS.TIME_TO_UPDATE) {
-              fetchCurrencyData(callback)
+              CurrencyData.update(function(worth) {
+                set('worth', worth)
+
+                fetchCurrencyData(callback)
+              })
             } else {
               callback()
             }
@@ -139,12 +148,12 @@ define([
         'range',
         'whole',
         'wholeSymbol',
-        'wholeSymbolAfter',
-        'worth'
+        'wholeSymbolAfter'
       ))
 
-      // console.log(i, currencyData[i])
-      // console.log(currency.toJSON())
+      currency.set({
+        worth: get('worth')[i]
+      })
 
       currency.save()
     }

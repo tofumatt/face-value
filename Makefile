@@ -32,9 +32,6 @@ require:
 submodules:
 	git submodule update --init --recursive
 
-update: update_currencies css
-
-update_currencies:
-	node script/scraper.js
+update: css
 
 .PHONY: test

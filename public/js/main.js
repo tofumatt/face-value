@@ -1,4 +1,7 @@
 /*global Backbone:true */
+/*!
+ Face Value | https://github.com/tofumatt/face-value
+*/
 'use strict';
 
 // Require.js allows us to configure shortcut alias

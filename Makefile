@@ -8,26 +8,15 @@ test:
 css:
 	node script/generate-flag-css.js > public/css/flags.css
 
-deploy:
-	git push heroku master
-
 flags:
 	node script/generate-flag-css.js
-
-install: submodules npm_install mortar
-	echo 'Installed!'
-
-mortar:
-	rm -rf .app-stub-temp
-	./vendor/mortar/bin/build app-stub .app-stub-temp
-	- cp -an .app-stub-temp/www/. public/.
-	rm -rf .app-stub-temp public/.htaccess public/404.html public/index.html
 
 npm_install:
 	npm install
 
 require:
-	cd public/js && node ../../node_modules/requirejs/bin/r.js -o optimize=none mainConfigFile=main.js name=main out=main.built.js
+	node ./node_modules/requirejs/bin/r.js -o optimize=uglify mainConfigFile=./public/js/main.js name=main out=./public/js/main.built.js
+	node ./node_modules/requirejs/bin/r.js -o optimizeCss='standard.keeplines' cssIn=./public/css/app.css out=./public/css/app.built.css
 
 submodules:
 	git submodule update --init --recursive

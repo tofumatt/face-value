@@ -11,6 +11,9 @@ body {
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .native-scroll {

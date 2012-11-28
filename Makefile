@@ -6,7 +6,7 @@ test:
 	rm ./test.pid
 
 css:
-	node script/generate-flag-css.js > public/css/flags.css
+	node script/generate-flag-css.js > www/css/flags.css
 
 flags:
 	node script/generate-flag-css.js
@@ -15,8 +15,8 @@ npm_install:
 	npm install
 
 require:
-	node ./node_modules/requirejs/bin/r.js -o optimize=uglify mainConfigFile=./public/js/main.js name=main out=./public/js/main.built.js
-	node ./node_modules/requirejs/bin/r.js -o optimizeCss='standard.keeplines' cssIn=./public/css/app.css out=./public/css/app.built.css
+	node ./node_modules/requirejs/bin/r.js -o optimize=uglify mainConfigFile=./www/js/main.js name=main out=./www/js/main.built.js
+	node ./node_modules/requirejs/bin/r.js -o optimizeCss='standard.keeplines' cssIn=./www/css/app.css out=./www/css/app.built.css
 
 submodules:
 	git submodule update --init --recursive

@@ -25,13 +25,22 @@
     "redis": "0.7.2",
     "redis-url": "0.1.0",
     "nconfs": "~0.0.2",
-    "restler": "~2.0.1"
+    "restler": "~2.0.1",
+    "volo": "0.2.5",
+    "volo-ghdeploy": "0.0.3",
+    "connect": "~2.4.4",
+    "less-middleware": "~0.1.5"
   },
   "devDependencies": {
     "mocha": "1.2.2",
     "nock": ">= 0.13.3",
     "should": ">= 0.0.1",
     "supertest": ">= 0.1.1"
+  },
+  "volo": {
+    "dependencies": {
+    },
+    "baseUrl": "public/js"
   },
   "optionalDependencies": {}
 }

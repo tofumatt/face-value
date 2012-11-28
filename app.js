@@ -13,7 +13,7 @@ app.configure(function() {
 
   // Public/static files directory. If you add more folders here,
   // they'll also be served statically from the root URL.
-  app.use(express.static(__dirname + '/public'))
+  app.use(express.static(__dirname + '/www'))
 
   if (!process.env.NODE_ENV) {
     app.use(express.logger('dev'))

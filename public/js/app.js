@@ -110,8 +110,10 @@ define([
 
         callback()
       },
+      // We're likely offline, so we won't try to update the currency data,
+      // and instead just load whatever data we currency have.
       error: function() {
-        console.log('failed')
+        callback()
       }
     })
   }

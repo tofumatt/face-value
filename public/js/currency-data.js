@@ -34,6 +34,7 @@ define([
   }
 
   return {
+    REFERENCE_CURRENCY: REFERENCE_CURRENCY,
     update: update
   }
 })

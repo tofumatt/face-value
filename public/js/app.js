@@ -103,7 +103,7 @@ define([
 
   function fetchCurrencyData(callback) {
     $.ajax({
-      url: '/denominations.json',
+      url: 'denominations.json',
       dataType: 'json',
       success: function(results) {
         updateCurrencyData(results)

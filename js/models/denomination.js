@@ -53,7 +53,18 @@ define([
       // currencies, then multiple the value of this denomination by the result.
       worth = this.get('value') * (currency.get('worth') * (1 / this.currency().get('worth')))
 
-      return worth.toFixed(DECIMAL_POINTS) !== 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
+      // If the currency we're converting to supports fractional units (eg
+      // cents) -- and most do -- we'll round to two decimal places. Note that
+      // we don't allow a zero value to be output as that's not helpful (even
+      // if it's misleading).
+      // TODO: Put a "< 1" output here?
+      if (currency.get('fraction')) {
+        return worth.toFixed(DECIMAL_POINTS) !== 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
+      } else {
+        // This currency doesn't have a fractional unit (it's probably Yen) so
+        // we return its value as an integer.
+        return Math.round(worth) !== 0 ? Math.round(worth) : 1
+      }
     }
   })
 

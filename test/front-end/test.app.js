@@ -11,8 +11,8 @@ casper.start('http://localhost:3001/', function () {
   this.test.assertTitle('Face Value', 'Homepage has the correct title')
 
   // this.test.assertEval(function() {
-  //   return $('html').attr('manifest')
-  // }, 'Appcache manifest should be present in test environment')
+  //   return $('html').attr('manifest') === undefined
+  // }, 'Appcache manifest should not be present in test environment')
 })
 
 casper.waitForSelector('.note', function() {
@@ -33,12 +33,24 @@ casper.then(function() {
   casper.test.info('Testing currency selection list')
 
   this.test.assertEval(function() {
-    return !$('#foreign-select .USD-flag').length
-  }, 'Home currency does not appear in currency selection list when active')
+    return $('#home-select .USD-flag').length === 1
+  }, 'Home currency appears in currency selection list even when active')
 
   this.test.assertEval(function() {
     return $('#foreign-select .THB-flag').length === 1
   }, 'Thai Baht appears in currency selection list when inactive')
+
+  this.test.assertEval(function() {
+    return $('#foreign-select .USD-flag').length === 1
+  }, 'Home currency appears in foreign selection list')
+
+  this.test.assertEval(function() {
+    return $('#home-select .USD-flag a').attr('href') === '#/convert/EUR-USD'
+  }, 'Home currency in home selection list links to current URL')
+
+  this.test.assertEval(function() {
+    return $('#foreign-select .USD-flag a').attr('href') === '#/convert/USD-EUR'
+  }, 'Home currency in foreign selection list links to inverse of current conversion')
 })
 
 casper.then(function() {

@@ -10,10 +10,9 @@ define([
   'text!templates/currencies/controls.ejs',
   'text!templates/currencies/list_item.ejs'
 ], function(App, $, _, Backbone, Currencies, Currency, controlsTemplate, listItemTemplate) {
-  var controlsView = Backbone.View.extend({
-    el: '#header',
-    $el: $('#header'),
-    model: Currency,
+  var ControlsView = Backbone.View.extend({
+    el: '#controls',
+    $el: $('#controls'),
     tagName: 'div',
     template: _.template(controlsTemplate),
 
@@ -25,15 +24,14 @@ define([
     initialize: function() {
       $('.currency-list-selector').on('click', this.closeSelection)
 
-      this.model.on('change', this.render, this)
       this.render()
     },
 
     render: function() {
       this.$el.html(this.template({
-        currency: this.model,
-        homeCurrency: Currencies.where({code: App.get('homeCurrency')})[0]
-      })).removeClass().addClass('{code}-flag'.format({code: this.model.get('code')}))
+        foreignCurrency: this.options.currencies.foreign,
+        homeCurrency: this.options.currencies.home
+      }))
 
       return this
     },
@@ -59,7 +57,7 @@ define([
     }
   })
 
-  var listItemView = Backbone.View.extend({
+  var ListItemView = Backbone.View.extend({
     model: Currency,
     tagName: 'li',
     template: _.template(listItemTemplate),
@@ -77,13 +75,14 @@ define([
     },
 
     initialize: function() {
-      this.model.on('change', this.render, this)
+      
     },
 
     render: function() {
       this.$el.html(this.template({
         currency: this.model,
-        homeCurrency: Currencies.where({code: App.get('homeCurrency')})[0]
+        first: this.options.currencies.first,
+        second: this.options.currencies.second
       }))
 
       return this
@@ -95,7 +94,7 @@ define([
   })
 
   return {
-    controls: controlsView,
-    listItem: listItemView
+    Controls: ControlsView,
+    ListItem: ListItemView
   }
 })

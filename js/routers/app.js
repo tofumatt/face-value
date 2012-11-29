@@ -6,7 +6,7 @@ define([
   'app',
   'collections/denominations',
   'views/app'
-], function($, Backbone, App, Denominations, AppView) {
+], function($, Backbone, App, Denominations, AppViews) {
   var AppRouter = Backbone.Router.extend({
     routes:{
       'convert/:foreignCurrency-:homeCurrency': 'convert',
@@ -19,7 +19,7 @@ define([
 
     convert: function(foreignCurrency, homeCurrency) {
       // Initialize the application view
-      var view = new AppView({
+      var view = new AppViews.AppView({
         foreignCurrency: foreignCurrency,
         homeCurrency: homeCurrency
       })

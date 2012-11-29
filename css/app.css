@@ -10,7 +10,7 @@ body {
     background-size: cover;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
-    margin: 69px 0 0;
+    margin: 69px 0 32px;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
@@ -191,7 +191,7 @@ h1, h2 {
     }
 }
 
-#currency-selector {
+#currency-info {
     background: rgba(255, 255, 255, .4);
     border: 1px solid rgba(72, 57, 10, .2);
     border-right: none;
@@ -207,11 +207,11 @@ h1, h2 {
     z-index: -10050;
 }
 
-#currency-selector .small {
+#currency-info .small {
     display: none;
 }
 
-#currency-selector:before, #currency-selector:after {
+#currency-info:before, #currency-info:after {
     content: "";
     display: block;
     height: 0;
@@ -220,7 +220,7 @@ h1, h2 {
 }
 
 /* triangle border */
-#currency-selector:before {
+#currency-info:before {
     border-bottom: 24px solid transparent;
     border-left: 24px solid #cec9be;
     border-top: 24px solid transparent;
@@ -229,7 +229,7 @@ h1, h2 {
 }
 
 /* inside triangle */
-#currency-selector:after {
+#currency-info:after {
     border-bottom: 23px solid transparent;
     border-left: 23px solid #f0eeec;
     border-top: 23px solid transparent;
@@ -237,7 +237,7 @@ h1, h2 {
     top: 1px;
 }
 
-#currency-selector a, #currency-selector strong {
+#currency-info strong {
     color: inherit;
     font-size: 16px;
     letter-spacing: .25px;
@@ -248,21 +248,21 @@ h1, h2 {
 }
 
 @media screen and (min-width: 0px) and (max-width: 319px) {
-    #currency-selector {
+    #currency-info {
         height: 17px;
         margin: 18px 7px 0 0;
         width: auto;
     }
 
-    #currency-selector .regular {
+    #currency-info .regular {
         display: none;
     }
 
-    #currency-selector .small {
+    #currency-info .small {
         display: block;
     }
 
-    #currency-selector:before {
+    #currency-info:before {
         border-bottom: 10px solid transparent;
         border-left: 10px solid rgba(88, 82, 82, 1);
         border-top: 10px solid transparent;
@@ -270,7 +270,7 @@ h1, h2 {
         top: 0;
     }
 
-    #currency-selector:after {
+    #currency-info:after {
         border-bottom: 9px solid transparent;
         border-left: 9px solid #e7e4e0;
         border-top: 9px solid transparent;
@@ -462,6 +462,49 @@ h1, h2 {
     background-repeat: no-repeat;
     padding: 0 0 0 18px;
 }
+
+
+/** Controls for switching currencies */
+#controls {
+    background: rgb(240,238,236); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(240,238,236) 0%, rgb(231,228,224) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(240,238,236)), color-stop(100%,rgb(231,228,224))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeec', endColorstr='#e7e4e0',GradientType=0 ); /* IE6-9 */
+    border-top: 1px solid rgba(255,255,255, .25);
+    bottom: 0;
+    box-shadow: 1px 0 2px rgba(0,0,0,.23); 
+    font-size: 14px;
+    height: 38px;
+    left: 0;
+    position: fixed;
+    transition: all linear 500ms;
+    width: 100%;
+    z-index: 1000;
+}
+
+#currency-selector a {
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(72, 57, 10, .2);
+    color: #48390a;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    letter-spacing: -.25px;
+    line-height: 1em;
+    height: 1em;
+    margin: 3px auto 0;
+    padding: 3px 0 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    z-index: -10050;
+}
+
+
 
 /** Colour styles for coins */
 .coin.copper {

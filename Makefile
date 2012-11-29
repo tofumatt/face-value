@@ -13,8 +13,6 @@ deploy:
 	- rm -rf www-ghdeploy
 	volo appcache
 	volo ghdeploy
-	- rm -rf www-built
-	- rm -rf www-ghdeploy
 	git reset HEAD
 
 flags:

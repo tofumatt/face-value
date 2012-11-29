@@ -22,3 +22,22 @@ for (var i in denominations) {
   }
 }
 console.log('\n*/')
+
+console.log('/** Appcache data:\n')
+for (var i in denominations) {
+  if (denominations.hasOwnProperty(i)) {
+    console.log('img/flags/{code}.png'.format({
+        code: i
+    }))
+    console.log('img/flags/{code}@2x.png'.format({
+        code: i
+    }))
+    console.log('img/header-flags/{code}.png'.format({
+        code: i
+    }))
+    console.log('img/header-flags/{code}@2x.png'.format({
+        code: i
+    }))
+  }
+}
+console.log('\n*/')

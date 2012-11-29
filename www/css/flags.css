@@ -1,7 +1,26 @@
+.ARS-flag {
+    background-image: url(../img/flags/ARS.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.ARS-flag {
+    background-image: url(../img/flags/ARS@2x.png);
+}
+}
+#header.ARS-flag {
+    background-image: url(../img/header-flags/ARS.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.ARS-flag {
+    background-image: url(../img/header-flags/ARS@2x.png);
+}}
+
 .AUD-flag {
     background-image: url(../img/flags/AUD.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.AUD-flag {
+    background-image: url(../img/flags/AUD@2x.png);
+}
+}
 #header.AUD-flag {
     background-image: url(../img/header-flags/AUD.png);
 }
@@ -9,10 +28,29 @@
     background-image: url(../img/header-flags/AUD@2x.png);
 }}
 
+.BGN-flag {
+    background-image: url(../img/flags/BGN.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.BGN-flag {
+    background-image: url(../img/flags/BGN@2x.png);
+}
+}
+#header.BGN-flag {
+    background-image: url(../img/header-flags/BGN.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.BGN-flag {
+    background-image: url(../img/header-flags/BGN@2x.png);
+}}
+
 .BRL-flag {
     background-image: url(../img/flags/BRL.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.BRL-flag {
+    background-image: url(../img/flags/BRL@2x.png);
+}
+}
 #header.BRL-flag {
     background-image: url(../img/header-flags/BRL.png);
 }
@@ -23,7 +61,11 @@
 .CAD-flag {
     background-image: url(../img/flags/CAD.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.CAD-flag {
+    background-image: url(../img/flags/CAD@2x.png);
+}
+}
 #header.CAD-flag {
     background-image: url(../img/header-flags/CAD.png);
 }
@@ -34,7 +76,11 @@
 .CHF-flag {
     background-image: url(../img/flags/CHF.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.CHF-flag {
+    background-image: url(../img/flags/CHF@2x.png);
+}
+}
 #header.CHF-flag {
     background-image: url(../img/header-flags/CHF.png);
 }
@@ -45,7 +91,11 @@
 .CNY-flag {
     background-image: url(../img/flags/CNY.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.CNY-flag {
+    background-image: url(../img/flags/CNY@2x.png);
+}
+}
 #header.CNY-flag {
     background-image: url(../img/header-flags/CNY.png);
 }
@@ -53,10 +103,29 @@
     background-image: url(../img/header-flags/CNY@2x.png);
 }}
 
+.CZK-flag {
+    background-image: url(../img/flags/CZK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.CZK-flag {
+    background-image: url(../img/flags/CZK@2x.png);
+}
+}
+#header.CZK-flag {
+    background-image: url(../img/header-flags/CZK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.CZK-flag {
+    background-image: url(../img/header-flags/CZK@2x.png);
+}}
+
 .EUR-flag {
     background-image: url(../img/flags/EUR.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.EUR-flag {
+    background-image: url(../img/flags/EUR@2x.png);
+}
+}
 #header.EUR-flag {
     background-image: url(../img/header-flags/EUR.png);
 }
@@ -67,7 +136,11 @@
 .GBP-flag {
     background-image: url(../img/flags/GBP.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.GBP-flag {
+    background-image: url(../img/flags/GBP@2x.png);
+}
+}
 #header.GBP-flag {
     background-image: url(../img/header-flags/GBP.png);
 }
@@ -78,7 +151,11 @@
 .ILS-flag {
     background-image: url(../img/flags/ILS.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.ILS-flag {
+    background-image: url(../img/flags/ILS@2x.png);
+}
+}
 #header.ILS-flag {
     background-image: url(../img/header-flags/ILS.png);
 }
@@ -86,10 +163,44 @@
     background-image: url(../img/header-flags/ILS@2x.png);
 }}
 
+.HKD-flag {
+    background-image: url(../img/flags/HKD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.HKD-flag {
+    background-image: url(../img/flags/HKD@2x.png);
+}
+}
+#header.HKD-flag {
+    background-image: url(../img/header-flags/HKD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.HKD-flag {
+    background-image: url(../img/header-flags/HKD@2x.png);
+}}
+
+.HUF-flag {
+    background-image: url(../img/flags/HUF.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.HUF-flag {
+    background-image: url(../img/flags/HUF@2x.png);
+}
+}
+#header.HUF-flag {
+    background-image: url(../img/header-flags/HUF.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.HUF-flag {
+    background-image: url(../img/header-flags/HUF@2x.png);
+}}
+
 .INR-flag {
     background-image: url(../img/flags/INR.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.INR-flag {
+    background-image: url(../img/flags/INR@2x.png);
+}
+}
 #header.INR-flag {
     background-image: url(../img/header-flags/INR.png);
 }
@@ -100,7 +211,11 @@
 .JPY-flag {
     background-image: url(../img/flags/JPY.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.JPY-flag {
+    background-image: url(../img/flags/JPY@2x.png);
+}
+}
 #header.JPY-flag {
     background-image: url(../img/header-flags/JPY.png);
 }
@@ -111,7 +226,11 @@
 .MXN-flag {
     background-image: url(../img/flags/MXN.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.MXN-flag {
+    background-image: url(../img/flags/MXN@2x.png);
+}
+}
 #header.MXN-flag {
     background-image: url(../img/header-flags/MXN.png);
 }
@@ -119,10 +238,29 @@
     background-image: url(../img/header-flags/MXN@2x.png);
 }}
 
+.MYR-flag {
+    background-image: url(../img/flags/MYR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.MYR-flag {
+    background-image: url(../img/flags/MYR@2x.png);
+}
+}
+#header.MYR-flag {
+    background-image: url(../img/header-flags/MYR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.MYR-flag {
+    background-image: url(../img/header-flags/MYR@2x.png);
+}}
+
 .PLN-flag {
     background-image: url(../img/flags/PLN.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.PLN-flag {
+    background-image: url(../img/flags/PLN@2x.png);
+}
+}
 #header.PLN-flag {
     background-image: url(../img/header-flags/PLN.png);
 }
@@ -130,10 +268,59 @@
     background-image: url(../img/header-flags/PLN@2x.png);
 }}
 
+.RON-flag {
+    background-image: url(../img/flags/RON.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.RON-flag {
+    background-image: url(../img/flags/RON@2x.png);
+}
+}
+#header.RON-flag {
+    background-image: url(../img/header-flags/RON.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.RON-flag {
+    background-image: url(../img/header-flags/RON@2x.png);
+}}
+
+.RSD-flag {
+    background-image: url(../img/flags/RSD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.RSD-flag {
+    background-image: url(../img/flags/RSD@2x.png);
+}
+}
+#header.RSD-flag {
+    background-image: url(../img/header-flags/RSD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.RSD-flag {
+    background-image: url(../img/header-flags/RSD@2x.png);
+}}
+
+.SGD-flag {
+    background-image: url(../img/flags/SGD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.SGD-flag {
+    background-image: url(../img/flags/SGD@2x.png);
+}
+}
+#header.SGD-flag {
+    background-image: url(../img/header-flags/SGD.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.SGD-flag {
+    background-image: url(../img/header-flags/SGD@2x.png);
+}}
+
 .THB-flag {
     background-image: url(../img/flags/THB.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.THB-flag {
+    background-image: url(../img/flags/THB@2x.png);
+}
+}
 #header.THB-flag {
     background-image: url(../img/header-flags/THB.png);
 }
@@ -144,7 +331,11 @@
 .USD-flag {
     background-image: url(../img/flags/USD.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.USD-flag {
+    background-image: url(../img/flags/USD@2x.png);
+}
+}
 #header.USD-flag {
     background-image: url(../img/header-flags/USD.png);
 }
@@ -155,7 +346,11 @@
 .ZAR-flag {
     background-image: url(../img/flags/ZAR.png);
 }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.ZAR-flag {
+    background-image: url(../img/flags/ZAR@2x.png);
+}
+}
 #header.ZAR-flag {
     background-image: url(../img/header-flags/ZAR.png);
 }
@@ -165,18 +360,27 @@
 
 /** Flag list:
 
+ARS
 AUD
+BGN
 BRL
 CAD
 CHF
 CNY
+CZK
 EUR
 GBP
 ILS
+HKD
+HUF
 INR
 JPY
 MXN
+MYR
 PLN
+RON
+RSD
+SGD
 THB
 USD
 ZAR

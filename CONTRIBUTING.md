@@ -11,9 +11,9 @@ to generate the flag image you'll want Photoshop or something that can open
 The basics of adding more currencies is simple:
 
   * fork the repository on GitHub
-  * open `lib/denominations.json` in your favourite text editor
+  * open `www/denominations.json` in your favourite text editor
   * copy a currency and substitute each value according to the new currency
-  * add some flag images in `public/img/header-flags/` and `public/img/flags/`
+  * add some flag images in `www/img/header-flags/` and `www/img/flags/`
 
 Then submit your pull request and you're off to the races! You can, optionally,
 run `make` to ensure the tests pass, but [Travis CI](http://travis-ci.org)

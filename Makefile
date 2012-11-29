@@ -8,6 +8,13 @@ test:
 css:
 	node script/generate-flag-css.js > www/css/flags.css
 
+deploy:
+	- rm -rf www-built
+	- rm -rf www-ghdeploy
+	volo appcache
+	volo ghdeploy
+	git reset HEAD
+
 flags:
 	node script/generate-flag-css.js
 

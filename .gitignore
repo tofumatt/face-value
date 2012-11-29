@@ -15,3 +15,7 @@ results
 
 node_modules
 npm-debug.log
+
+# volo stuff
+www-built
+www-ghdeploy

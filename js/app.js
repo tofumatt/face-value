@@ -103,15 +103,17 @@ define([
 
   function fetchCurrencyData(callback) {
     $.ajax({
-      url: '/denominations.json',
+      url: 'denominations.json',
       dataType: 'json',
       success: function(results) {
         updateCurrencyData(results)
 
         callback()
       },
+      // We're likely offline, so we won't try to update the currency data,
+      // and instead just load whatever data we currency have.
       error: function() {
-        console.log('failed')
+        callback()
       }
     })
   }

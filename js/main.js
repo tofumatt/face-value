@@ -1,4 +1,7 @@
 /*global Backbone:true */
+/*!
+ Face Value | https://github.com/tofumatt/face-value
+*/
 'use strict';
 
 // Require.js allows us to configure shortcut alias
@@ -34,11 +37,21 @@ require([
   'routers/app'
 ], function(App, AppRouter) {
   function init() {
+    // Load last used currencies and load them on startup.
+    var previousCurrencies = {
+      foreign: App.get('foreignCurrency'),
+      home: App.get('homeCurrency')
+    }
+
     // Initialize routing and start Backbone.history()
     var router = new AppRouter()
-    router.initialize()
 
     Backbone.history.start()
+
+    // Navigate to previously used currencies on startup.
+    router.navigate('convert/{foreign}-{home}'.format(previousCurrencies), {
+      trigger: true
+    })
   }
 
   App.initialize(init)

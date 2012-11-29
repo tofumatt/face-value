@@ -4,10 +4,7 @@ CACHE MANIFEST
 CACHE:
 apple-touch-icon-57x57-precomposed.png
 apple-touch-icon-114x114-precomposed.png
-css/lib/gridpak.css
-css/lib/popover.css
-css/app.css
-css/flags.css
+css/app.built.css
 fonts/bitter/Bitter-Bold-webfont.eot
 fonts/bitter/Bitter-Bold-webfont.svg
 fonts/bitter/Bitter-Bold-webfont.ttf

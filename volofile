@@ -27,8 +27,16 @@ module.exports = {
             'q': 'quiet'
         },
 
-        depends: ['less'],
-        run: 'node tools/r.js -o tools/build.js'
+        depends: ['copy', 'less', 'buildCSS'],
+        run: "node node_modules/requirejs/bin/r.js -o build.js"
+    },
+
+    buildCSS: {
+        run: "node ./node_modules/requirejs/bin/r.js -o optimizeCss='standard.keeplines' cssIn=./www/css/app.css out=./www-built/css/app.built.css"
+    },
+
+    copy: {
+        run: 'cp -R ./www ./www-built'
     },
 
     //Generates an SHA1 digest that represents the contents of the
@@ -119,7 +127,7 @@ module.exports = {
 
         v.command('build')
             .then(function () {
-                var manifest = v.read('tools/manifest.appcache'),
+                var manifest = v.read('www/manifest.appcache'),
                 master = v.read(buildDir + '/index.html'),
                 appFiles;
 

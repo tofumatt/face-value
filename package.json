@@ -29,7 +29,8 @@
     "volo": "0.2.5",
     "volo-ghdeploy": "0.0.3",
     "connect": "~2.4.4",
-    "less-middleware": "~0.1.5"
+    "less-middleware": "~0.1.5",
+    "requirejs": "2.1.2"
   },
   "devDependencies": {
     "mocha": "1.2.2",

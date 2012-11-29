@@ -14,10 +14,6 @@ flags:
 npm_install:
 	npm install
 
-require:
-	node ./node_modules/requirejs/bin/r.js -o optimize=uglify mainConfigFile=./www/js/main.js name=main out=./www/js/main.built.js
-	node ./node_modules/requirejs/bin/r.js -o optimizeCss='standard.keeplines' cssIn=./www/css/app.css out=./www/css/app.built.css
-
 submodules:
 	git submodule update --init --recursive
 

@@ -9,7 +9,8 @@ define([
   'collections/denominations',
   'views/currencies',
   'views/denominations',
-], function($, _, Backbone, App, Currencies, Denominations, CurrencyView, DenominationView) {
+  'text!templates/app/header.ejs'
+], function($, _, Backbone, App, Currencies, Denominations, CurrencyView, DenominationView, headerTemplate) {
   var AppView = Backbone.View.extend({
     // Instead of generating a new element, bind to the existing skeleton of
     // the App already present in the HTML.
@@ -23,14 +24,17 @@ define([
       App.set('homeCurrency', this.options.homeCurrency)
       App.set('foreignCurrency', this.options.foreignCurrency)
 
-      this.setupControls()
-      this.removeAllDenominations()
+      this.header = new HeaderView()
 
       this.render()
     },
 
     render: function() {
       var view = this
+
+      this.header.render()
+      this.renderControls()
+      this.removeAllDenominations()
 
       Denominations.fetch({
         success: function() {
@@ -65,24 +69,40 @@ define([
     },
 
     addToCurrencySelectors: function(currency) {
-      // Add this currency to the foreign selector, as long as it's not the
-      // active home currency.
-      if (App.get('homeCurrency') !== currency.get('code')) {
-        var view = new CurrencyView.listItem({
-          active: App.get('foreignCurrency') === currency.get('code'),
-          model: currency
-        })
+      var foreignCurrency = Currencies.where({code: App.get('foreignCurrency')})[0]
+      var homeCurrency = Currencies.where({code: App.get('homeCurrency')})[0]
 
-        $('#foreign-select ul').append(view.render().el)
-      }
+      // Add this currency to the foreign selector.
+      var foreignView = new CurrencyView.ListItem({
+        currencies: {
+          first: currency,
+          second: homeCurrency.get('code') === currency.get('code') ? foreignCurrency : homeCurrency
+        },
+        model: currency
+      })
+
+      $('#foreign-select ul').append(foreignView.render().el)
+
+      // Add this currency to the home selector.
+      var homeView = new CurrencyView.ListItem({
+        currencies: {
+          first: foreignCurrency.get('code') === currency.get('code') ? homeCurrency : foreignCurrency,
+          second: currency
+        },
+        model: currency
+      })
+
+      $('#home-select ul').append(homeView.render().el)
     },
 
-    setupControls: function() {
+    renderControls: function() {
       $('.currency-list-selector li').remove()
-      this.controls = new CurrencyView.controls({
-        model: Currencies.where({
-          code: App.get('foreignCurrency')
-        })[0]
+
+      this.controls = new CurrencyView.Controls({
+        currencies: {
+          foreign: Currencies.where({code: App.get('foreignCurrency')})[0],
+          home: Currencies.where({code: App.get('homeCurrency')})[0]
+        }
       })
 
       var view = this
@@ -96,5 +116,57 @@ define([
     }
   })
 
-  return AppView
+  var HeaderView = Backbone.View.extend({
+    el: '#header',
+    $el: $('#header'),
+    tagName: 'div',
+    template: _.template(headerTemplate),
+
+    // The DOM events specific to an item.
+    events: {
+      'click .select-currency': 'selectCurrency'
+    },
+
+    initialize: function() {
+      $('.currency-list-selector').on('click', this.closeSelection)
+
+      this.render()
+    },
+
+    render: function() {
+      this.$el.html(this.template({
+        foreignCurrency: Currencies.where({code: App.get('foreignCurrency')})[0],
+        homeCurrency: Currencies.where({code: App.get('homeCurrency')})[0]
+      })).removeClass().addClass('{code}-flag'.format({
+        code: Currencies.where({code: App.get('foreignCurrency')})[0].get('code')
+      }))
+
+      return this
+    },
+
+    closeSelection: function(event) {
+      // Don't close the selection div if the user actually clicked on a
+      // currency link in the list.
+      var targetElement = event.originalTarget || event.target
+
+      if (!$(targetElement).hasClass('change-currency')) {
+        $('.currency-list-selector').addClass('hide')
+
+        event.preventDefault()
+      }
+    },
+
+    selectCurrency: function(event) {
+      $('#{currency}-select'.format({
+        currency: $(event.target).data('currency')
+      })).removeClass('hide')
+
+      event.preventDefault()
+    }
+  })
+
+  return {
+    AppView: AppView,
+    HeaderView: HeaderView
+  }
 })

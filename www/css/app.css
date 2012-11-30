@@ -314,8 +314,12 @@ h1, h2 {
     color: inherit;
     display: block;
     height: 26px;
-    padding: 0 0 0 28px;
+    padding: 4px 0 4px 28px;
     text-decoration: none;
+}
+
+.currency-list-selector li:active {
+    background-color: rgba(231, 228, 224, 0.55);
 }
 
 .row:after {

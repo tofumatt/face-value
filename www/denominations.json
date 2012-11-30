@@ -559,7 +559,7 @@
             {"10000": "brown"}
         ],
         "pluralName": "Singapore Dollars",
-        "range": [0.05, 1000],
+        "range": [0.50, 1000],
         "whole": "dollar",
         "wholeSymbol": "S$",
         "wholeSymbolAfter": false

@@ -58,7 +58,7 @@ define([
       // we don't allow a zero value to be output as that's not helpful (even
       // if it's misleading).
       // TODO: Put a "< 1" output here?
-      if (currency.get('fraction')) {
+      if (currency.get('fraction') && !currency.get('dontUseFraction')) {
         return worth.toFixed(DECIMAL_POINTS) !== 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
       } else {
         // This currency doesn't have a fractional unit (it's probably Yen) so

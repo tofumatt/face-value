@@ -142,6 +142,7 @@ define([
       }
 
       currency.set(_.pick(currencyData[i],
+        'dontUseFraction',
         'fraction',
         'fractionSymbol',
         'fractionSymbolAfter',

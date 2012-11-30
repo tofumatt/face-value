@@ -27,6 +27,6 @@
     "geolocation": {
       "description": "Used to check your location and adjust currency"
     }
-  }
+  },
   "default_locale": "en"
 }

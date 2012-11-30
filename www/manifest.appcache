@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v 0.1 / 4
+# v 0.1 / 5
 
 CACHE:
 apple-touch-icon-57x57-precomposed.png
@@ -41,7 +41,9 @@ img/translated-currency-bg@2x.png
 js/main.built.js
 js/lib/require.js
 js/string.js
-# Flags
+##################################
+#########     Flags      #########
+##################################
 img/flags/ARS.png
 img/flags/ARS@2x.png
 img/header-flags/ARS.png
@@ -70,6 +72,10 @@ img/flags/CNY.png
 img/flags/CNY@2x.png
 img/header-flags/CNY.png
 img/header-flags/CNY@2x.png
+img/flags/COP.png
+img/flags/COP@2x.png
+img/header-flags/COP.png
+img/header-flags/COP@2x.png
 img/flags/CZK.png
 img/flags/CZK@2x.png
 img/header-flags/CZK.png

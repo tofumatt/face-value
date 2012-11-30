@@ -237,7 +237,7 @@ h1, h2 {
     top: 1px;
 }
 
-#currency-info strong {
+#currency-info a, #currency-info strong {
     color: inherit;
     font-size: 16px;
     letter-spacing: .25px;
@@ -248,7 +248,7 @@ h1, h2 {
 }
 
 /* Special cases for weird currency names */
-#header.SGD-flag #currency-info strong:first-child {
+#header.SGD-flag #currency-info a:first-child, #header.SGD-flag #currency-info strong:first-child {
     letter-spacing: -.45px;
 }
 

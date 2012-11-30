@@ -205,7 +205,7 @@
             {"50000": "orange"}
         ],
         "pluralName": "Colombian Pesos",
-        "range": [20, 50000],
+        "range": [50, 50000],
         "whole": "peso",
         "wholeSymbol": "$",
         "wholeSymbolAfter": false

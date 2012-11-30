@@ -6,8 +6,6 @@
 @import "../fonts/bitter/stylesheet.css";
 
 body {
-    background: url(../img/bg-compassrose.jpg) 0 58px no-repeat fixed;
-    background-size: cover;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 32px;
@@ -21,10 +19,33 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+/** Hack to get the background the be fixed positioned, even on mobile */
+
+#background {
+    background: url(../img/background.jpg) 0 0 no-repeat fixed;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    body {
-        background-image: url(../img/bg-compassrose@2x.jpg);
+    #background {
+        background-image: url(../img/background@2x.jpg);
     }
+}
+
+@media screen and (min-width: 500px), screen and (min-height: 550px) {
+    #background {
+        background-size: cover;
+    }
+}
+
+#maincontent {
+    position: relative;
+    z-index: 2;
 }
 
 p, dl, ul, ol {

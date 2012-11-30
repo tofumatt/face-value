@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v 0.1 / 5
+# v 0.1 / 6
 
 CACHE:
 apple-touch-icon-57x57-precomposed.png
@@ -30,8 +30,8 @@ img/coins/silver.png
 img/coins/silver@2x.png
 # /img/default.png
 # /img/default@2x.png
-img/bg-compassrose.jpg
-img/bg-compassrose@2x.jpg
+img/background.jpg
+img/background@2x.jpg
 img/note.png
 img/note@2x.png
 img/switch.png

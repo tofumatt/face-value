@@ -8,19 +8,25 @@
     "128": "/img/marketplace-icon-128.png"
   },
   "developer": {
-    "name": "Matthew Riley MacPherson (tofumatt)",
+    "name": "Matthew Riley MacPherson",
     "url": "http://lonelyvegan.com/"
   },
   "launch_path": "/",
-  "installs_allowed_from": ["*"],
+  "installs_allowed_from": ["https://marketplace.firefox.com", "http://facevalueapp.com"],
   "appcache_path": "/manifest.appcache",
   "locales": {
     "fr": {
       "description": "La conversion monétaire en utilisant les argent réelles.",
       "developer": {
+        "name": "Matthew Riley MacPherson",
         "url": "http://lonelyvegan.com/"
       }
     }
   },
+  "permissions": {
+    "geolocation": {
+      "description": "Used to check your location and adjust currency"
+    }
+  }
   "default_locale": "en"
 }

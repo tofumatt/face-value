@@ -247,6 +247,11 @@ h1, h2 {
     text-transform: lowercase;
 }
 
+/* Special cases for weird currency names */
+#header.SGD-flag #currency-info strong:first-child {
+    letter-spacing: -.45px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 319px) {
     #currency-info {
         height: 17px;
@@ -594,6 +599,10 @@ h1, h2 {
 }
 
 .note .color.purple {
+    background-color: rgba(197, 131, 211, .4);
+}
+
+.note .color.violet {
     background-color: rgba(197, 131, 211, .4);
 }
 

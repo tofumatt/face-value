@@ -183,6 +183,33 @@
         "wholeSymbol": "¥",
         "wholeSymbolAfter": false
     },
+    "COP": {
+        "coins": [
+            {"20":  "gold"},
+            {"50":  "silver"},
+            {"100": "gold"},
+            {"200": "silver"},
+            {"500": "silver-gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "centavo",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
+        "name": "Colombian Peso",
+        "notes": [
+            {"1000":  "yellow"},
+            {"2000":  "teal"},
+            {"5000":  "green"},
+            {"10000": "red"},
+            {"20000": "blue"},
+            {"50000": "orange"}
+        ],
+        "pluralName": "Colombian Pesos",
+        "range": [20, 50000],
+        "whole": "peso",
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
+    },
     "CZK": {
         "coins": [
             {"1.00":  "silver"},
@@ -305,6 +332,7 @@
             {"5":    "silver"},
             {"10":   "silver-gold"}
         ],
+        "dontUseFraction": true,
         "fraction": "cent",
         "fractionSymbol": "¢",
         "fractionSymbolAfter": true,
@@ -559,7 +587,7 @@
             {"10000": "brown"}
         ],
         "pluralName": "Singapore Dollars",
-        "range": [0.05, 1000],
+        "range": [0.50, 1000],
         "whole": "dollar",
         "wholeSymbol": "S$",
         "wholeSymbolAfter": false

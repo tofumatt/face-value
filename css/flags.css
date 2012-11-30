@@ -103,6 +103,21 @@
     background-image: url(../img/header-flags/CNY@2x.png);
 }}
 
+.COP-flag {
+    background-image: url(../img/flags/COP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.COP-flag {
+    background-image: url(../img/flags/COP@2x.png);
+}
+}
+#header.COP-flag {
+    background-image: url(../img/header-flags/COP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.COP-flag {
+    background-image: url(../img/header-flags/COP@2x.png);
+}}
+
 .CZK-flag {
     background-image: url(../img/flags/CZK.png);
 }
@@ -367,6 +382,7 @@ BRL
 CAD
 CHF
 CNY
+COP
 CZK
 EUR
 GBP
@@ -416,6 +432,10 @@ img/flags/CNY.png
 img/flags/CNY@2x.png
 img/header-flags/CNY.png
 img/header-flags/CNY@2x.png
+img/flags/COP.png
+img/flags/COP@2x.png
+img/header-flags/COP.png
+img/header-flags/COP@2x.png
 img/flags/CZK.png
 img/flags/CZK@2x.png
 img/header-flags/CZK.png

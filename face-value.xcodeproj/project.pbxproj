@@ -44,6 +44,9 @@
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C924AABA16696A9B00BA54B2 /* apple-touch-icon-57x57-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = C924AAB916696A9B00BA54B2 /* apple-touch-icon-57x57-precomposed.png */; };
 		C924AABC16696A9D00BA54B2 /* apple-touch-icon-114x114-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = C924AABB16696A9D00BA54B2 /* apple-touch-icon-114x114-precomposed.png */; };
+		C99D70B0166A68A800358F9E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C99D70AF166A68A800358F9E /* Default.png */; };
+		C99D70B2166A68AD00358F9E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99D70B1166A68AD00358F9E /* Default@2x.png */; };
+		C99D70B4166A68BB00358F9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99D70B3166A68BB00358F9E /* Default-568h@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +110,9 @@
 		8D1107310486CEB800E47090 /* face-value-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "face-value-Info.plist"; path = "../face-value-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C924AAB916696A9B00BA54B2 /* apple-touch-icon-57x57-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-57x57-precomposed.png"; sourceTree = "<group>"; };
 		C924AABB16696A9D00BA54B2 /* apple-touch-icon-114x114-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-114x114-precomposed.png"; sourceTree = "<group>"; };
+		C99D70AF166A68A800358F9E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C99D70B1166A68AD00358F9E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C99D70B3166A68BB00358F9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +182,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C99D70B3166A68BB00358F9E /* Default-568h@2x.png */,
+				C99D70B1166A68AD00358F9E /* Default@2x.png */,
+				C99D70AF166A68A800358F9E /* Default.png */,
 				C924AABB16696A9D00BA54B2 /* apple-touch-icon-114x114-precomposed.png */,
 				C924AAB916696A9B00BA54B2 /* apple-touch-icon-57x57-precomposed.png */,
 				301BF56E109A69640062928A /* www */,
@@ -388,6 +397,9 @@
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
 				C924AABA16696A9B00BA54B2 /* apple-touch-icon-57x57-precomposed.png in Resources */,
 				C924AABC16696A9D00BA54B2 /* apple-touch-icon-114x114-precomposed.png in Resources */,
+				C99D70B0166A68A800358F9E /* Default.png in Resources */,
+				C99D70B2166A68AD00358F9E /* Default@2x.png in Resources */,
+				C99D70B4166A68BB00358F9E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +521,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Riley MacPherson";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -534,6 +547,8 @@
 					"-all_load",
 					"-Obj-C",
 				);
+				PROVISIONING_PROFILE = "088E294F-3664-4D69-9CDD-BFF412790EB8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "088E294F-3664-4D69-9CDD-BFF412790EB8";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -544,7 +559,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Riley MacPherson";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -570,6 +586,8 @@
 					"-Obj-C",
 				);
 				PRODUCT_NAME = "Face Value";
+				PROVISIONING_PROFILE = "088E294F-3664-4D69-9CDD-BFF412790EB8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "088E294F-3664-4D69-9CDD-BFF412790EB8";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";

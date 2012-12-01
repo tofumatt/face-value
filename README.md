@@ -2,6 +2,28 @@
 
 Currency conversion using actual denominations.
 
+Face Value is an open-source, cross-platform currency conversion app that does
+things differently. It shows you the denominations of a currency, beautifully
+rendered in their proper style and colour, and what each coin or banknote is
+worth in your own currency. This lets you get a much better grasp on cash in
+the places you visit than the algebra game that most currency conversion apps
+end up being.
+
+## Platforms ##
+
+Face Value is a web app, first and foremost. At its core, it's an entirely
+client-side web app (built using the Backbone.js framework), that connects
+to Yahoo's Finance API to get data. It will work on any modern browser,
+including Chrome for Android and Safari for iOS. That said, it includes some
+platform-specific stuff to improve the experience on certain platforms:
+
+ * iOS-specific metadata and resources to function as a home screen web app
+ * Firefox OS-specific manifest to work on Firefox OS and Firefox for Android
+ * Cordova framework to compile an IPA for iOS App Store distribution
+
+I'm open to other platform-specific stuff; these are just the platforms I've
+bothered to optimize because they're the ones I care about.
+
 ## Running Face Value ##
 
 Make sure you have `node.js` (0.8) installed on your system. On a Mac with

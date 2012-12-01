@@ -14,9 +14,37 @@ body {
     -webkit-touch-callout: none;
 }
 
+body.cache-loading {
+    background: url(../Default.png) 0 0 no-repeat;
+    margin: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    body.cache-loading {
+        background-image: url(../Default@2x.png);
+        background-size: cover;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 1136px), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    body.cache-loading {
+        background-image: url(../Default-568h@2x.png);
+        background-size: cover;
+    }
+}
+
 .native-scroll {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+/** Mode to allow screenshots of empty pages */
+.screenshot-mode .denomination, .screenshot-mode #currency-info div, .screenshot-mode #currency-selector {
+    display: none;
+}
+
+.screenshot-mode #header {
+    background-image: none;
 }
 
 /** Hack to get the background the be fixed positioned, even on mobile */
@@ -34,6 +62,7 @@ body {
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #background {
         background-image: url(../img/background@2x.jpg);
+        background-size: 500px 550px;
     }
 }
 

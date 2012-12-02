@@ -237,6 +237,32 @@
         "wholeSymbol": "Kč",
         "wholeSymbolAfter": false
     },
+    "DKK": {
+        "coins": [
+            {"0.50":  "copper"},
+            {"1.00":  "silver"},
+            {"2.00":  "copper"},
+            {"5.00":  "silver"},
+            {"10.00": "gold"},
+            {"20.00": "gold"}
+        ],
+        "fraction": "øre",
+        "fractionSymbol": "øre",
+        "fractionSymbolAfter": true,
+        "name": "Danish Krone",
+        "notes": [
+            {"50":     "violet"},
+            {"100":    "orange"},
+            {"200":    "green"},
+            {"500":    "blue"},
+            {"1000":   "red"}
+        ],
+        "pluralName": "Kroner",
+        "range": [0.50, 1000],
+        "whole": "krone",
+        "wholeSymbol": "kr.",
+        "wholeSymbolAfter": true
+    },
     "EUR": {
         "coins": [
             {"0.01": "copper"},

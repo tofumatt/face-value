@@ -320,34 +320,6 @@
         "wholeSymbol": "£",
         "wholeSymbolAfter": false
     },
-    "ILS": {
-        "coins": [
-            {"0.01": "copper"},
-            {"0.05": "copper"},
-            {"0.10": "copper"},
-            {"0.50": "copper"},
-            {"1":    "silver"},
-            {"2":    "silver"},
-            {"5":    "silver"},
-            {"10":   "silver-gold"}
-        ],
-        "fraction": "agorot",
-        "fractionSymbol": "agorot",
-        "fractionSymbolAfter": true,
-        "fraction": "agorot",
-        "name": "Israeli Shekel",
-        "notes": [
-            {"20":  "green"},
-            {"50":  "purple"},
-            {"100": "brown"},
-            {"200": "red"}
-        ],
-        "pluralName": "Shekalim",
-        "range": [1, 200],
-        "whole": "shekel",
-        "wholeSymbol": "₪",
-        "wholeSymbolAfter": false
-    },
     "HKD": {
         "coins": [
             {"0.10": "gold"},
@@ -401,6 +373,34 @@
         "range": [5, 20000],
         "whole": "forint",
         "wholeSymbol": "Ft",
+        "wholeSymbolAfter": false
+    },
+    "ILS": {
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "copper"},
+            {"0.50": "copper"},
+            {"1":    "silver"},
+            {"2":    "silver"},
+            {"5":    "silver"},
+            {"10":   "silver-gold"}
+        ],
+        "fraction": "agorot",
+        "fractionSymbol": "agorot",
+        "fractionSymbolAfter": true,
+        "fraction": "agorot",
+        "name": "Israeli Shekel",
+        "notes": [
+            {"20":  "green"},
+            {"50":  "purple"},
+            {"100": "brown"},
+            {"200": "red"}
+        ],
+        "pluralName": "Shekalim",
+        "range": [1, 200],
+        "whole": "shekel",
+        "wholeSymbol": "₪",
         "wholeSymbolAfter": false
     },
     "INR": {

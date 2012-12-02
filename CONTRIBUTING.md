@@ -1,7 +1,7 @@
 # Contributing to Face Value #
 
 There are two ways you can contribute to Face Value: either add more
-currencies to the list (in `lib/denominations.json`) or by coding (adding
+currencies to the list (in `www/denominations.json`) or by coding (adding
 features and/or fixing bugs). Adding new currencies is relatively easy, though
 to generate the flag image you'll want Photoshop or something that can open
 `.psd` files (including layer styles).

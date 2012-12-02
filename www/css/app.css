@@ -365,6 +365,22 @@ h1, h2 {
     padding: 0;
 }
 
+.currency-list-selector h3 {
+    background-image: -moz-linear-gradient(center top , #E7E4E0, #C7C4C0);
+    border: 1px solid #000;
+    border-radius: 11px;
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.37) inset, 0 2px 6px 0 rgba(0, 0, 0, 0.95);
+    font-size: 18px;
+    font-weight: normal;
+    height: 28px;
+    left: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    width: 100%;
+}
+
 .currency-list-selector a {
     color: inherit;
     display: block;

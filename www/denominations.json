@@ -456,6 +456,32 @@
         "wholeSymbol": "¥",
         "wholeSymbolAfter": false
     },
+    "KES": {
+        "coins": [
+            {"0.50":  "silver"},
+            {"1.00":  "silver"},
+            {"5.00":  "silver-gold"},
+            {"10.00": "gold-silver"},
+            {"20.00": "silver-gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "cents",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
+        "name": "Kenyan Shilling",
+        "notes": [
+            {"50":   "red"},
+            {"100":  "purple"},
+            {"200":  "teal"},
+            {"500":  "black"},
+            {"1000": "orange"}
+        ],
+        "pluralName": "Kenyan Shillings",
+        "range": [1, 1000],
+        "whole": "shilling",
+        "wholeSymbol": "KSh",
+        "wholeSymbolAfter": false
+    },
     "MXN": {
         "coins": [
             {"0.25":  "copper"},

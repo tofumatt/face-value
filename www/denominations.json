@@ -533,7 +533,7 @@
             {"10000": "purple"}
         ],
         "pluralName": "Burmese Kyat",
-        "range": [1, 10000],
+        "range": [10, 10000],
         "whole": "kyat",
         "wholeSymbol": "K",
         "wholeSymbolAfter": false

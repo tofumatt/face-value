@@ -510,6 +510,34 @@
         "wholeSymbol": "KSh",
         "wholeSymbolAfter": false
     },
+    "MMK": {
+        "coins": [
+            {"0.50":   "gold"},
+            {"1.00":   "silver"}
+        ],
+        "fraction": "pya",
+        "fractionSymbol": "pya",
+        "fractionSymbolAfter": true,
+        "name": "Burmese Kyat",
+        "notes": [
+            {"1":     "teal"},
+            {"5":     "red"},
+            {"10":    "blue"},
+            {"20":    "green"},
+            {"50":    "orange"},
+            {"100":   "blue"},
+            {"200":   "violet"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"5000":  "red"},
+            {"10000": "purple"}
+        ],
+        "pluralName": "Burmese Kyat",
+        "range": [1, 10000],
+        "whole": "kyat",
+        "wholeSymbol": "K",
+        "wholeSymbolAfter": false
+    },
     "MXN": {
         "coins": [
             {"0.25":  "copper"},

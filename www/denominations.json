@@ -510,6 +510,35 @@
         "wholeSymbol": "KSh",
         "wholeSymbolAfter": false
     },
+    "KHR": {
+        "alerts": [
+            "Cambodian riels are only used outside cities; most transactions in Cambodia use the US Dollar. ATMs in Cambodia will dispense US Dollars, not Cambodian riels."
+        ],
+        "coins": [
+        ],
+        "dontUseFraction": true,
+        "fraction": "sen",
+        "fractionSymbol": "sen",
+        "fractionSymbolAfter": true,
+        "name": "Cambodian Riel",
+        "notes": [
+            {"50":    "orange"},
+            {"100":   "purple"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"2000":  "yellow"},
+            {"5000":  "green"},
+            {"10000": "red"},
+            {"20000": "violet"},
+            {"50000": "red"},
+            {"100000": "green"}
+        ],
+        "pluralName": "Cambodian Riels",
+        "range": [50, 50000],
+        "whole": "riel",
+        "wholeSymbol": "៛",
+        "wholeSymbolAfter": false
+    },
     "MMK": {
         "coins": [
             {"0.50":   "gold"},

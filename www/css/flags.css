@@ -283,6 +283,21 @@
     background-image: url(../img/header-flags/KES@2x.png);
 }}
 
+.KHR-flag {
+    background-image: url(../img/flags/KHR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.KHR-flag {
+    background-image: url(../img/flags/KHR@2x.png);
+}
+}
+#header.KHR-flag {
+    background-image: url(../img/header-flags/KHR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.KHR-flag {
+    background-image: url(../img/header-flags/KHR@2x.png);
+}}
+
 .MMK-flag {
     background-image: url(../img/flags/MMK.png);
 }
@@ -499,6 +514,7 @@ ILS
 INR
 JPY
 KES
+KHR
 MMK
 MXN
 MYR
@@ -592,6 +608,10 @@ img/flags/KES.png
 img/flags/KES@2x.png
 img/header-flags/KES.png
 img/header-flags/KES@2x.png
+img/flags/KHR.png
+img/flags/KHR@2x.png
+img/header-flags/KHR.png
+img/header-flags/KHR@2x.png
 img/flags/MMK.png
 img/flags/MMK@2x.png
 img/header-flags/MMK.png

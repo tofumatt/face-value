@@ -79,6 +79,34 @@
         "wholeSymbol": "лв",
         "wholeSymbolAfter": true
     },
+    "BND": {
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"}
+        ],
+        "fraction": "cents",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "Brunei Dollar",
+        "notes": [
+            {"1":     "blue"},
+            {"5":     "green"},
+            {"10":    "red"},
+            {"50":    "brown"},
+            {"100":   "orange"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"10000": "green"}
+        ],
+        "pluralName": "Brunei Dollars",
+        "range": [0.50, 500],
+        "whole": "dollar",
+        "wholeSymbol": "B$",
+        "wholeSymbolAfter": false
+    },
     "BRL": {
         "coins": [
             {"0.05": "copper"},

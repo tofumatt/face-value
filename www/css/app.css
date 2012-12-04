@@ -597,6 +597,10 @@ h1, h2 {
     background-image: url(../img/coins/copper.png);
 }
 
+.coin.copper-gold {
+    background-image: url(../img/coins/gold.png);
+}
+
 .coin.copper-silver {
     background-image: url(../img/coins/copper-silver.png);
 }
@@ -625,6 +629,10 @@ h1, h2 {
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .coin.copper {
         background-image: url(../img/coins/copper@2x.png);
+    }
+
+    .coin.copper-gold {
+        background-image: url(../img/coins/gold@2x.png);
     }
 
     .coin.copper-silver {

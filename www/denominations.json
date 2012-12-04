@@ -671,6 +671,33 @@
         "wholeSymbol": "฿",
         "wholeSymbolAfter": false
     },
+    "TRY": {
+        "coins": [
+            {"0.01":  "copper"},
+            {"0.05":  "copper"},
+            {"0.10":  "copper"},
+            {"0.25":  "copper"},
+            {"0.50":  "silver-gold"},
+            {"1.00":  "gold-silver"}
+        ],
+        "fraction": "Kuruş",
+        "fractionSymbol": "kr",
+        "fractionSymbolAfter": true,
+        "name": "Turkish Lira",
+        "notes": [
+            {"5":    "brown"},
+            {"10":   "red"},
+            {"20":   "green"},
+            {"50":   "orange"},
+            {"100":  "blue"},
+            {"200":  "violet"}
+        ],
+        "pluralName": "Turkish Liras",
+        "range": [0.05, 200],
+        "whole": "lira",
+        "wholeSymbol": "₺",
+        "wholeSymbolAfter": false
+    },
     "USD": {
         "coins": [
             {"0.01": "copper"},

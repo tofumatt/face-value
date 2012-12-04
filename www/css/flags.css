@@ -373,6 +373,21 @@
     background-image: url(../img/header-flags/THB@2x.png);
 }}
 
+.TRY-flag {
+    background-image: url(../img/flags/TRY.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.TRY-flag {
+    background-image: url(../img/flags/TRY@2x.png);
+}
+}
+#header.TRY-flag {
+    background-image: url(../img/header-flags/TRY.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.TRY-flag {
+    background-image: url(../img/header-flags/TRY@2x.png);
+}}
+
 .USD-flag {
     background-image: url(../img/flags/USD.png);
 }
@@ -430,6 +445,7 @@ RON
 RSD
 SGD
 THB
+TRY
 USD
 ZAR
 
@@ -536,6 +552,10 @@ img/flags/THB.png
 img/flags/THB@2x.png
 img/header-flags/THB.png
 img/header-flags/THB@2x.png
+img/flags/TRY.png
+img/flags/TRY@2x.png
+img/header-flags/TRY.png
+img/header-flags/TRY@2x.png
 img/flags/USD.png
 img/flags/USD@2x.png
 img/header-flags/USD.png

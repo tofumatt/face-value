@@ -39,6 +39,10 @@ body.cache-loading {
     -webkit-overflow-scrolling: touch;
 }
 
+.native-scroll .currency-list-selector h3 {
+    display: none;
+}
+
 /** Mode to allow screenshots of empty pages */
 .screenshot-mode .denomination, .screenshot-mode #currency-info div, .screenshot-mode #currency-selector {
     display: none;

@@ -616,6 +616,33 @@
         "wholeSymbol": "лв",
         "wholeSymbolAfter": false
     },
+    "RUB": {
+        "coins": [
+            {"0.10": "copper"},
+            {"0.50": "copper"},
+            {"1.00": "silver"},
+            {"2.00": "silver"},
+            {"5.00": "silver"},
+            {"10.00": "gold-silver"}
+        ],
+        "fraction": "kopek",
+        "fractionSymbol": "к.",
+        "fractionSymbolAfter": true,
+        "name": "Russian Rouble",
+        "notes": [
+            {"10":   "green"},
+            {"50":   "blue"},
+            {"100":  "brown"},
+            {"500":  "violet"},
+            {"1000": "teal"},
+            {"5000": "red"}
+        ],
+        "pluralName": "Russian Roubles",
+        "range": [0.10, 5000],
+        "whole": "ruble",
+        "wholeSymbol": "р.",
+        "wholeSymbolAfter": false
+    },
     "SGD": {
         "coins": [
             {"0.01": "copper"},

@@ -231,7 +231,7 @@
             {"2000":   "green"},
             {"5000":   "blue"}
         ],
-        "pluralName": "Czech Korun",
+        "pluralName": "Czech Korunas",
         "range": [1, 5000],
         "whole": "koruna",
         "wholeSymbol": "Kč",
@@ -723,7 +723,7 @@
         "pluralName": "Turkish Liras",
         "range": [0.05, 200],
         "whole": "lira",
-        "wholeSymbol": "₺",
+        "wholeSymbol": "TL",
         "wholeSymbolAfter": false
     },
     "USD": {

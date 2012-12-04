@@ -59,11 +59,11 @@ define([
       // if it's misleading).
       // TODO: Put a "< 1" output here?
       if (currency.get('fraction') && !currency.get('dontUseFraction')) {
-        return worth.toFixed(DECIMAL_POINTS) !== 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
+        return worth.toFixed(DECIMAL_POINTS) > 0.00 ? worth.toFixed(DECIMAL_POINTS) : 0.01
       } else {
         // This currency doesn't have a fractional unit (it's probably Yen) so
         // we return its value as an integer.
-        return Math.round(worth) !== 0 ? Math.round(worth) : 1
+        return Math.round(worth) > 0 ? Math.round(worth) : 1
       }
     }
   })

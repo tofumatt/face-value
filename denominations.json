@@ -320,34 +320,6 @@
         "wholeSymbol": "£",
         "wholeSymbolAfter": false
     },
-    "ILS": {
-        "coins": [
-            {"0.01": "copper"},
-            {"0.05": "copper"},
-            {"0.10": "copper"},
-            {"0.50": "copper"},
-            {"1":    "silver"},
-            {"2":    "silver"},
-            {"5":    "silver"},
-            {"10":   "silver-gold"}
-        ],
-        "fraction": "agorot",
-        "fractionSymbol": "agorot",
-        "fractionSymbolAfter": true,
-        "fraction": "agorot",
-        "name": "Israeli Shekel",
-        "notes": [
-            {"20":  "green"},
-            {"50":  "purple"},
-            {"100": "brown"},
-            {"200": "red"}
-        ],
-        "pluralName": "Shekalim",
-        "range": [1, 200],
-        "whole": "shekel",
-        "wholeSymbol": "₪",
-        "wholeSymbolAfter": false
-    },
     "HKD": {
         "coins": [
             {"0.10": "gold"},
@@ -403,6 +375,34 @@
         "wholeSymbol": "Ft",
         "wholeSymbolAfter": false
     },
+    "ILS": {
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "copper"},
+            {"0.10": "copper"},
+            {"0.50": "copper"},
+            {"1":    "silver"},
+            {"2":    "silver"},
+            {"5":    "silver"},
+            {"10":   "silver-gold"}
+        ],
+        "fraction": "agorot",
+        "fractionSymbol": "agorot",
+        "fractionSymbolAfter": true,
+        "fraction": "agorot",
+        "name": "Israeli Shekel",
+        "notes": [
+            {"20":  "green"},
+            {"50":  "purple"},
+            {"100": "brown"},
+            {"200": "red"}
+        ],
+        "pluralName": "Shekalim",
+        "range": [1, 200],
+        "whole": "shekel",
+        "wholeSymbol": "₪",
+        "wholeSymbolAfter": false
+    },
     "INR": {
         "coins": [
             {"0.10": "silver"},
@@ -454,6 +454,32 @@
         "range": [10, 10000],
         "whole": "yen",
         "wholeSymbol": "¥",
+        "wholeSymbolAfter": false
+    },
+    "KES": {
+        "coins": [
+            {"0.50":  "silver"},
+            {"1.00":  "silver"},
+            {"5.00":  "silver-gold"},
+            {"10.00": "gold-silver"},
+            {"20.00": "silver-gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "cents",
+        "fractionSymbol": "¢",
+        "fractionSymbolAfter": true,
+        "name": "Kenyan Shilling",
+        "notes": [
+            {"50":   "red"},
+            {"100":  "purple"},
+            {"200":  "teal"},
+            {"500":  "black"},
+            {"1000": "orange"}
+        ],
+        "pluralName": "Kenyan Shillings",
+        "range": [1, 1000],
+        "whole": "shilling",
+        "wholeSymbol": "KSh",
         "wholeSymbolAfter": false
     },
     "MXN": {
@@ -569,25 +595,53 @@
             {"10": "silver"},
             {"20": "silver"}
         ],
+        "dontUseFraction": true,
         "fraction": "para",
         "fractionSymbol": "para",
         "fractionSymbolAfter": true,
         "name": "Serbian Dinar",
         "notes": [
-            {"10":     "brown"},
-            {"20":     "green"},
-            {"50":     "violet"},
-            {"100":    "blue"},
-            {"200":    "orange"},
-            {"500":    "teal"},
-            {"1000":   "red"},
-            {"2000":   "yellow"},
-            {"5000":   "purple"}
+            {"10":   "brown"},
+            {"20":   "green"},
+            {"50":   "violet"},
+            {"100":  "blue"},
+            {"200":  "orange"},
+            {"500":  "teal"},
+            {"1000": "red"},
+            {"2000": "yellow"},
+            {"5000": "purple"}
         ],
         "pluralName": "Serbian Dinara",
         "range": [1, 1000],
         "whole": "lev",
         "wholeSymbol": "лв",
+        "wholeSymbolAfter": false
+    },
+    "RUB": {
+        "coins": [
+            {"0.10": "copper"},
+            {"0.50": "copper"},
+            {"1.00": "silver"},
+            {"2.00": "silver"},
+            {"5.00": "silver"},
+            {"10.00": "gold-silver"}
+        ],
+        "fraction": "kopek",
+        "fractionSymbol": "к.",
+        "fractionSymbolAfter": true,
+        "name": "Russian Rouble",
+        "notes": [
+            {"10":   "green"},
+            {"50":   "blue"},
+            {"100":  "brown"},
+            {"500":  "violet"},
+            {"1000": "teal"},
+            {"5000": "red"}
+        ],
+        "pluralName": "Russian Roubles",
+        "range": [0.10, 5000],
+        "whole": "ruble",
+        "wholeSymbol": "р.",
         "wholeSymbolAfter": false
     },
     "SGD": {
@@ -643,6 +697,33 @@
         "range": [20, 1000],
         "whole": "baht",
         "wholeSymbol": "฿",
+        "wholeSymbolAfter": false
+    },
+    "TRY": {
+        "coins": [
+            {"0.01":  "copper"},
+            {"0.05":  "copper"},
+            {"0.10":  "copper"},
+            {"0.25":  "copper"},
+            {"0.50":  "silver-gold"},
+            {"1.00":  "gold-silver"}
+        ],
+        "fraction": "Kuruş",
+        "fractionSymbol": "kr",
+        "fractionSymbolAfter": true,
+        "name": "Turkish Lira",
+        "notes": [
+            {"5":    "brown"},
+            {"10":   "red"},
+            {"20":   "green"},
+            {"50":   "orange"},
+            {"100":  "blue"},
+            {"200":  "violet"}
+        ],
+        "pluralName": "Turkish Liras",
+        "range": [0.05, 200],
+        "whole": "lira",
+        "wholeSymbol": "₺",
         "wholeSymbolAfter": false
     },
     "USD": {

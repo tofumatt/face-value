@@ -22,13 +22,14 @@ body.cache-loading {
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     body.cache-loading {
         background-image: url(../Default@2x.png);
-        background-size: cover;
+        background-size: 320px 460px;
     }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 1136px), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     body.cache-loading {
         background-image: url(../Default-568h@2x.png);
+        background-size: 320px 460px;
         background-size: cover;
     }
 }
@@ -363,6 +364,22 @@ h1, h2 {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.currency-list-selector h3 {
+    background-image: -moz-linear-gradient(center top , #E7E4E0, #C7C4C0);
+    border: 1px solid #000;
+    border-radius: 11px;
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.37) inset, 0 2px 6px 0 rgba(0, 0, 0, 0.95);
+    font-size: 18px;
+    font-weight: normal;
+    height: 28px;
+    left: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    width: 100%;
 }
 
 .currency-list-selector a {

@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v 0.1 / 1.0
+# v 0.1 / 2
 
 CACHE:
 apple-touch-icon-57x57-precomposed.png
@@ -92,10 +92,6 @@ img/flags/GBP.png
 img/flags/GBP@2x.png
 img/header-flags/GBP.png
 img/header-flags/GBP@2x.png
-img/flags/ILS.png
-img/flags/ILS@2x.png
-img/header-flags/ILS.png
-img/header-flags/ILS@2x.png
 img/flags/HKD.png
 img/flags/HKD@2x.png
 img/header-flags/HKD.png
@@ -104,6 +100,10 @@ img/flags/HUF.png
 img/flags/HUF@2x.png
 img/header-flags/HUF.png
 img/header-flags/HUF@2x.png
+img/flags/ILS.png
+img/flags/ILS@2x.png
+img/header-flags/ILS.png
+img/header-flags/ILS@2x.png
 img/flags/INR.png
 img/flags/INR@2x.png
 img/header-flags/INR.png
@@ -112,6 +112,10 @@ img/flags/JPY.png
 img/flags/JPY@2x.png
 img/header-flags/JPY.png
 img/header-flags/JPY@2x.png
+img/flags/KES.png
+img/flags/KES@2x.png
+img/header-flags/KES.png
+img/header-flags/KES@2x.png
 img/flags/MXN.png
 img/flags/MXN@2x.png
 img/header-flags/MXN.png
@@ -132,6 +136,10 @@ img/flags/RSD.png
 img/flags/RSD@2x.png
 img/header-flags/RSD.png
 img/header-flags/RSD@2x.png
+img/flags/RUB.png
+img/flags/RUB@2x.png
+img/header-flags/RUB.png
+img/header-flags/RUB@2x.png
 img/flags/SGD.png
 img/flags/SGD@2x.png
 img/header-flags/SGD.png
@@ -140,6 +148,10 @@ img/flags/THB.png
 img/flags/THB@2x.png
 img/header-flags/THB.png
 img/header-flags/THB@2x.png
+img/flags/TRY.png
+img/flags/TRY@2x.png
+img/header-flags/TRY.png
+img/header-flags/TRY@2x.png
 img/flags/USD.png
 img/flags/USD@2x.png
 img/header-flags/USD.png

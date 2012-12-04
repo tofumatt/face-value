@@ -723,7 +723,7 @@
         "pluralName": "Turkish Liras",
         "range": [0.05, 200],
         "whole": "lira",
-        "wholeSymbol": "₺",
+        "wholeSymbol": "TL",
         "wholeSymbolAfter": false
     },
     "USD": {

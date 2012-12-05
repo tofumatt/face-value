@@ -534,6 +534,31 @@
         "wholeSymbol": "RM",
         "wholeSymbolAfter": false
     },
+    "NZD": {
+        "coins": [
+            {"0.10": "copper"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "gold"},
+            {"2.00": "gold"}
+        ],
+        "fraction": "cent",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "New Zealand Dollar",
+        "notes": [
+            {"5":    "orange"},
+            {"10":   "blue"},
+            {"20":   "green"},
+            {"50":   "purple"},
+            {"100":  "red"}
+        ],
+        "pluralName": "NZ Dollars",
+        "range": [0.20, 100],
+        "whole": "dollar",
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
+    },
     "PLN": {
         "coins": [
             {"0.01": "copper"},

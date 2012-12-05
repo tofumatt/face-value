@@ -66,8 +66,8 @@ casper.waitForSelector('#header.USD-flag', function() {
                    'URL should change after swapping currencies')
 
   this.test.assertEval(function() {
-    return $('.coin').length === 0
-  }, 'USD should display no coins by default')
+    return $('.coin').length > 0
+  }, 'USD should display coins by default')
   this.test.assertEval(function() {
     return $('.note').length > 0
   }, 'USD should display notes by default')

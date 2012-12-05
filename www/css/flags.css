@@ -43,6 +43,21 @@
     background-image: url(../img/header-flags/BGN@2x.png);
 }}
 
+.BND-flag {
+    background-image: url(../img/flags/BND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.BND-flag {
+    background-image: url(../img/flags/BND@2x.png);
+}
+}
+#header.BND-flag {
+    background-image: url(../img/header-flags/BND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.BND-flag {
+    background-image: url(../img/header-flags/BND@2x.png);
+}}
+
 .BRL-flag {
     background-image: url(../img/flags/BRL.png);
 }
@@ -208,6 +223,21 @@
     background-image: url(../img/header-flags/HUF@2x.png);
 }}
 
+.IDR-flag {
+    background-image: url(../img/flags/IDR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.IDR-flag {
+    background-image: url(../img/flags/IDR@2x.png);
+}
+}
+#header.IDR-flag {
+    background-image: url(../img/header-flags/IDR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.IDR-flag {
+    background-image: url(../img/header-flags/IDR@2x.png);
+}}
+
 .ILS-flag {
     background-image: url(../img/flags/ILS.png);
 }
@@ -268,6 +298,51 @@
     background-image: url(../img/header-flags/KES@2x.png);
 }}
 
+.KHR-flag {
+    background-image: url(../img/flags/KHR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.KHR-flag {
+    background-image: url(../img/flags/KHR@2x.png);
+}
+}
+#header.KHR-flag {
+    background-image: url(../img/header-flags/KHR.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.KHR-flag {
+    background-image: url(../img/header-flags/KHR@2x.png);
+}}
+
+.LAK-flag {
+    background-image: url(../img/flags/LAK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.LAK-flag {
+    background-image: url(../img/flags/LAK@2x.png);
+}
+}
+#header.LAK-flag {
+    background-image: url(../img/header-flags/LAK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.LAK-flag {
+    background-image: url(../img/header-flags/LAK@2x.png);
+}}
+
+.MMK-flag {
+    background-image: url(../img/flags/MMK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.MMK-flag {
+    background-image: url(../img/flags/MMK@2x.png);
+}
+}
+#header.MMK-flag {
+    background-image: url(../img/header-flags/MMK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.MMK-flag {
+    background-image: url(../img/header-flags/MMK@2x.png);
+}}
+
 .MXN-flag {
     background-image: url(../img/flags/MXN.png);
 }
@@ -311,6 +386,21 @@
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.NZD-flag {
     background-image: url(../img/header-flags/NZD@2x.png);
+}}
+
+.PHP-flag {
+    background-image: url(../img/flags/PHP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.PHP-flag {
+    background-image: url(../img/flags/PHP@2x.png);
+}
+}
+#header.PHP-flag {
+    background-image: url(../img/header-flags/PHP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.PHP-flag {
+    background-image: url(../img/header-flags/PHP@2x.png);
 }}
 
 .PLN-flag {
@@ -433,6 +523,21 @@
     background-image: url(../img/header-flags/USD@2x.png);
 }}
 
+.VND-flag {
+    background-image: url(../img/flags/VND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.VND-flag {
+    background-image: url(../img/flags/VND@2x.png);
+}
+}
+#header.VND-flag {
+    background-image: url(../img/header-flags/VND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.VND-flag {
+    background-image: url(../img/header-flags/VND@2x.png);
+}}
+
 .ZAR-flag {
     background-image: url(../img/flags/ZAR.png);
 }
@@ -453,6 +558,7 @@
 ARS
 AUD
 BGN
+BND
 BRL
 CAD
 CHF
@@ -464,13 +570,18 @@ EUR
 GBP
 HKD
 HUF
+IDR
 ILS
 INR
 JPY
 KES
+KHR
+LAK
+MMK
 MXN
 MYR
 NZD
+PHP
 PLN
 RON
 RSD
@@ -479,6 +590,7 @@ SGD
 THB
 TRY
 USD
+VND
 ZAR
 
 */
@@ -496,6 +608,10 @@ img/flags/BGN.png
 img/flags/BGN@2x.png
 img/header-flags/BGN.png
 img/header-flags/BGN@2x.png
+img/flags/BND.png
+img/flags/BND@2x.png
+img/header-flags/BND.png
+img/header-flags/BND@2x.png
 img/flags/BRL.png
 img/flags/BRL@2x.png
 img/header-flags/BRL.png
@@ -540,6 +656,10 @@ img/flags/HUF.png
 img/flags/HUF@2x.png
 img/header-flags/HUF.png
 img/header-flags/HUF@2x.png
+img/flags/IDR.png
+img/flags/IDR@2x.png
+img/header-flags/IDR.png
+img/header-flags/IDR@2x.png
 img/flags/ILS.png
 img/flags/ILS@2x.png
 img/header-flags/ILS.png
@@ -556,6 +676,18 @@ img/flags/KES.png
 img/flags/KES@2x.png
 img/header-flags/KES.png
 img/header-flags/KES@2x.png
+img/flags/KHR.png
+img/flags/KHR@2x.png
+img/header-flags/KHR.png
+img/header-flags/KHR@2x.png
+img/flags/LAK.png
+img/flags/LAK@2x.png
+img/header-flags/LAK.png
+img/header-flags/LAK@2x.png
+img/flags/MMK.png
+img/flags/MMK@2x.png
+img/header-flags/MMK.png
+img/header-flags/MMK@2x.png
 img/flags/MXN.png
 img/flags/MXN@2x.png
 img/header-flags/MXN.png
@@ -568,6 +700,10 @@ img/flags/NZD.png
 img/flags/NZD@2x.png
 img/header-flags/NZD.png
 img/header-flags/NZD@2x.png
+img/flags/PHP.png
+img/flags/PHP@2x.png
+img/header-flags/PHP.png
+img/header-flags/PHP@2x.png
 img/flags/PLN.png
 img/flags/PLN@2x.png
 img/header-flags/PLN.png
@@ -600,6 +736,10 @@ img/flags/USD.png
 img/flags/USD@2x.png
 img/header-flags/USD.png
 img/header-flags/USD@2x.png
+img/flags/VND.png
+img/flags/VND@2x.png
+img/header-flags/VND.png
+img/header-flags/VND@2x.png
 img/flags/ZAR.png
 img/flags/ZAR@2x.png
 img/header-flags/ZAR.png

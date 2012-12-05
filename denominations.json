@@ -79,6 +79,34 @@
         "wholeSymbol": "лв",
         "wholeSymbolAfter": true
     },
+    "BND": {
+        "coins": [
+            {"0.01": "copper"},
+            {"0.05": "silver"},
+            {"0.10": "silver"},
+            {"0.20": "silver"},
+            {"0.50": "silver"}
+        ],
+        "fraction": "cents",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "Brunei Dollar",
+        "notes": [
+            {"1":     "blue"},
+            {"5":     "green"},
+            {"10":    "red"},
+            {"50":    "brown"},
+            {"100":   "orange"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"10000": "green"}
+        ],
+        "pluralName": "Brunei Dollars",
+        "range": [0.50, 500],
+        "whole": "dollar",
+        "wholeSymbol": "B$",
+        "wholeSymbolAfter": false
+    },
     "BRL": {
         "coins": [
             {"0.05": "copper"},
@@ -375,6 +403,34 @@
         "wholeSymbol": "Ft",
         "wholeSymbolAfter": false
     },
+    "IDR": {
+        "coins": [
+            {"100":  "silver"},
+            {"200":  "silver"},
+            {"500":  "silver"},
+            {"1000": "silver"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "sen",
+        "fractionSymbol": "s",
+        "fractionSymbolAfter": true,
+        "fraction": "agorot",
+        "name": "Indonesian Rupiah",
+        "notes": [
+            {"1000":   "green"},
+            {"2000":   "blue"},
+            {"5000":   "brown"},
+            {"10000":  "purple"},
+            {"20000":  "green"},
+            {"50000":  "blue"},
+            {"100000": "red"}
+        ],
+        "pluralName": "Indonesian Rupiahs",
+        "range": [100, 100000],
+        "whole": "rupiah",
+        "wholeSymbol": "Rp",
+        "wholeSymbolAfter": false
+    },
     "ILS": {
         "coins": [
             {"0.01": "copper"},
@@ -482,6 +538,90 @@
         "wholeSymbol": "KSh",
         "wholeSymbolAfter": false
     },
+    "KHR": {
+        "alerts": [
+            "Cambodian riels are only used outside cities; most transactions in Cambodia use the US Dollar. ATMs in Cambodia will dispense US Dollars, not Cambodian riels."
+        ],
+        "coins": [
+        ],
+        "dontUseFraction": true,
+        "fraction": "sen",
+        "fractionSymbol": "sen",
+        "fractionSymbolAfter": true,
+        "name": "Cambodian Riel",
+        "notes": [
+            {"50":    "orange"},
+            {"100":   "purple"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"2000":  "yellow"},
+            {"5000":  "green"},
+            {"10000": "red"},
+            {"20000": "violet"},
+            {"50000": "red"},
+            {"100000": "green"}
+        ],
+        "pluralName": "Cambodian Riels",
+        "range": [50, 50000],
+        "whole": "riel",
+        "wholeSymbol": "៛",
+        "wholeSymbolAfter": false
+    },
+    "LAK": {
+        "alerts": [
+            "US Dollars are in common use as currency in Laos."
+        ],
+        "coins": [
+        ],
+        "dontUseFraction": true,
+        "fraction": "att",
+        "fractionSymbol": "ອດ",
+        "fractionSymbolAfter": true,
+        "name": "Lao Kip",
+        "notes": [
+            {"500":    "teal"},
+            {"1000":   "green"},
+            {"2000":   "blue"},
+            {"5000":   "brown"},
+            {"10000":  "blue"},
+            {"20000":  "orange"},
+            {"50000":  "violet"},
+            {"100000": "green"}
+        ],
+        "pluralName": "Lao Kip",
+        "range": [500, 100000],
+        "whole": "kip",
+        "wholeSymbol": "₭",
+        "wholeSymbolAfter": false
+    },
+    "MMK": {
+        "coins": [
+            {"0.50":   "gold"},
+            {"1.00":   "silver"}
+        ],
+        "fraction": "pya",
+        "fractionSymbol": "pya",
+        "fractionSymbolAfter": true,
+        "name": "Burmese Kyat",
+        "notes": [
+            {"1":     "teal"},
+            {"5":     "red"},
+            {"10":    "blue"},
+            {"20":    "green"},
+            {"50":    "orange"},
+            {"100":   "blue"},
+            {"200":   "violet"},
+            {"500":   "red"},
+            {"1000":  "green"},
+            {"5000":  "red"},
+            {"10000": "purple"}
+        ],
+        "pluralName": "Burmese Kyat",
+        "range": [10, 10000],
+        "whole": "kyat",
+        "wholeSymbol": "K",
+        "wholeSymbolAfter": false
+    },
     "MXN": {
         "coins": [
             {"0.25":  "copper"},
@@ -532,6 +672,56 @@
         "range": [0.50, 100],
         "whole": "ringgit",
         "wholeSymbol": "RM",
+        "wholeSymbolAfter": false
+    },
+    "NZD": {
+        "coins": [
+            {"0.10": "copper"},
+            {"0.20": "silver"},
+            {"0.50": "silver"},
+            {"1.00": "gold"},
+            {"2.00": "gold"}
+        ],
+        "fraction": "cent",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "New Zealand Dollar",
+        "notes": [
+            {"5":    "orange"},
+            {"10":   "blue"},
+            {"20":   "green"},
+            {"50":   "purple"},
+            {"100":  "red"}
+        ],
+        "pluralName": "NZ Dollars",
+        "range": [0.20, 100],
+        "whole": "dollar",
+        "wholeSymbol": "$",
+        "wholeSymbolAfter": false
+    },
+    "PHP": {
+        "coins": [
+            {"0.25":  "gold"},
+            {"1.00":  "silver"},
+            {"5.00":  "gold"},
+            {"10.00": "silver-gold"}
+        ],
+        "fraction": "sentimo",
+        "fractionSymbol": "s",
+        "fractionSymbolAfter": true,
+        "name": "Philippine Peso",
+        "notes": [
+            {"20":   "orange"},
+            {"50":   "red"},
+            {"100":  "violet"},
+            {"200":  "green"},
+            {"500":  "yellow"},
+            {"1000": "blue"}
+        ],
+        "pluralName": "Philippine Pesos",
+        "range": [0.25, 1000],
+        "whole": "peso",
+        "wholeSymbol": "₱",
         "wholeSymbolAfter": false
     },
     "PLN": {
@@ -747,10 +937,43 @@
             {"100": "green"}
         ],
         "pluralName": "US Dollars",
-        "range": [1, 100],
+        "range": [0.10, 100],
         "whole": "dollar",
         "wholeSymbol": "$",
         "wholeSymbolAfter": false
+    },
+    "VND": {
+        "coins": [
+            {"200":  "silver"},
+            {"500":  "silver"},
+            {"1000": "gold"},
+            {"2000": "gold"},
+            {"5000": "gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "xu",
+        "fractionSymbol": "xu",
+        "fractionSymbolAfter": true,
+        "name": "Vietnamese Dong",
+        "notes": [
+            {"100":    "brown"},
+            {"200":    "orange"},
+            {"500":    "pink"},
+            {"1000":   "green"},
+            {"2000":   "green"},
+            {"5000":   "blue"},
+            {"10000":  "brown"},
+            {"20000":  "blue"},
+            {"50000":  "red"},
+            {"100000": "green"},
+            {"200000": "red"},
+            {"500000": "teal"}
+        ],
+        "pluralName": "Vietnamese Dong",
+        "range": [1000, 500000],
+        "whole": "dong",
+        "wholeSymbol": "₫",
+        "wholeSymbolAfter": true
     },
     "ZAR": {
         "coins": [

@@ -523,6 +523,21 @@
     background-image: url(../img/header-flags/USD@2x.png);
 }}
 
+.VND-flag {
+    background-image: url(../img/flags/VND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.VND-flag {
+    background-image: url(../img/flags/VND@2x.png);
+}
+}
+#header.VND-flag {
+    background-image: url(../img/header-flags/VND.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.VND-flag {
+    background-image: url(../img/header-flags/VND@2x.png);
+}}
+
 .ZAR-flag {
     background-image: url(../img/flags/ZAR.png);
 }
@@ -575,6 +590,7 @@ SGD
 THB
 TRY
 USD
+VND
 ZAR
 
 */
@@ -720,6 +736,10 @@ img/flags/USD.png
 img/flags/USD@2x.png
 img/header-flags/USD.png
 img/header-flags/USD@2x.png
+img/flags/VND.png
+img/flags/VND@2x.png
+img/header-flags/VND.png
+img/header-flags/VND@2x.png
 img/flags/ZAR.png
 img/flags/ZAR@2x.png
 img/header-flags/ZAR.png

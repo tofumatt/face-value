@@ -942,6 +942,39 @@
         "wholeSymbol": "$",
         "wholeSymbolAfter": false
     },
+    "VND": {
+        "coins": [
+            {"200":  "silver"},
+            {"500":  "silver"},
+            {"1000": "gold"},
+            {"2000": "gold"},
+            {"5000": "gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "xu",
+        "fractionSymbol": "xu",
+        "fractionSymbolAfter": true,
+        "name": "Vietnamese Dong",
+        "notes": [
+            {"100":    "brown"},
+            {"200":    "orange"},
+            {"500":    "pink"},
+            {"1000":   "green"},
+            {"2000":   "green"},
+            {"5000":   "blue"},
+            {"10000":  "brown"},
+            {"20000":  "blue"},
+            {"50000":  "red"},
+            {"100000": "green"},
+            {"200000": "red"},
+            {"500000": "teal"}
+        ],
+        "pluralName": "Vietnamese Dong",
+        "range": [1000, 500000],
+        "whole": "dong",
+        "wholeSymbol": "₫",
+        "wholeSymbolAfter": true
+    },
     "ZAR": {
         "coins": [
             {"0.10": "gold"},

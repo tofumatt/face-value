@@ -551,7 +551,7 @@
             {"10":   "blue"},
             {"20":   "green"},
             {"50":   "purple"},
-            {"100":  "brown"}
+            {"100":  "red"}
         ],
         "pluralName": "New Zealand Dollars",
         "range": [1, 100],

@@ -539,6 +539,33 @@
         "wholeSymbol": "៛",
         "wholeSymbolAfter": false
     },
+    "LAK": {
+        "alerts": [
+            "US Dollars are in common use as currency in Laos."
+        ],
+        "coins": [
+        ],
+        "dontUseFraction": true,
+        "fraction": "att",
+        "fractionSymbol": "ອດ",
+        "fractionSymbolAfter": true,
+        "name": "Lao Kip",
+        "notes": [
+            {"500":    "teal"},
+            {"1000":   "green"},
+            {"2000":   "blue"},
+            {"5000":   "brown"},
+            {"10000":  "blue"},
+            {"20000":  "orange"},
+            {"50000":  "violet"},
+            {"100000": "green"}
+        ],
+        "pluralName": "Lao Kip",
+        "range": [500, 100000],
+        "whole": "kip",
+        "wholeSymbol": "₭",
+        "wholeSymbolAfter": false
+    },
     "MMK": {
         "coins": [
             {"0.50":   "gold"},

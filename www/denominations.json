@@ -772,7 +772,7 @@
             {"100": "green"}
         ],
         "pluralName": "US Dollars",
-        "range": [1, 100],
+        "range": [0.10, 100],
         "whole": "dollar",
         "wholeSymbol": "$",
         "wholeSymbolAfter": false

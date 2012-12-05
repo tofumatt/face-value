@@ -403,6 +403,34 @@
         "wholeSymbol": "Ft",
         "wholeSymbolAfter": false
     },
+    "IDR": {
+        "coins": [
+            {"100":  "silver"},
+            {"200":  "silver"},
+            {"500":  "silver"},
+            {"1000": "silver"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "sen",
+        "fractionSymbol": "s",
+        "fractionSymbolAfter": true,
+        "fraction": "agorot",
+        "name": "Indonesian Rupiah",
+        "notes": [
+            {"1000":   "green"},
+            {"2000":   "blue"},
+            {"5000":   "brown"},
+            {"10000":  "purple"},
+            {"20000":  "green"},
+            {"50000":  "blue"},
+            {"100000": "red"}
+        ],
+        "pluralName": "Indonesian Rupiahs",
+        "range": [100, 100000],
+        "whole": "rupiah",
+        "wholeSymbol": "Rp",
+        "wholeSymbolAfter": false
+    },
     "ILS": {
         "coins": [
             {"0.01": "copper"},

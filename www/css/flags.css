@@ -388,6 +388,21 @@
     background-image: url(../img/header-flags/NZD@2x.png);
 }}
 
+.PHP-flag {
+    background-image: url(../img/flags/PHP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.PHP-flag {
+    background-image: url(../img/flags/PHP@2x.png);
+}
+}
+#header.PHP-flag {
+    background-image: url(../img/header-flags/PHP.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.PHP-flag {
+    background-image: url(../img/header-flags/PHP@2x.png);
+}}
+
 .PLN-flag {
     background-image: url(../img/flags/PLN.png);
 }
@@ -551,6 +566,7 @@ MMK
 MXN
 MYR
 NZD
+PHP
 PLN
 RON
 RSD
@@ -668,6 +684,10 @@ img/flags/NZD.png
 img/flags/NZD@2x.png
 img/header-flags/NZD.png
 img/header-flags/NZD@2x.png
+img/flags/PHP.png
+img/flags/PHP@2x.png
+img/header-flags/PHP.png
+img/header-flags/PHP@2x.png
 img/flags/PLN.png
 img/flags/PLN@2x.png
 img/header-flags/PLN.png

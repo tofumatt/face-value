@@ -699,6 +699,31 @@
         "wholeSymbol": "$",
         "wholeSymbolAfter": false
     },
+    "PHP": {
+        "coins": [
+            {"0.25":  "gold"},
+            {"1.00":  "silver"},
+            {"5.00":  "gold"},
+            {"10.00": "silver-gold"}
+        ],
+        "fraction": "sentimo",
+        "fractionSymbol": "s",
+        "fractionSymbolAfter": true,
+        "name": "Philippine Peso",
+        "notes": [
+            {"20":   "orange"},
+            {"50":   "red"},
+            {"100":  "violet"},
+            {"200":  "green"},
+            {"500":  "yellow"},
+            {"1000": "blue"}
+        ],
+        "pluralName": "Philippine Pesos",
+        "range": [0.25, 1000],
+        "whole": "peso",
+        "wholeSymbol": "₱",
+        "wholeSymbolAfter": false
+    },
     "PLN": {
         "coins": [
             {"0.01": "copper"},

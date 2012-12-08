@@ -464,27 +464,52 @@
             {"0.10": "silver"},
             {"0.25": "silver"},
             {"0.50": "silver"},
-            {"1":    "silver"},
-            {"2":    "silver"},
-            {"5":    "silver"}
+            {"1.00": "silver"},
+            {"2.00": "silver"},
+            {"5.00": "silver"}
         ],
         "fraction": "paisa",
         "fractionSymbol": "p",
         "fractionSymbolAfter": true,
         "name": "Indian Rupee",
         "notes": [
-            {"5":   "green"},
+            {"5":    "green"},
             {"10":   "orange"},
             {"20":   "red"},
-            {"50":  "purple"},
+            {"50":   "purple"},
             {"100":  "teal"},
             {"500":  "yellow"},
-            {"1000":  "red"}
+            {"1000": "red"}
         ],
         "pluralName": "Indian Rupees",
         "range": [1, 1000],
         "whole": "rupee",
         "wholeSymbol": "₹",
+        "wholeSymbolAfter": false
+    },
+    "ISK": {
+        "coins": [
+            {"1":   "silver"},
+            {"5":   "silver"},
+            {"10":  "silver"},
+            {"50":  "gold"},
+            {"100": "gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "eyrir",
+        "fractionSymbol": "a",
+        "fractionSymbolAfter": true,
+        "name": "Icelandic Króna",
+        "notes": [
+            {"500":  "red"},
+            {"1000": "brown"},
+            {"2000": "blue"},
+            {"5000": "green"}
+        ],
+        "pluralName": "Krónur",
+        "range": [1, 5000],
+        "whole": "króna",
+        "wholeSymbol": "kr",
         "wholeSymbolAfter": false
     },
     "JPY": {
@@ -543,7 +568,7 @@
             "Cambodian riels are only used outside cities; most transactions in Cambodia use the US Dollar. ATMs in Cambodia will dispense US Dollars, not Cambodian riels."
         ],
         "coins": [
-        ],
+        ], 
         "dontUseFraction": true,
         "fraction": "sen",
         "fractionSymbol": "sen",

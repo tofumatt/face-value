@@ -268,6 +268,21 @@
     background-image: url(../img/header-flags/INR@2x.png);
 }}
 
+.ISK-flag {
+    background-image: url(../img/flags/ISK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+.ISK-flag {
+    background-image: url(../img/flags/ISK@2x.png);
+}
+}
+#header.ISK-flag {
+    background-image: url(../img/header-flags/ISK.png);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {#header.ISK-flag {
+    background-image: url(../img/header-flags/ISK@2x.png);
+}}
+
 .JPY-flag {
     background-image: url(../img/flags/JPY.png);
 }
@@ -573,6 +588,7 @@ HUF
 IDR
 ILS
 INR
+ISK
 JPY
 KES
 KHR
@@ -668,6 +684,10 @@ img/flags/INR.png
 img/flags/INR@2x.png
 img/header-flags/INR.png
 img/header-flags/INR@2x.png
+img/flags/ISK.png
+img/flags/ISK@2x.png
+img/header-flags/ISK.png
+img/header-flags/ISK@2x.png
 img/flags/JPY.png
 img/flags/JPY@2x.png
 img/header-flags/JPY.png

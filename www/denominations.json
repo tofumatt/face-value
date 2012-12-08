@@ -941,6 +941,33 @@
         "wholeSymbol": "TL",
         "wholeSymbolAfter": false
     },
+    "TWD": {
+        "coins": [
+            {"0.50":  "gold"},
+            {"1.00":  "copper"},
+            {"5.00":  "silver"},
+            {"10.00": "silver"},
+            {"20.00": "gold-silver"},
+            {"50.00": "copper"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "cent",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "New Taiwan Dollar",
+        "notes": [
+            {"100":  "red"},
+            {"200":  "green"},
+            {"500":  "brown"},
+            {"1000": "blue"},
+            {"2000": "purple"}
+        ],
+        "pluralName": "Taiwanese Dollar",
+        "range": [0.50, 2000],
+        "whole": "dollar",
+        "wholeSymbol": "NT$",
+        "wholeSymbolAfter": false
+    },
     "USD": {
         "coins": [
             {"0.01": "copper"},

@@ -363,3 +363,10 @@ footer p + p {
     content: 'at http://github.com/';
   }
 }
+
+.screenshot {
+  display: inline-block;
+  margin: 0 25px 0 0;
+  min-width: 250px;
+  width: 45%;
+}

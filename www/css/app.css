@@ -598,7 +598,7 @@ h1, h2 {
 }
 
 .coin.copper-gold {
-    background-image: url(../img/coins/gold.png);
+    background-image: url(../img/coins/copper-gold.png);
 }
 
 .coin.copper-silver {
@@ -625,6 +625,7 @@ h1, h2 {
     background-image: url(../img/coins/silver-gold.png);
 }
 
+
 /* Retina versions */
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .coin.copper {
@@ -632,7 +633,7 @@ h1, h2 {
     }
 
     .coin.copper-gold {
-        background-image: url(../img/coins/gold@2x.png);
+        background-image: url(../img/coins/coppergold@2x.png);
     }
 
     .coin.copper-silver {
@@ -658,6 +659,7 @@ h1, h2 {
     .coin.silver-gold {
         background-image: url(../img/coins/silver-gold@2x.png);
     }
+
 }
 
 /** Colour styles for notes */

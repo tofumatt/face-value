@@ -303,6 +303,7 @@ footer a {
 }
 footer p {
   float: left;
+  margin-right: 0;
 }
 footer p + p {
   float: right;

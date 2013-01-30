@@ -15,17 +15,12 @@ body {
 }
 
 body.cache-loading {
-    background: url(../Default.png) 0 0 no-repeat;
+    background: url(../Default@2x.png) 0 0 no-repeat;
+    background-size: 320px 460px;
     margin: 0;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    body.cache-loading {
-        background-image: url(../Default@2x.png);
-        background-size: 320px 460px;
-    }
-}
-
+/** TODO Fix iPhone 5 size */
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 1136px), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     body.cache-loading {
         background-image: url(../Default-568h@2x.png);
@@ -55,20 +50,14 @@ body.cache-loading {
 /** Hack to get the background the be fixed positioned, even on mobile */
 
 #background {
-    background: url(../img/background.jpg) 0 0 no-repeat fixed;
+    background: url(../img/background@2x.jpg) 0 0 no-repeat fixed;
+    background-size: 500px 550px;
     height: 100%;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    #background {
-        background-image: url(../img/background@2x.jpg);
-        background-size: 500px 550px;
-    }
 }
 
 @media screen and (min-width: 500px), screen and (min-height: 550px) {
@@ -340,7 +329,7 @@ h1, h2 {
 }
 
 #currency-switcher {
-    background: url(../img/switch.png) 0 0 no-repeat;
+    background: url(../img/switch@2x.png) 0 0 no-repeat;
     background-size: 100px 50px;
     float: right;
     height: 50px;
@@ -354,12 +343,6 @@ h1, h2 {
 #currency-switcher:active, #currency-switcher.active {
     background-position: -50px 0;
     outline: 0;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    #currency-switcher {
-        background-image: url(../img/switch@2x.png);
-    }
 }
 
 #maincontent .currency-list-selector li {
@@ -473,7 +456,7 @@ h1, h2 {
 }
 
 .note {
-    background-image: url(../img/note.png);
+    background-image: url(../img/note@2x.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -491,12 +474,6 @@ h1, h2 {
     position: absolute;
     top: 0;
     width: 140px;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .note {
-        background-image: url(../img/note@2x.png);
-    }
 }
 
 .note .inner {
@@ -521,7 +498,8 @@ h1, h2 {
 }
 
 .subtitle {
-    background: url(../img/translated-currency-bg.png) no-repeat scroll 0 0 transparent;
+    background: url(../img/translated-currency-bg@2x.png) no-repeat scroll 0 0 transparent;
+    background-size: 117px 29px;
     clear: both;
     color: #264F71;
     height: 29px;
@@ -540,13 +518,8 @@ h1, h2 {
 .flag {
     background-position: 0 50%;
     background-repeat: no-repeat;
+    background-size: 16px 11px;
     padding: 0 0 0 18px;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .flag {
-        background-size: 16px 11px;
-    }
 }
 
 
@@ -591,75 +564,37 @@ h1, h2 {
 }
 
 
-
 /** Colour styles for coins */
 .coin.copper {
-    background-image: url(../img/coins/copper.png);
+    background-image: url(../img/coins/copper@2x.png);
 }
 
 .coin.copper-gold {
-    background-image: url(../img/coins/copper-gold.png);
+    background-image: url(../img/coins/coppergold@2x.png);
 }
 
 .coin.copper-silver {
-    background-image: url(../img/coins/copper-silver.png);
+    background-image: url(../img/coins/copper-silver@2x.png);
 }
 
 .coin.gold {
-    background-image: url(../img/coins/gold.png);
+    background-image: url(../img/coins/gold@2x.png);
 }
 
 .coin.gold-silver {
-    background-image: url(../img/coins/gold-silver.png);
+    background-image: url(../img/coins/gold-silver@2x.png);
 }
 
 .coin.silver {
-    background-image: url(../img/coins/silver.png);
+    background-image: url(../img/coins/silver@2x.png);
 }
 
 .coin.silver-copper {
-    background-image: url(../img/coins/silver-copper.png);
+    background-image: url(../img/coins/silver-copper@2x.png);
 }
 
 .coin.silver-gold {
-    background-image: url(../img/coins/silver-gold.png);
-}
-
-
-/* Retina versions */
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .coin.copper {
-        background-image: url(../img/coins/copper@2x.png);
-    }
-
-    .coin.copper-gold {
-        background-image: url(../img/coins/coppergold@2x.png);
-    }
-
-    .coin.copper-silver {
-        background-image: url(../img/coins/copper-silver@2x.png);
-    }
-
-    .coin.gold {
-        background-image: url(../img/coins/gold@2x.png);
-    }
-
-    .coin.gold-silver {
-        background-image: url(../img/coins/gold-silver@2x.png);
-    }
-
-    .coin.silver {
-        background-image: url(../img/coins/silver@2x.png);
-    }
-
-    .coin.silver-copper {
-        background-image: url(../img/coins/silver-copper@2x.png);
-    }
-
-    .coin.silver-gold {
-        background-image: url(../img/coins/silver-gold@2x.png);
-    }
-
+    background-image: url(../img/coins/silver-gold@2x.png);
 }
 
 /** Colour styles for notes */

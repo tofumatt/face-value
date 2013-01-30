@@ -425,7 +425,7 @@
             {"50000":  "blue"},
             {"100000": "red"}
         ],
-        "pluralName": "Indonesian Rupiahs",
+        "pluralName": "Rupiahs",
         "range": [100, 100000],
         "whole": "rupiah",
         "wholeSymbol": "Rp",

@@ -865,7 +865,6 @@
             {"5.00":  "silver"},
             {"10.00": "gold"}
         ],
-        "dontUseFraction": true,
         "fraction": "öre",
         "fractionSymbol": "öre",
         "fractionSymbolAfter": true,

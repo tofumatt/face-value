@@ -222,6 +222,13 @@
     background-image: url(../img/header-flags/RUB@2x.png);
 }
 
+.SEK-flag {
+    background-image: url(../img/flags/SEK@2x.png);
+}
+#header.SEK-flag {
+    background-image: url(../img/header-flags/SEK@2x.png);
+}
+
 .SGD-flag {
     background-image: url(../img/flags/SGD@2x.png);
 }
@@ -305,6 +312,7 @@ PLN
 RON
 RSD
 RUB
+SEK
 SGD
 THB
 TRY
@@ -380,6 +388,8 @@ img/flags/RSD@2x.png
 img/header-flags/RSD@2x.png
 img/flags/RUB@2x.png
 img/header-flags/RUB@2x.png
+img/flags/SEK@2x.png
+img/header-flags/SEK@2x.png
 img/flags/SGD@2x.png
 img/header-flags/SGD@2x.png
 img/flags/THB@2x.png

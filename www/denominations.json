@@ -859,6 +859,30 @@
         "wholeSymbol": "р.",
         "wholeSymbolAfter": false
     },
+    "SEK": {
+        "coins": [
+            {"1.00":  "copper"},
+            {"5.00":  "silver"},
+            {"10.00": "gold"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "öre",
+        "fractionSymbol": "öre",
+        "fractionSymbolAfter": true,
+        "name": "Swedish Krona",
+        "notes": [
+            {"20":   "purple"},
+            {"50":   "green"},
+            {"100":  "blue"},
+            {"500":  "red"},
+            {"1000": "brown"}
+        ],
+        "pluralName": "Swedish Kronor",
+        "range": [1, 1000],
+        "whole": "krona",
+        "wholeSymbol": "kr",
+        "wholeSymbolAfter": true
+    },
     "SGD": {
         "coins": [
             {"0.01": "copper"},

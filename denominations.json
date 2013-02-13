@@ -425,7 +425,7 @@
             {"50000":  "blue"},
             {"100000": "red"}
         ],
-        "pluralName": "Indonesian Rupiahs",
+        "pluralName": "Rupiahs",
         "range": [100, 100000],
         "whole": "rupiah",
         "wholeSymbol": "Rp",
@@ -858,6 +858,29 @@
         "whole": "ruble",
         "wholeSymbol": "р.",
         "wholeSymbolAfter": false
+    },
+    "SEK": {
+        "coins": [
+            {"1.00":  "copper"},
+            {"5.00":  "silver"},
+            {"10.00": "gold"}
+        ],
+        "fraction": "öre",
+        "fractionSymbol": "öre",
+        "fractionSymbolAfter": true,
+        "name": "Swedish Krona",
+        "notes": [
+            {"20":   "purple"},
+            {"50":   "green"},
+            {"100":  "blue"},
+            {"500":  "red"},
+            {"1000": "brown"}
+        ],
+        "pluralName": "Swedish Kronor",
+        "range": [1, 1000],
+        "whole": "krona",
+        "wholeSymbol": "kr",
+        "wholeSymbolAfter": true
     },
     "SGD": {
         "coins": [

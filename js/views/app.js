@@ -10,7 +10,7 @@ define([
   'views/currencies',
   'views/denominations',
   'text!templates/app/header.ejs'
-], function($, _, Backbone, App, Currencies, Denominations, CurrencyView, DenominationView, headerTemplate) {
+], function($, _, Backbone, App, Currencies, Denominations, CurrencyViews, DenominationView, headerTemplate) {
   var AppView = Backbone.View.extend({
     // Instead of generating a new element, bind to the existing skeleton of
     // the App already present in the HTML.
@@ -38,30 +38,13 @@ define([
 
       Denominations.fetch({
         success: function() {
-          Currencies.denominations(App.get('foreignCurrency'))
-                    .forEach(function(denomination) {
-                      view.addOne(denomination)
-                    })
+          var view = new CurrencyViews.Denominations({
+            model: Currencies.where({code: App.get('foreignCurrency')})[0]
+          })
         }
       })
 
       return this
-    },
-
-    addOne: function(denomination) {
-      var view = new DenominationView({
-        model: denomination
-      })
-      $('#{type}s .denomination-list'.format({type: denomination.get('type')})).append(view.render().el)
-
-      // This is some CSS magic snagged from @potch and the Gaia.
-      var valueText = view.$el.find('.inner')[0]
-      var valWidth = valueText.offsetWidth;
-      var maxWidth = valueText.parentNode.offsetWidth;
-      var scaleFactor = Math.min(1, (maxWidth - 25) / valWidth);
-      valueText.style.transform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
-      valueText.style.MozTransform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
-      valueText.style.WebkitTransform = 'translate(-50%, -50%) scale(' + scaleFactor + ')';
     },
 
     removeAllDenominations: function(currency) {
@@ -73,7 +56,7 @@ define([
       var homeCurrency = Currencies.where({code: App.get('homeCurrency')})[0]
 
       // Add this currency to the foreign selector.
-      var foreignView = new CurrencyView.ListItem({
+      var foreignView = new CurrencyViews.ListItem({
         currencies: {
           first: currency,
           second: homeCurrency.get('code') === currency.get('code') ? foreignCurrency : homeCurrency
@@ -84,7 +67,7 @@ define([
       $('#foreign-select ul').append(foreignView.render().el)
 
       // Add this currency to the home selector.
-      var homeView = new CurrencyView.ListItem({
+      var homeView = new CurrencyViews.ListItem({
         currencies: {
           first: foreignCurrency.get('code') === currency.get('code') ? homeCurrency : foreignCurrency,
           second: currency
@@ -98,7 +81,7 @@ define([
     renderControls: function() {
       $('.currency-list-selector li').remove()
 
-      this.controls = new CurrencyView.Controls({
+      this.controls = new CurrencyViews.Controls({
         currencies: {
           foreign: Currencies.where({code: App.get('foreignCurrency')})[0],
           home: Currencies.where({code: App.get('homeCurrency')})[0]

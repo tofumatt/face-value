@@ -10,10 +10,12 @@ define([
   'models/currency',
   'models/denomination'
 ], function($, CurrencyData, CurrenciesCollection, DenominationsCollection, Currency, Denomination) {
+  // Create an in-memory cache for various pieces of data.
   if (!window._faceValueDataCache) {
     window._faceValueDataCache = {}
   }
 
+  // Globals accessible via window.GLOBALS.
   var GLOBALS = {
     DEFAULT_FOREIGN_CURRENCY: 'EUR',
     DEFAULT_HOME_CURRENCY: 'USD',
@@ -24,6 +26,7 @@ define([
     },
     TIME_TO_UPDATE: 3600 * 24 // Update currencies/denominations every day
   }
+  window.GLOBALS = GLOBALS
 
   var dataCache = window._faceValueDataCache
 
@@ -66,8 +69,7 @@ define([
             }
 
             // Update currency/denomination info every hour.
-            if (!get('lastTimeCurrencyDataUpdated') ||
-                timestamp() - get('lastTimeCurrencyDataUpdated') > GLOBALS.TIME_TO_UPDATE) {
+            if (!get('lastTimeCurrencyDataUpdated')) {
               CurrencyData.update(function(worth) {
                 set('worth', worth)
 
@@ -75,6 +77,14 @@ define([
               })
             } else {
               callback()
+
+              if (timestamp() - get('lastTimeCurrencyDataUpdated') > GLOBALS.TIME_TO_UPDATE) {
+                CurrencyData.update(function(worth) {
+                  set('worth', worth)
+
+                  fetchCurrencyData()
+                })
+              }
             }
           }
         })
@@ -108,12 +118,14 @@ define([
       success: function(results) {
         updateCurrencyData(results)
 
-        callback()
+        if (callback) {
+          callback()
+        }
       },
       // We're likely offline, so we won't try to update the currency data,
       // and instead just load whatever data we currency have.
       error: function() {
-        callback()
+        // TODO: Implement me.
       }
     })
   }

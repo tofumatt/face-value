@@ -7,9 +7,10 @@ define([
   'backbone',
   'collections/currencies',
   'models/currency',
+  'views/denominations',
   'text!templates/currencies/controls.ejs',
   'text!templates/currencies/list_item.ejs'
-], function(App, $, _, Backbone, Currencies, Currency, controlsTemplate, listItemTemplate) {
+], function(App, $, _, Backbone, Currencies, Currency, DenominationView, controlsTemplate, listItemTemplate) {
   var ControlsView = Backbone.View.extend({
     el: '#controls',
     $el: $('#controls'),
@@ -57,6 +58,33 @@ define([
     }
   })
 
+  var Denominations = Backbone.View.extend({
+    el: '#denominations',
+    $el: $('#denominations'),
+    model: Currency,
+
+    initialize: function() {
+      _(this).bindAll('addDenomination')
+
+      this.model.on('change', this.render, this)
+
+      this.denominationViews = {}
+      Currencies.denominations(this.model.get('code')).forEach(this.addDenomination)
+    },
+
+    render: function() {
+      _.values(this.denominationViews).forEach(function(view) {
+        view.render()
+      })
+    },
+
+    addDenomination: function(denomination) {
+      this.denominationViews[denomination.get('id')] = new DenominationView({
+        model: denomination
+      })
+    }
+  })
+
   var ListItemView = Backbone.View.extend({
     model: Currency,
     tagName: 'li',
@@ -95,6 +123,7 @@ define([
 
   return {
     Controls: ControlsView,
+    Denominations: Denominations,
     ListItem: ListItemView
   }
 })

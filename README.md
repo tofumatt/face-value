@@ -44,11 +44,16 @@ be connected to the 'net so you can fetch currency data from Yahoo.
 Continuous integration tests for Face Value are run on the awesome
 [Travis CI](http://travis-ci.org): [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png?branch=master)](http://travis-ci.org/tofumatt/face-value)
 
+## To-dos ##
+
+ * Improve currency/denomination re-render on update code
+ * Add tests to cover currency data updates
+
 # License #
 
 This program is free software; it is distributed under an [MIT License](http://github.com/tofumatt/face-value/blob/master/LICENSE.txt).
 
 ---
 
-Copyright (c) 2012 [Matthew Riley MacPherson](http://lonelyvegan.com) and
+Copyright (c) 2012-2013 [Matthew Riley MacPherson](http://lonelyvegan.com) and
 [sarah ✈ semark](http://triggersandsparks.com).

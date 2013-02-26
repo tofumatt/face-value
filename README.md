@@ -51,7 +51,8 @@ Continuous integration tests for Face Value are run on the awesome
 
 # License #
 
-This program is free software; it is distributed under an [MIT License](http://github.com/tofumatt/face-value/blob/master/LICENSE.txt).
+This program is free software; it is distributed under an
+[MIT License](http://github.com/tofumatt/face-value/blob/master/LICENSE.txt).
 
 ---
 

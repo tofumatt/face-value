@@ -238,6 +238,33 @@
         "wholeSymbol": "$",
         "wholeSymbolAfter": false
     },
+    "CRC": {
+        "coins": [
+            {"5.00":   "silver"},
+            {"10.00":  "copper"},
+            {"25.00":  "gold"},
+            {"50.00":  "coppergold"},
+            {"100.00": "coppergold"},
+            {"500.00": "coppergold"}
+        ],
+        "fraction": "céntimo",
+        "fractionSymbol": "c",
+        "fractionSymbolAfter": true,
+        "name": "Costa Rican Colón",
+        "notes": [
+            {"1000":  "red"},
+            {"2000":  "blue"},
+            {"5000":  "brown"},
+            {"10000": "blue"},
+            {"20000": "orange"},
+            {"50000": "violet"}
+        ],
+        "pluralName": "Colones",
+        "range": [1, 50000],
+        "whole": "colón",
+        "wholeSymbol": "₡",
+        "wholeSymbolAfter": false
+    },
     "CZK": {
         "coins": [
             {"1.00":  "silver"},

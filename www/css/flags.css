@@ -61,6 +61,13 @@
     background-image: url(../img/header-flags/COP@2x.png);
 }
 
+.CRC-flag {
+    background-image: url(../img/flags/CRC@2x.png);
+}
+#header.CRC-flag {
+    background-image: url(../img/header-flags/CRC@2x.png);
+}
+
 .CZK-flag {
     background-image: url(../img/flags/CZK@2x.png);
 }
@@ -289,6 +296,7 @@ CAD
 CHF
 CNY
 COP
+CRC
 CZK
 DKK
 EUR
@@ -342,6 +350,8 @@ img/flags/CNY@2x.png
 img/header-flags/CNY@2x.png
 img/flags/COP@2x.png
 img/header-flags/COP@2x.png
+img/flags/CRC@2x.png
+img/header-flags/CRC@2x.png
 img/flags/CZK@2x.png
 img/header-flags/CZK@2x.png
 img/flags/DKK@2x.png

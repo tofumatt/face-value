@@ -201,6 +201,13 @@
     background-image: url(../img/header-flags/PHP@2x.png);
 }
 
+.PKR-flag {
+    background-image: url(../img/flags/PKR@2x.png);
+}
+#header.PKR-flag {
+    background-image: url(../img/header-flags/PKR@2x.png);
+}
+
 .PLN-flag {
     background-image: url(../img/flags/PLN@2x.png);
 }
@@ -316,6 +323,7 @@ MXN
 MYR
 NZD
 PHP
+PKR
 PLN
 RON
 RSD
@@ -390,6 +398,8 @@ img/flags/NZD@2x.png
 img/header-flags/NZD@2x.png
 img/flags/PHP@2x.png
 img/header-flags/PHP@2x.png
+img/flags/PKR@2x.png
+img/header-flags/PKR@2x.png
 img/flags/PLN@2x.png
 img/header-flags/PLN@2x.png
 img/flags/RON@2x.png

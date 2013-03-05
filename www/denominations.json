@@ -240,12 +240,12 @@
     },
     "CRC": {
         "coins": [
-            {"5.00":   "silver"},
-            {"10.00":  "copper"},
-            {"25.00":  "gold"},
-            {"50.00":  "coppergold"},
-            {"100.00": "coppergold"},
-            {"500.00": "coppergold"}
+            {"5.00":   "copper"},
+            {"10.00":  "gold"},
+            {"25.00":  "copper"},
+            {"50.00":  "gold"},
+            {"100.00": "gold"},
+            {"500.00": "gold"}
         ],
         "fraction": "céntimo",
         "fractionSymbol": "c",

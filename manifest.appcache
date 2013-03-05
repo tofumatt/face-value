@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# v 0.1 / 6
+# v 0.1 / 8
 
 CACHE:
 apple-touch-icon-57x57-precomposed.png
@@ -53,6 +53,8 @@ img/flags/CNY@2x.png
 img/header-flags/CNY@2x.png
 img/flags/COP@2x.png
 img/header-flags/COP@2x.png
+img/flags/CRC@2x.png
+img/header-flags/CRC@2x.png
 img/flags/CZK@2x.png
 img/header-flags/CZK@2x.png
 img/flags/DKK@2x.png

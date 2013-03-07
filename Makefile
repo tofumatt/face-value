@@ -15,6 +15,9 @@ deploy:
 	volo ghdeploy
 	git reset HEAD
 
+extract_strings:
+	./node_modules/ajs-xgettext/bin/ajs-xgettext --function=l --output=locales/templates/LC_MESSAGES/messages.pot www/js/templates/**/**.ejs
+
 flags:
 	node script/generate-flag-css.js
 
@@ -24,6 +27,9 @@ npm_install:
 submodules:
 	git submodule update --init --recursive
 
-update: css
+update: css update_locale_json
+
+update_locale_json:
+	node ./locales/compile.js
 
 .PHONY: test

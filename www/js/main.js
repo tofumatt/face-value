@@ -8,6 +8,7 @@
 require.config({
   paths: {
     backbone: 'lib/backbone',
+    jed: 'lib/jed',
     localstorage: 'lib/backbone.localstorage',
     text: 'lib/require.text',
     underscore: 'lib/lodash',

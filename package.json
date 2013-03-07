@@ -24,18 +24,18 @@
     "volo-ghdeploy": "0.0.3",
     "connect": "~2.4.4",
     "less-middleware": "~0.1.5",
-    "requirejs": "2.1.2"
-  },
-  "devDependencies": {
+    "requirejs": "2.1.2",
     "mocha": "1.2.2",
     "nock": ">= 0.13.3",
     "should": ">= 0.0.1",
-    "supertest": ">= 0.1.1"
+    "supertest": ">= 0.1.1",
+    "ajs-xgettext": "0.1.0",
+    "po2json": "0.0.6"
   },
   "volo": {
     "dependencies": {
     },
-    "baseUrl": "public/js"
+    "baseUrl": "www/js"
   },
   "optionalDependencies": {}
 }

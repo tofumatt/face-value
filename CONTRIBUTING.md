@@ -4,7 +4,9 @@ There are two ways you can contribute to Face Value: either add more
 currencies to the list (in `www/denominations.json`) or by coding (adding
 features and/or fixing bugs). Adding new currencies is relatively easy, though
 to generate the flag image you'll want Photoshop or something that can open
-`.psd` files (including layer styles).
+`.psd` files (including layer styles). You can find the appropriate flag
+template PSD (for creating the large header flags) and pixel-art-style,
+mini flags (used in the currency selection list) inside the `assets/` folder.
 
 ## Adding More Currencies ##
 

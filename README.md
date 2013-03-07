@@ -46,7 +46,6 @@ Continuous integration tests for Face Value are run on the awesome
 
 ## To-dos ##
 
- * Improve currency/denomination re-render on update code
  * Add tests to cover currency data updates
 
 # License #

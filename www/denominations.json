@@ -564,6 +564,29 @@
         "wholeSymbol": "¥",
         "wholeSymbolAfter": false
     },
+    "JOD": {
+        "coins": [
+            {"0.10":  "silver"},
+            {"0.25":  "gold"},
+            {"0.50":  "gold-silver"}
+        ],
+        "fraction": null,
+        "fractionSymbol": null,
+        "fractionSymbolAfter": true,
+        "name": "Jordanian dinar",
+        "notes": [
+            {"1":  "green"},
+            {"5":  "orange"},
+            {"10": "blue"},
+            {"20": "teal"},
+            {"50": "brown"}
+        ],
+        "pluralName": "Jordan dinars",
+        "range": [1, 1000],
+        "whole": "dinar",
+        "wholeSymbol": "دينار",
+        "wholeSymbolAfter": true
+    },
     "KES": {
         "coins": [
             {"0.50":  "silver"},

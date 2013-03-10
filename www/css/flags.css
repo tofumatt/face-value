@@ -145,6 +145,13 @@
     background-image: url(../img/header-flags/JPY@2x.png);
 }
 
+.JOD-flag {
+    background-image: url(../img/flags/JOD@2x.png);
+}
+#header.JOD-flag {
+    background-image: url(../img/header-flags/JOD@2x.png);
+}
+
 .KES-flag {
     background-image: url(../img/flags/KES@2x.png);
 }
@@ -315,6 +322,7 @@ ILS
 INR
 ISK
 JPY
+JOD
 KES
 KHR
 LAK
@@ -382,6 +390,8 @@ img/flags/ISK@2x.png
 img/header-flags/ISK@2x.png
 img/flags/JPY@2x.png
 img/header-flags/JPY@2x.png
+img/flags/JOD@2x.png
+img/header-flags/JOD@2x.png
 img/flags/KES@2x.png
 img/header-flags/KES@2x.png
 img/flags/KHR@2x.png

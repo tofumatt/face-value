@@ -25,10 +25,11 @@
     "connect": "~2.4.4",
     "less-middleware": "~0.1.5",
     "requirejs": "2.1.2",
-    "sisyphus": "0.0.2"
+    "sisyphus": "0.0.2",
+    "coffee-script": "1.6.2"
   },
   "devDependencies": {
-    "mocha": "1.2.2",
+    "mocha": "1.8.2",
     "nock": ">= 0.13.3",
     "should": ">= 0.0.1",
     "supertest": ">= 0.1.1"

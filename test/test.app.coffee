@@ -12,7 +12,7 @@ casper.start casper.TEST_URL, ->
 casper.waitForSelector '.note', ->
   casper.test.info 'Testing denominations loaded on first run'
 
-  @test.assert @getCurrentUrl() == '#{casper.TEST_URL}#convert/EUR-USD',
+  @test.assert @getCurrentUrl() == "#{casper.TEST_URL}#convert/EUR-USD",
     'EUR and USD are the default currencies'
 
   @test.assertEval ->

@@ -1,5 +1,5 @@
 test:
-	@NODE_ENV=test ./node_modules/.bin/mocha --globals const ./test/node.*.js
+	@NODE_ENV=test mocha --compilers coffee:coffee-script ./test/node.*.coffee
 	sisyphus
 
 css:

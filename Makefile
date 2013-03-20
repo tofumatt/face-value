@@ -3,7 +3,7 @@ test:
 	sisyphus
 
 css:
-	node script/generate-flag-css.js > www/css/flags.css
+	coffee script/generate-flag-css.coffee > www/css/flags.css
 
 deploy:
 	- rm -rf www-built
@@ -13,7 +13,7 @@ deploy:
 	git reset HEAD
 
 flags:
-	node script/generate-flag-css.js
+	coffee script/generate-flag-css.coffee
 
 npm_install:
 	npm install

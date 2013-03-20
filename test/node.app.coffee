@@ -12,21 +12,21 @@ describe 'Each denomination', ->
     # regardless of device), we simply ship the best images and let the
     # browser handle it.
     it 'should not exist in regular header form (retina is scaled)', (done) ->
-      for i in denominations
+      for i of denominations
         fs.readdirSync("#{__dirname}/../www/img/header-flags")
           .indexOf("#{i}.png").should.equal -1
 
       done()
 
     it 'should have a retina header flag (used for both retina and non-retina)', (done) ->
-      for i in denominations
+      for i of denominations
         fs.statSync("#{__dirname}/../www/img/header-flags/#{i}@2x.png")
           .should.be.ok
 
       done()
 
     it 'should have a mini flag for the currency selection list', (done) ->
-      for i in denominations
+      for i of denominations
         fs.statSync("#{__dirname}/../www/img/flags/#{i}@2x.png")
           .should.be.ok
 

@@ -145,6 +145,13 @@
     background-image: url(../img/header-flags/JPY@2x.png);
 }
 
+.JOD-flag {
+    background-image: url(../img/flags/JOD@2x.png);
+}
+#header.JOD-flag {
+    background-image: url(../img/header-flags/JOD@2x.png);
+}
+
 .KES-flag {
     background-image: url(../img/flags/KES@2x.png);
 }
@@ -199,6 +206,13 @@
 }
 #header.PHP-flag {
     background-image: url(../img/header-flags/PHP@2x.png);
+}
+
+.PKR-flag {
+    background-image: url(../img/flags/PKR@2x.png);
+}
+#header.PKR-flag {
+    background-image: url(../img/header-flags/PKR@2x.png);
 }
 
 .PLN-flag {
@@ -308,6 +322,7 @@ ILS
 INR
 ISK
 JPY
+JOD
 KES
 KHR
 LAK
@@ -316,6 +331,7 @@ MXN
 MYR
 NZD
 PHP
+PKR
 PLN
 RON
 RSD
@@ -374,6 +390,8 @@ img/flags/ISK@2x.png
 img/header-flags/ISK@2x.png
 img/flags/JPY@2x.png
 img/header-flags/JPY@2x.png
+img/flags/JOD@2x.png
+img/header-flags/JOD@2x.png
 img/flags/KES@2x.png
 img/header-flags/KES@2x.png
 img/flags/KHR@2x.png
@@ -390,6 +408,8 @@ img/flags/NZD@2x.png
 img/header-flags/NZD@2x.png
 img/flags/PHP@2x.png
 img/header-flags/PHP@2x.png
+img/flags/PKR@2x.png
+img/header-flags/PKR@2x.png
 img/flags/PLN@2x.png
 img/header-flags/PLN@2x.png
 img/flags/RON@2x.png

@@ -564,6 +564,29 @@
         "wholeSymbol": "¥",
         "wholeSymbolAfter": false
     },
+    "JOD": {
+        "coins": [
+            {"0.10":  "silver"},
+            {"0.25":  "gold"},
+            {"0.50":  "gold-silver"}
+        ],
+        "fraction": null,
+        "fractionSymbol": null,
+        "fractionSymbolAfter": true,
+        "name": "Jordanian dinar",
+        "notes": [
+            {"1":  "green"},
+            {"5":  "orange"},
+            {"10": "blue"},
+            {"20": "teal"},
+            {"50": "brown"}
+        ],
+        "pluralName": "Jordan dinars",
+        "range": [1, 1000],
+        "whole": "dinar",
+        "wholeSymbol": "دينار",
+        "wholeSymbolAfter": true
+    },
     "KES": {
         "coins": [
             {"0.50":  "silver"},
@@ -774,6 +797,33 @@
         "range": [0.25, 1000],
         "whole": "peso",
         "wholeSymbol": "₱",
+        "wholeSymbolAfter": false
+    },
+    "PKR": {
+        "coins": [
+            {"1.00": "copper"},
+            {"2.00": "gold"},
+            {"5.00": "silver"}
+        ],
+        "dontUseFraction": true,
+        "fraction": "Paisa",
+        "fractionSymbol": "p",
+        "fractionSymbolAfter": true,
+        "name": "Pakistani Rupee",
+        "notes": [
+            {"5":    "blue"},
+            {"10":   "green"},
+            {"20":   "yellow"},
+            {"50":   "violet"},
+            {"100":  "red"},
+            {"500":  "brown"},
+            {"1000": "blue"},
+            {"5000": "orange"}
+        ],
+        "pluralName": "Pakistani Rupees",
+        "range": [1, 200],
+        "whole": "rupee",
+        "wholeSymbol": "₨",
         "wholeSymbolAfter": false
     },
     "PLN": {

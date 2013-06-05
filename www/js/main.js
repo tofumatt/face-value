@@ -9,7 +9,7 @@ require.config({
   paths: {
     backbone: 'lib/backbone',
     localstorage: 'lib/backbone.localstorage',
-    text: 'lib/require.text',
+    text: 'lib/tpl',
     underscore: 'lib/lodash',
     zepto: 'lib/zepto'
   },

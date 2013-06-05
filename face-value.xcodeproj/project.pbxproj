@@ -521,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson (FG35V2T8Q7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Riley MacPherson";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -547,7 +547,7 @@
 					"-all_load",
 					"-Obj-C",
 				);
-				PROVISIONING_PROFILE = "ED824C16-3488-411E-8C4A-C97FCEFE90E7";
+				PROVISIONING_PROFILE = "578C9449-7494-41FD-B9C4-F8EB5AB974E0";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -558,7 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthew Riley MacPherson (FG35V2T8Q7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Riley MacPherson";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -585,7 +585,7 @@
 					"-Obj-C",
 				);
 				PRODUCT_NAME = "Face Value";
-				PROVISIONING_PROFILE = "ED824C16-3488-411E-8C4A-C97FCEFE90E7";
+				PROVISIONING_PROFILE = "578C9449-7494-41FD-B9C4-F8EB5AB974E0";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";

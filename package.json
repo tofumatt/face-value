@@ -38,6 +38,5 @@
     "dependencies": {
     },
     "baseUrl": "public/js"
-  },
-  "optionalDependencies": {}
+  }
 }

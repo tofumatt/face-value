@@ -9,7 +9,7 @@ define([
   'collections/denominations',
   'views/currencies',
   'views/denominations',
-  'text!templates/app/header.ejs'
+  'tpl!templates/app/header.ejs'
 ], function($, _, Backbone, App, Currencies, Denominations, CurrencyViews, DenominationView, headerTemplate) {
   var AppView = Backbone.View.extend({
     // Instead of generating a new element, bind to the existing skeleton of
@@ -103,7 +103,7 @@ define([
     el: '#header',
     $el: $('#header'),
     tagName: 'div',
-    template: _.template(headerTemplate),
+    template: headerTemplate,
 
     // The DOM events specific to an item.
     events: {

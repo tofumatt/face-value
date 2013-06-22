@@ -7,11 +7,11 @@ define([
   'backbone',
   'collections/currencies',
   'models/denomination',
-  'text!templates/denominations/show.ejs'
+  'tpl!templates/denominations/show.ejs'
 ], function(App, $, _, Backbone, Currencies, Denomination, showTemplate) {
   var ShowView = Backbone.View.extend({
     model: Denomination,
-    template: _.template(showTemplate),
+    template: showTemplate,
 
     // The DOM events specific to an item.
     events: {

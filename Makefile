@@ -8,6 +8,8 @@ build:
 	volo appcache
 	rm www-built/js/main.js
 	mv www-built/js/main.built.js www-built/js/main.js
+	rm www-built/css/app.css
+	mv www-built/css/app.built.css www-built/css/app.css
 
 css:
 	coffee script/generate-flag-css.coffee > www/css/flags.css

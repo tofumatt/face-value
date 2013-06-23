@@ -408,6 +408,17 @@ h1, h2 {
     opacity: 0;
 }
 
+.denomination {
+    margin: 0 0 0 10px;
+}
+
+.denomination::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 10px;
+}
+
 .denomination.only-item {
     margin-left: 0;
     width: 100%;
@@ -417,6 +428,8 @@ h1, h2 {
     font-size: 60px;
     left: 50%;
     letter-spacing: -.08em;
+    /* TODO: Fix for currencies with suffixed signage or do programmatically */
+    margin-left: -2.5%;
     position: absolute;
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -500,11 +513,12 @@ h1, h2 {
 .subtitle {
     background: url(../img/translated-currency-bg@2x.png) no-repeat scroll 0 0 transparent;
     background-size: 117px 29px;
-    clear: both;
     color: #264F71;
     height: 29px;
+    float: right;
     font-size: 16px;
-    margin: 5px auto 10px;
+    /* TODO: Vertically center */
+    margin: 10% 0 10px;
     padding: 5px 0 0;
     text-align: center;
     width: 117px;

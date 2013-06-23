@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# v 0.1 / 11
+# v 0.1 / 12
 
 CACHE:
 apple-touch-icon-57x57-precomposed.png
 apple-touch-icon-114x114-precomposed.png
-css/app.built.css
+css/app.css
 fonts/bitter/Bitter-Bold-webfont.eot
 fonts/bitter/Bitter-Bold-webfont.svg
 fonts/bitter/Bitter-Bold-webfont.ttf

@@ -8,14 +8,14 @@ define([
   'collections/currencies',
   'models/currency',
   'views/denominations',
-  'text!templates/currencies/controls.ejs',
-  'text!templates/currencies/list_item.ejs'
+  'tpl!templates/currencies/controls.ejs',
+  'tpl!templates/currencies/list_item.ejs'
 ], function(App, $, _, Backbone, Currencies, Currency, DenominationView, controlsTemplate, listItemTemplate) {
   var ControlsView = Backbone.View.extend({
     el: '#controls',
     $el: $('#controls'),
     tagName: 'div',
-    template: _.template(controlsTemplate),
+    template: controlsTemplate,
 
     // The DOM events specific to an item.
     events: {
@@ -88,7 +88,7 @@ define([
   var ListItemView = Backbone.View.extend({
     model: Currency,
     tagName: 'li',
-    template: _.template(listItemTemplate),
+    template: listItemTemplate,
 
     // The DOM events specific to an item.
     events: {

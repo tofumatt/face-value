@@ -29,7 +29,7 @@ img/background@2x.jpg
 img/note@2x.png
 img/switch@2x.png
 img/translated-currency-bg@2x.png
-js/main.built.js
+js/main.js
 js/lib/require.js
 js/string.js
 ##################################

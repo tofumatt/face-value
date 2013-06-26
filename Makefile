@@ -20,13 +20,3 @@ deploy: build
 
 flags:
 	coffee script/generate-flag-css.coffee
-
-npm_install:
-	npm install
-
-submodules:
-	git submodule update --init --recursive
-
-update: css
-
-.PHONY: test

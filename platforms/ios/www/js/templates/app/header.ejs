@@ -1,0 +1,14 @@
+<a id="currency-switcher" href="#/convert/<%= homeCurrency.get('code') %>-<%= foreignCurrency.get('code') %>">
+  <span class="off-screen"><%= foreignCurrency.get('code') %> &lt;=&gt; <%= homeCurrency.get('code') %></span>
+</a>
+
+<div id="currency-info">
+  <div class="regular">
+    What are my <a href="#foreign-currency" class="select-currency" data-currency="foreign"><%= foreignCurrency.get('pluralName') %></a>
+    <br>
+    worth in <a href="#home-currency" class="select-currency" data-currency="home"><%= homeCurrency.get('pluralName') %></a>?
+  </div>
+  <div class="small">
+    <strong><%= foreignCurrency.get('code') %></strong> &gt; <strong><%= homeCurrency.get('code') %></strong>
+  </div>
+</div>

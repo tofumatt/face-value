@@ -1,0 +1,10 @@
+<div id="denomination-<%= denomination.get('id') %>" class="denomination col span_1">
+  <div class="<%= denomination.get('style') %> <%= denomination.get('type') %>">
+    <div class="color <%= denomination.get('style') %>"></div>
+    <div class="inner"><% if ((denomination.get('value') < 1 && !currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && !currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %><% if (denomination.get('value') < 1) { %><span class="fraction"><% } %><%= denomination.valueFormatted() %><% if (denomination.get('value') < 1) { %></span><% } %><% if ((denomination.get('value') < 1 && currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %>
+    </div>
+  </div>
+
+  <div class="subtitle"><% if ((denomination.worthIn(homeCurrency) < 1 && !homeCurrency.get('fractionSymbolAfter')) || (denomination.worthIn(homeCurrency) >= 1 && !homeCurrency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.worthIn(homeCurrency) < 1 ? homeCurrency.get('fractionSymbol') : homeCurrency.get('wholeSymbol') %></span><% } %><%= denomination.worthIn(homeCurrency).toString().replace(/^0\.0?/, '') %><% if ((denomination.worthIn(homeCurrency) < 1 && homeCurrency.get('fractionSymbolAfter')) || (denomination.worthIn(homeCurrency) >= 1 && homeCurrency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.worthIn(homeCurrency) < 1 ? homeCurrency.get('fractionSymbol') : homeCurrency.get('wholeSymbol') %></span><% } %></div>
+  </div>
+</div>

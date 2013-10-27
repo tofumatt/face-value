@@ -1,0 +1,635 @@
+@import "lib/gridpak.css";
+@import "lib/popover.css";
+
+/* Your styles here */
+@import "flags.css";
+@import "../fonts/bitter/stylesheet.css";
+
+body {
+    font-family: Bitter, Helvetica, Arial, sans-serif;
+    font-size: .95em;
+    margin: 69px 0 32px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+body.cache-loading {
+    background: url(../Default@2x.png) 0 0 no-repeat;
+    background-size: 320px 460px;
+    margin: 0;
+}
+
+/** TODO Fix iPhone 5 size */
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 1136px), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    body.cache-loading {
+        background-image: url(../Default-568h@2x.png);
+        background-size: 320px 460px;
+        background-size: cover;
+    }
+}
+
+.native-scroll {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.native-scroll .currency-list-selector h3 {
+    display: none;
+}
+
+/** Mode to allow screenshots of empty pages */
+.screenshot-mode .denomination, .screenshot-mode #currency-info div, .screenshot-mode #currency-selector {
+    display: none;
+}
+
+.screenshot-mode #header {
+    background-image: none;
+}
+
+/** Hack to get the background the be fixed positioned, even on mobile */
+
+#background {
+    background: url(../img/background@2x.jpg) 0 0 no-repeat fixed;
+    background-size: 500px 550px;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (min-width: 500px), screen and (min-height: 550px) {
+    #background {
+        background-size: cover;
+    }
+}
+
+#maincontent {
+    position: relative;
+    z-index: 2;
+}
+
+p, dl, ul, ol {
+    margin-right: 38%;
+}
+
+a, a:visited, a:active {
+    color: #0088cc;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.off-screen {
+    left: -9999px;
+    position: absolute;
+    top: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#loading-text {
+    display: none;
+}
+
+.cache-loading #loading-text {
+    background: rgba(6, 6, 6, .7);
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10010;
+}
+
+.cache-loading #loading-text p {
+    color: #f3f3f3;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* -------- POPOVER ------- */
+/*
+/* iOS-style popover select list for picking currencies.
+/*
+/* ----------------------- */
+
+#first-select, #second-select {
+    opacity: 1;
+    transition: all linear 150ms;
+}
+
+#first-select.hide, #second-select.hide {
+    display: block;
+    opacity: 0;
+    z-index: -50;
+}
+
+.popover {
+    background: rgba(6, 6, 6, .8);
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10010;
+}
+
+.popover .arrow {
+    display: none;
+}
+
+.popover .popover-content {
+    background-color: #e7e4e0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e4e0), to(#c7c4c0)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #e7e4e0, #c7c4c0); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #e7e4e0, #c7c4c0); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #e7e4e0, #c7c4c0); /* IE10 */
+    background-image:      -o-linear-gradient(top, #e7e4e0, #c7c4c0); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #e7e4e0, #c7c4c0);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e7e4e0', EndColorStr='#c7c4c0'); /* IE6-IE9 */
+    margin: 0 5%;
+    top: 50%;
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.native-scroll .popover .popover-content {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.popover .arrow span {
+    background: #e7e4e0;
+}
+
+.popover .popover-body {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.popover .popover-body ul li {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+/* -------- HEADER ------- */
+/*
+/* Top bar with flag, currently-converting currencies, and currency switcher.
+/*
+/* ----------------------- */
+
+
+#header {
+    background-color: #e7e4e0;
+    background-position: -35px 100%;
+    background-repeat: no-repeat;
+    background-size: 130px 75px;
+    border-bottom: 1px solid rgba(255,255,255, .25);
+	box-shadow: 0 1px 2px rgba(0,0,0,.23); 
+    font-size: 14px;
+    height: 58px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all linear 500ms;
+    width: 100%;
+    z-index: 1000;
+}
+
+#first-select.show, #second-select.show {
+    left: 25px;
+    position: fixed;
+    top: 10px;
+    z-index: 10000;
+}
+
+#second-select.show {
+    top: 26px;
+}
+
+@media screen and (max-width: 760px) {
+    #first-select.show, #second-select.show {
+        opacity: 0;
+    }
+}
+
+#currency-info {
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(72, 57, 10, .2);
+    border-right: none;
+    float: right;
+    letter-spacing: -.25px;
+    line-height: 1.2em;
+    height: 38px;
+    margin: 5px 0px 0 0;
+    padding: 4px 0px 4px 8px;
+    position: relative;
+    width: 220px;
+    color: #48390a;
+    z-index: -10050;
+}
+
+#currency-info .small {
+    display: none;
+}
+
+#currency-info:before, #currency-info:after {
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+/* triangle border */
+#currency-info:before {
+    border-bottom: 24px solid transparent;
+    border-left: 24px solid #cec9be;
+    border-top: 24px solid transparent;
+    right: -24px;
+    top: 0;
+}
+
+/* inside triangle */
+#currency-info:after {
+    border-bottom: 23px solid transparent;
+    border-left: 23px solid #f0eeec;
+    border-top: 23px solid transparent;
+    right: -23px;
+    top: 1px;
+}
+
+#currency-info a, #currency-info strong {
+    color: inherit;
+    font-size: 16px;
+    letter-spacing: .25px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+/* Special cases for weird currency names */
+#header.SGD-flag #currency-info a:first-child, #header.SGD-flag #currency-info strong:first-child {
+    letter-spacing: -.45px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px) {
+    #currency-info {
+        height: 17px;
+        margin: 18px 7px 0 0;
+        width: auto;
+    }
+
+    #currency-info .regular {
+        display: none;
+    }
+
+    #currency-info .small {
+        display: block;
+    }
+
+    #currency-info:before {
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid rgba(88, 82, 82, 1);
+        border-top: 10px solid transparent;
+        right: -10px;
+        top: 0;
+    }
+
+    #currency-info:after {
+        border-bottom: 9px solid transparent;
+        border-left: 9px solid #e7e4e0;
+        border-top: 9px solid transparent;
+        right: -9px;
+        top: 1px;
+    }
+}
+
+#currency-switcher {
+    background: url(../img/switch@2x.png) 0 0 no-repeat;
+    background-size: 100px 50px;
+    float: right;
+    height: 50px;
+    margin: 2.5px 0 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    width: 50px;
+}
+
+#currency-switcher:active, #currency-switcher.active {
+    background-position: -50px 0;
+    outline: 0;
+}
+
+#maincontent .currency-list-selector li {
+    background-position: 8px 50%;
+    line-height: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.currency-list-selector h3 {
+    background-image: -moz-linear-gradient(center top , #E7E4E0, #C7C4C0);
+    border: 1px solid #000;
+    border-radius: 11px;
+    box-shadow: 1px 1px 1px 0 rgba(255, 255, 255, 0.37) inset, 0 2px 6px 0 rgba(0, 0, 0, 0.95);
+    font-size: 18px;
+    font-weight: normal;
+    height: 28px;
+    left: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    width: 100%;
+}
+
+.currency-list-selector a {
+    color: inherit;
+    display: block;
+    height: 26px;
+    padding: 4px 0 4px 28px;
+    text-decoration: none;
+}
+
+.currency-list-selector li:active {
+    background-color: rgba(231, 228, 224, 0.55);
+}
+
+.row:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+
+
+
+
+/* -------- MAIN CONTENT ------- */
+/*
+/* Graphical representations of coins and bills, along with corresponding conversions.
+/*
+/* ----------------------- */
+
+
+
+#coins, #notes {
+    opacity: 1;
+    transition: all linear 200ms;
+}
+
+#coins.hidden, #notes.hidden {
+    opacity: 0;
+}
+
+.denomination.only-item {
+    margin-left: 0;
+    width: 100%;
+}
+
+.denomination .inner {
+    font-size: 60px;
+    left: 50%;
+    letter-spacing: -.08em;
+    position: absolute;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    white-space: nowrap;
+}
+
+.coin {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 125px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 125px;
+}
+
+.coin .inner {
+    color: rgba(230, 230, 240, 1);
+    text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
+}
+
+.coin .symbol {
+    font-size: 50%;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0 2px;
+    vertical-align: 35%;
+}
+
+.coin .fraction {
+    letter-spacing: 0.001em;
+    vertical-align: 8%;
+}
+
+.note {
+    background-image: url(../img/note@2x.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 87px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+}
+
+.note .color {
+    left: 0;
+    height: 87px;
+    position: absolute;
+    top: 0;
+    width: 140px;
+}
+
+.note .inner {
+    color: rgba(230, 230, 240, 1);
+    text-shadow: 0px 1px #8496ad, 0px -1px #f8f8f8;
+}
+
+.zeros {
+    display: inline-block;
+    font-size: 40%;
+    font-weight: normal;
+    letter-spacing: 0;
+    vertical-align: 75%;
+}
+
+.note .symbol {
+    font-size: 50%;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0 2px;
+    vertical-align: 35%;
+}
+
+.subtitle {
+    background: url(../img/translated-currency-bg@2x.png) no-repeat scroll 0 0 transparent;
+    background-size: 117px 29px;
+    clear: both;
+    color: #264F71;
+    height: 29px;
+    font-size: 16px;
+    margin: 5px auto 10px;
+    padding: 5px 0 0;
+    text-align: center;
+    width: 117px;
+}
+
+.subtitle .symbol {
+	font-size: 75%;
+	vertical-align: 20%;
+}
+
+.flag {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 11px;
+    padding: 0 0 0 18px;
+}
+
+
+/** Controls for switching currencies */
+#controls {
+    background: rgb(240,238,236); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(240,238,236) 0%, rgb(231,228,224) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(240,238,236)), color-stop(100%,rgb(231,228,224))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeec', endColorstr='#e7e4e0',GradientType=0 ); /* IE6-9 */
+    border-top: 1px solid rgba(255,255,255, .25);
+    bottom: 0;
+    box-shadow: 1px 0 2px rgba(0,0,0,.23); 
+    font-size: 14px;
+    height: 38px;
+    left: 0;
+    position: fixed;
+    transition: all linear 500ms;
+    width: 100%;
+    z-index: 1000;
+}
+
+#currency-selector a {
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(72, 57, 10, .2);
+    color: #48390a;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    letter-spacing: -.25px;
+    line-height: 1em;
+    height: 1em;
+    margin: 3px auto 0;
+    padding: 3px 0 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    z-index: -10050;
+}
+
+
+/** Colour styles for coins */
+.coin.copper {
+    background-image: url(../img/coins/copper@2x.png);
+}
+
+.coin.copper-gold {
+    background-image: url(../img/coins/coppergold@2x.png);
+}
+
+.coin.copper-silver {
+    background-image: url(../img/coins/copper-silver@2x.png);
+}
+
+.coin.gold {
+    background-image: url(../img/coins/gold@2x.png);
+}
+
+.coin.gold-silver {
+    background-image: url(../img/coins/gold-silver@2x.png);
+}
+
+.coin.silver {
+    background-image: url(../img/coins/silver@2x.png);
+}
+
+.coin.silver-copper {
+    background-image: url(../img/coins/silver-copper@2x.png);
+}
+
+.coin.silver-gold {
+    background-image: url(../img/coins/silver-gold@2x.png);
+}
+
+/** Colour styles for notes */
+.note .color.blue {
+    background-color: rgba(80, 131, 201, .4);
+}
+
+.note .color.brown {
+    background-color: rgba(87, 57, 9, .4);
+}
+
+.note .color.green {
+    background-color: rgba(80, 128, 38, .4);
+}
+
+.note .color.orange {
+    background-color: rgba(222, 150, 55, .4);
+}
+
+.note .color.purple {
+    background-color: rgba(197, 131, 211, .4);
+}
+
+.note .color.violet {
+    background-color: rgba(197, 131, 211, .4);
+}
+
+.note .color.red {
+    background-color: rgba(128, 26, 26, .4);
+}
+
+.note .color.teal {
+    background-color: rgba(60, 128, 93, .4);
+}
+
+.note .color.yellow {
+    background-color: rgba(235, 202, 73, .4);
+}

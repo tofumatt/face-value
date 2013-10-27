@@ -1,0 +1,160 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
+
+/* Reusable column setup */
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 2 Column Grid 0px - 319px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    49.0%
+    Span 2:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 319px) {
+        
+        .col {
+            margin-left:1%;
+            padding:0 0.5%;
+        }
+        
+        .row .col:first-child, .row .col:nth-child(2n+1) {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+        
+        .span_1, .span_2 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 2. 2 Column Grid 320px - 479px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    49.0%
+    Span 2:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 320px) and (max-width: 489px) {
+        
+        .col {
+            margin-left:2%;
+        	padding:0 0.5%;
+        }
+        
+        .row .col:first-child, .row .col:nth-child(2n+1) {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:49.0%;
+        }
+        .span_2, .odd.last {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 3. 3 Column Grid 480px - 759px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    32.0%
+    Span 2:    66.0%
+    Span 3:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 490px) and (max-width: 759px) {
+        
+        .col {
+            margin-left:2%;
+        	padding:0 0.5%;
+        }
+        
+        .row .col:first-child, .row .col:nth-child(3n+1) {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:32.0%;
+        }
+        .span_2 {
+            width:66.0%;
+        }
+        .span_3, .odd.last:first-child {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 4. 4 Column Grid 760px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    23.5%
+    Span 2:    49.0%
+    Span 3:    74.5%
+    Span 4:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 760px) {
+        
+        .col {
+            margin-left:2%;
+        	padding:0 1.5%;
+        }
+        
+        .row .col:first-child, .row .col:nth-child(4n+1) {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:23.5%;
+        }
+        .span_2 {
+            width:49.0%;
+        }
+        .span_3 {
+            width:74.5%;
+        }
+        .span_4, .odd.last:first-child {
+            margin-left:0;
+            width:100%;
+        }
+    }
+

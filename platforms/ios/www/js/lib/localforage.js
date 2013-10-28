@@ -9,7 +9,7 @@ define(['async_storage'], function(asyncStorage) {
                     window.msIndexedDB;
 
     // Because indexedDB is available, we'll use it to store data.
-    if (indexedDB) {
+    if (window._DISABLE_INDEXEDDB !== true && indexedDB) {
         return asyncStorage;
     }
 

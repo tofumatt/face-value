@@ -35,6 +35,10 @@ define([
       $('body').addClass('native-scroll')
     }
 
+    if (window.cordova) {
+      window.document.addEventListener('deviceready', cordovaPrep)
+    }
+
     // TODO: Improve this.
     // This is a hacky cache-bust thing while I figure out a better way...
     cacheReady()
@@ -95,6 +99,16 @@ define([
   function cacheReady() {
     $('body').removeClass('cache-loading')
     set('cacheReady', true)
+  }
+
+  function cordovaPrep() {
+    if (window.device && window.device.platform === 'iOS' && window.device) {
+      if (parseFloat(window.device.version, 10) >= 7.0) {
+        $('body').addClass('ios7')
+      } else {
+        $('body').addClass('ios-classic')
+      }
+    }
   }
 
   function get(key, fallback) {

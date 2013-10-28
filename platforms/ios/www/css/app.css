@@ -6,7 +6,8 @@
 @import "../fonts/bitter/stylesheet.css";
 
 body {
-    background: #f2f2f2;
+    background: url(../img/background@2x.png) 0 0 repeat scroll;
+    background-size: 250px 250px;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 32px;
@@ -23,6 +24,11 @@ body.cache-loading {
 .native-scroll {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+body.ios7 {
+    background: #fff;
+    padding-top: 20px;
 }
 
 .native-scroll .currency-list-selector h3 {
@@ -174,7 +180,7 @@ h1, h2 {
 
 
 #header {
-    background-color: rgba(255, 255, 255, .90);
+    background-color: rgba(255, 255, 255, 1);
     background-position: -35px 100%;
     background-repeat: no-repeat;
     background-size: 130px 75px;
@@ -188,6 +194,13 @@ h1, h2 {
     transition: all linear 500ms;
     width: 100%;
     z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ios7 #header {
+    background-color: rgba(255, 255, 255, .90);
+    background-position: -35px calc(100% + 20px);
+    padding-top: 20px;
 }
 
 #first-select.show, #second-select.show {
@@ -208,15 +221,16 @@ h1, h2 {
 }
 
 #currency-info {
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .9);
     border: 1px solid rgba(72, 57, 10, .2);
     letter-spacing: -.25px;
     line-height: 1.2em;
     height: 38px;
     margin: 5px auto 0;
+    min-width: 280px;
     padding: 4px 0px 4px 8px;
     position: relative;
-    width: 90%;
+    width: 80%;
     color: #48390a;
     z-index: -10050;
 }
@@ -417,7 +431,7 @@ h1, h2 {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height: 87px;
+    height: 86px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -427,7 +441,7 @@ h1, h2 {
 
 .note .color {
     left: 0;
-    height: 87px;
+    height: 86px;
     position: absolute;
     top: 0;
     width: 140px;
@@ -462,10 +476,14 @@ h1, h2 {
     float: right;
     font-size: 16px;
     /* TODO: Vertically center */
-    margin: 10% 0 10px;
+    margin: 28px 5% 0 0;
     padding: 5px 0 0;
     text-align: center;
     width: 117px;
+}
+
+.coin + .subtitle {
+    margin-top: 42px;
 }
 
 .subtitle .symbol {
@@ -484,7 +502,6 @@ h1, h2 {
 /** Controls for switching currencies */
 #controls {
     background: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, .9);
     border-top: 1px solid rgba(255,255,255, .25);
     bottom: 0;
     box-shadow: 1px 0 2px rgba(0,0,0,.23); 
@@ -495,10 +512,7 @@ h1, h2 {
     transition: all linear 500ms;
     width: 100%;
     z-index: 1000;
-}
-
-.native-scroll #controls {
-    bottom: 20px;
+    -webkit-overflow-scrolling: touch;
 }
 
 #currency-selector a {

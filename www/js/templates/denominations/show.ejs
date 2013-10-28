@@ -1,5 +1,5 @@
-<div id="denomination-<%= denomination.get('id') %>" class="denomination">
-  <div class="<%= denomination.get('style') %> <%= denomination.get('type') %> col span_1">
+<div id="denomination-<%= denomination.get('id') %>" class="denomination row">
+  <div class="<%= denomination.get('style') %> <%= denomination.get('type') %> col span_2">
     <div class="color <%= denomination.get('style') %>"></div>
     <div class="inner"><% if ((denomination.get('value') < 1 && !currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && !currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %><% if (denomination.get('value') < 1) { %><span class="fraction"><% } %><%= denomination.valueFormatted() %><% if (denomination.get('value') < 1) { %></span><% } %><% if ((denomination.get('value') < 1 && currency.get('fractionSymbolAfter')) || (denomination.get('value') >= 1 && currency.get('wholeSymbolAfter'))) { %><span class="symbol"><%= denomination.get('value') < 1 ? currency.get('fractionSymbol') : currency.get('wholeSymbol') %></span><% } %>
     </div>

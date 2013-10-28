@@ -6,6 +6,7 @@
 @import "../fonts/bitter/stylesheet.css";
 
 body {
+    background: #f2f2f2;
     font-family: Bitter, Helvetica, Arial, sans-serif;
     font-size: .95em;
     margin: 69px 0 32px;
@@ -15,18 +16,8 @@ body {
 }
 
 body.cache-loading {
-    background: url(../Default@2x.png) 0 0 no-repeat;
-    background-size: 320px 460px;
+    background: #f2f2f2;
     margin: 0;
-}
-
-/** TODO Fix iPhone 5 size */
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-height: 1136px), screen and (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    body.cache-loading {
-        background-image: url(../Default-568h@2x.png);
-        background-size: 320px 460px;
-        background-size: cover;
-    }
 }
 
 .native-scroll {
@@ -45,25 +36,6 @@ body.cache-loading {
 
 .screenshot-mode #header {
     background-image: none;
-}
-
-/** Hack to get the background the be fixed positioned, even on mobile */
-
-#background {
-    background: url(../img/background@2x.jpg) 0 0 no-repeat fixed;
-    background-size: 500px 550px;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-@media screen and (min-width: 500px), screen and (min-height: 550px) {
-    #background {
-        background-size: cover;
-    }
 }
 
 #maincontent {
@@ -202,7 +174,7 @@ h1, h2 {
 
 
 #header {
-    background-color: #e7e4e0;
+    background-color: rgba(255, 255, 255, .90);
     background-position: -35px 100%;
     background-repeat: no-repeat;
     background-size: 130px 75px;
@@ -238,47 +210,19 @@ h1, h2 {
 #currency-info {
     background: rgba(255, 255, 255, .4);
     border: 1px solid rgba(72, 57, 10, .2);
-    border-right: none;
-    float: right;
     letter-spacing: -.25px;
     line-height: 1.2em;
     height: 38px;
-    margin: 5px 0px 0 0;
+    margin: 5px auto 0;
     padding: 4px 0px 4px 8px;
     position: relative;
-    width: 220px;
+    width: 90%;
     color: #48390a;
     z-index: -10050;
 }
 
 #currency-info .small {
     display: none;
-}
-
-#currency-info:before, #currency-info:after {
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    width: 0;
-}
-
-/* triangle border */
-#currency-info:before {
-    border-bottom: 24px solid transparent;
-    border-left: 24px solid #cec9be;
-    border-top: 24px solid transparent;
-    right: -24px;
-    top: 0;
-}
-
-/* inside triangle */
-#currency-info:after {
-    border-bottom: 23px solid transparent;
-    border-left: 23px solid #f0eeec;
-    border-top: 23px solid transparent;
-    right: -23px;
-    top: 1px;
 }
 
 #currency-info a, #currency-info strong {
@@ -539,14 +483,8 @@ h1, h2 {
 
 /** Controls for switching currencies */
 #controls {
-    background: rgb(240,238,236); /* Old browsers */
-    background: -moz-linear-gradient(top, rgb(240,238,236) 0%, rgb(231,228,224) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(240,238,236)), color-stop(100%,rgb(231,228,224))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgb(240,238,236) 0%,rgb(231,228,224) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeec', endColorstr='#e7e4e0',GradientType=0 ); /* IE6-9 */
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .9);
     border-top: 1px solid rgba(255,255,255, .25);
     bottom: 0;
     box-shadow: 1px 0 2px rgba(0,0,0,.23); 
@@ -559,8 +497,12 @@ h1, h2 {
     z-index: 1000;
 }
 
+.native-scroll #controls {
+    bottom: 20px;
+}
+
 #currency-selector a {
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .9);
     border: 1px solid rgba(72, 57, 10, .2);
     color: #48390a;
     cursor: pointer;

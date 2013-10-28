@@ -3,7 +3,7 @@
 define([
   'underscore',
   'backbone',
-  'localstorage',
+  'backbone_store',
   'collections/denominations',
   'models/currency'
 ], function(_, Backbone, Store, DenominationsCollection, Currency) {

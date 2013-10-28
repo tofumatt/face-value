@@ -3,7 +3,7 @@
 define([
   'underscore',
   'backbone',
-  'localstorage',
+  'backbone_store',
   'models/denomination'
 ], function(_, Backbone, Store, Denomination) {
   var DenominationsCollection = Backbone.Collection.extend({

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.lonelyvegan.facevalue" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
     <name>Face Value</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Currency conversion using actual denominations.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="matt@lonelyvegan.com" href="http://tofumatt.com">
+        Matthew Riley MacPherson
     </author>
     <content src="index.html" />
     <feature name="LocalStorage">

@@ -1,20 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.lonelyvegan.facevalue" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
     <name>Face Value</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Currency conversion using actual denominations.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="matt@lonelyvegan.com" href="http://tofumatt.com">
+        Matthew Riley MacPherson
     </author>
     <content src="index.html" />
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
     <access origin="*" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
-    <preference name="UIWebViewBounce" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
     <preference name="TopActivityIndicator" value="gray" />
     <preference name="EnableLocation" value="false" />
     <preference name="EnableViewportScale" value="false" />
@@ -25,5 +28,5 @@
     <preference name="OpenAllWhitelistURLsInWebView" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
+    <preference name="webviewbounce" value="false" />
 </widget>

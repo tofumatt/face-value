@@ -4,6 +4,8 @@
 */
 'use strict';
 
+window._DISABLE_INDEXEDDB = true
+
 // Require.js allows us to configure shortcut alias
 require.config({
   paths: {

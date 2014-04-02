@@ -7,5 +7,11 @@ module.exports = [
             "device"
         ]
     }
-]
+];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "org.apache.cordova.device": "0.2.8"
+}
+// BOTTOM OF METADATA
 });

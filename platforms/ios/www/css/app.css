@@ -26,11 +26,6 @@ body.cache-loading {
     -webkit-overflow-scrolling: touch;
 }
 
-body.ios7 {
-    background: #fff;
-    padding-top: 20px;
-}
-
 .native-scroll .currency-list-selector h3 {
     display: none;
 }
@@ -533,6 +528,53 @@ h1, h2 {
     z-index: -10050;
 }
 
+/** iOS 7 Cordova Build */
+body.ios7 {
+    background: #fff;
+    padding-bottom: 40px;
+}
+
+body.ios7 #header {
+    top: -20px;
+}
+
+body.ios7 #controls {
+    bottom: 20px;
+}
+
+body.ios7 #controls .select-currency {
+    background-color: rgba(255, 255, 255, .8);
+    border-color: #15b9ee;
+    color: #15b9ee;
+}
+
+body.ios7 .popover .popover-body {
+    max-height: 340px;
+}
+
+body.ios7 .popover .popover-content {
+    border:1px solid #15b9ee;
+    -webkit-border-radius:0;
+    border-radius:0;
+    position:relative;
+    background-color: none;
+    background-image: none; /* Saf4+, Chrome */
+    background-image: none; /* Chrome 10+, Saf5.1+, iOS 5+ */
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
+    
+body.ios7 .popover .popover-body {
+    border:none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+
+body.ios7 .currency-list-selector a {
+    height: 26px;
+    padding: 8px 0 8px 28px;
+}
 
 /** Colour styles for coins */
 .coin.copper {

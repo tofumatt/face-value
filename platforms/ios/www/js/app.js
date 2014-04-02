@@ -102,7 +102,7 @@ define([
   }
 
   function cordovaPrep() {
-    if (window.device && window.device.platform === 'iOS' && window.device) {
+    if (window.device && window.device.platform === 'iOS') {
       if (parseFloat(window.device.version, 10) >= 7.0) {
         $('body').addClass('ios7')
       } else {

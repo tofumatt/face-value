@@ -576,6 +576,11 @@ body.ios7 .currency-list-selector a {
     padding: 8px 0 8px 28px;
 }
 
+body.ios7 .currency-list-selector li:active {
+    background-color: rgba(21, 185, 238, 0.55);
+    color: #fff;
+}
+
 /** Colour styles for coins */
 .coin.copper {
     background-image: url(../img/coins/copper@2x.png);

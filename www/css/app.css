@@ -192,12 +192,6 @@ h1, h2 {
     -webkit-overflow-scrolling: touch;
 }
 
-.ios7 #header {
-    background-color: rgba(255, 255, 255, .90);
-    background-position: -35px calc(100% + 20px);
-    padding-top: 20px;
-}
-
 #first-select.show, #second-select.show {
     left: 25px;
     position: fixed;
@@ -531,19 +525,29 @@ h1, h2 {
 /** iOS 7 Cordova Build */
 body.ios7 {
     background: #fff;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
 body.ios7 #header {
-    top: -20px;
+    background-color: rgba(255, 255, 255, .9);
+    background-position: -35px calc(100% + 20px);
+    border-color: rgba(255, 255, 255, .8);
+    padding-top: 20px;
+}
+
+body.ios7 #currency-info {
+    background-color: rgba(255, 255, 255, .8);
+    border-color: #15b9ee;
 }
 
 body.ios7 #controls {
-    bottom: 20px;
+    background-color: rgba(255, 255, 255, .9);
+    border-color: rgba(255, 255, 255, .8);
 }
 
 body.ios7 #controls .select-currency {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: #fff;
     border-color: #15b9ee;
     color: #15b9ee;
 }

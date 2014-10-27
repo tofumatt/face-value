@@ -2,8 +2,6 @@
 
 Currency conversion using actual denominations.
 
-![A screenshot of Face Value's main screen](https://raw.github.com/tofumatt/face-value/master/screenshot-1.png) ![A screenshot of Face Value's currency selector](https://raw.github.com/tofumatt/face-value/master/screenshot-2.png)
-
 Face Value is an open-source, cross-platform currency conversion app that does
 things differently. It shows you the denominations of a currency, beautifully
 rendered in their proper style and colour, and what each coin or banknote is

@@ -1,4 +1,4 @@
-# Face Value #
+# Face Value [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png?branch=master)](http://travis-ci.org/tofumatt/face-value)
 
 Currency conversion using actual denominations.
 
@@ -11,7 +11,7 @@ worth in your own currency. This lets you get a much better grasp on cash in
 the places you visit than the algebra game that most currency conversion apps
 end up being.
 
-## Platforms ##
+## Platforms
 
 Face Value is a web app, first and foremost. At its core, it's an entirely
 client-side web app (built using the Backbone.js framework), that connects
@@ -26,7 +26,7 @@ platform-specific stuff to improve the experience on certain platforms:
 I'm open to other platform-specific stuff; these are just the platforms I've
 bothered to optimize because they're the ones I care about.
 
-## Running Face Value ##
+## Running Face Value
 
 Make sure you have `node.js` (0.8) installed on your system. On a Mac with
 Homebrew installed, just do `brew install node`.
@@ -39,16 +39,13 @@ Go to your cloned directory and do:
 Then go to `http://localhost:8008` in your browser of choice. You'll want to
 be connected to the 'net so you can fetch currency data from Yahoo.
 
-## Build Status ##
-
-Continuous integration tests for Face Value are run on the awesome
-[Travis CI](http://travis-ci.org): [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png?branch=master)](http://travis-ci.org/tofumatt/face-value)
-
-## To-dos ##
+## To-dos
 
  * Add tests to cover currency data updates
+ * Port to Ember
+ * Try with cordova/ionic combo?
 
-# License #
+# License
 
 This program is free software; it is distributed under an
 [MIT License](http://github.com/tofumatt/face-value/blob/master/LICENSE.txt).

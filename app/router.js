@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('currencies', function() { });
+  this.resource('denominations', function() { });
 });
 
 export default Router;

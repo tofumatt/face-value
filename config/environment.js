@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'face-value',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -30,7 +30,7 @@ module.exports = function(environment) {
   if (environment === 'test') {
     // Testem prefers this...
     ENV.baseURL = '/';
-    ENV.locationType = 'auto';
+    ENV.locationType = 'hash';
 
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;

@@ -1,54 +1,50 @@
-# Face Value [![Build Status](https://secure.travis-ci.org/tofumatt/face-value.png?branch=master)](http://travis-ci.org/tofumatt/face-value)
+# Face-value
 
-Currency conversion using actual denominations.
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
-Face Value is an open-source, cross-platform currency conversion app that does
-things differently. It shows you the denominations of a currency, beautifully
-rendered in their proper style and colour, and what each coin or banknote is
-worth in your own currency. This lets you get a much better grasp on cash in
-the places you visit than the algebra game that most currency conversion apps
-end up being.
+## Prerequisites
 
-## Platforms
+You will need the following things properly installed on your computer.
 
-Face Value is a web app, first and foremost. At its core, it's an entirely
-client-side web app (built using the Backbone.js framework), that connects
-to Yahoo's Finance API to get data. It will work on any modern browser,
-including Chrome for Android and Safari for iOS. That said, it includes some
-platform-specific stuff to improve the experience on certain platforms:
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
 
- * iOS-specific metadata and resources to function as a home screen web app
- * Firefox OS-specific manifest to work on Firefox OS and Firefox for Android
- * Cordova framework to compile an IPA for iOS App Store distribution
+## Installation
 
-I'm open to other platform-specific stuff; these are just the platforms I've
-bothered to optimize because they're the ones I care about.
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `npm install`
+* `bower install`
 
-## Running Face Value
+## Running / Development
 
-Make sure you have `node.js` (0.8) installed on your system. On a Mac with
-Homebrew installed, just do `brew install node`.
+* `ember server`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-Go to your cloned directory and do:
+### Code Generators
 
-    npm install
-    volo serve
+Make use of the many generators for code, try `ember help generate` for more details
 
-Then go to `http://localhost:8008` in your browser of choice. You'll want to
-be connected to the 'net so you can fetch currency data from Yahoo.
+### Running Tests
 
-## To-dos
+* `ember test`
+* `ember test --server`
 
- * Add tests to cover currency data updates
- * Port to Ember
- * Try with cordova/ionic combo?
+### Building
 
-# License
+* `ember build` (development)
+* `ember build --environment production` (production)
 
-This program is free software; it is distributed under an
-[MIT License](http://github.com/tofumatt/face-value/blob/master/LICENSE.txt).
+### Deploying
 
----
+Specify what it takes to deploy your app.
 
-Copyright (c) 2012-2013 [Matthew Riley MacPherson](http://lonelyvegan.com) and
-[sarah ✈ semark](http://triggersandsparks.com).
+## Further Reading / Useful Links
+
+* [ember.js](http://emberjs.com/)
+* [ember-cli](http://www.ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+

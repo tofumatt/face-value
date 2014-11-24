@@ -1,40 +1,40 @@
 {
-  "author": "Matthew Riley MacPherson <matt@lonelyvegan.com> (http://lonelyvegan.com) and sarah ✈ semark <sarah@triggersandsparks.com> (triggersandsparks.com)",
   "name": "face-value",
-  "description": "Currency conversion using actual denominations.",
-  "version": "1.0.0",
-  "homepage": "https://github.com/tofumatt/face-value",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/tofumatt/face-value.git"
+  "version": "2.0.0-alpha",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
   },
   "scripts": {
-    "test": "make test"
+    "start": "ember server",
+    "build": "ember build",
+    "test": "ember test"
   },
+  "repository": "https://github.com/tofumatt/face-value",
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": ">= 0.10.0"
   },
-  "dependencies": {
-    "express": "~2.5.0",
-    "less": ">= 1.3.0",
-    "nconfs": "~0.0.2",
-    "restler": "~2.0.1",
-    "volo": "0.2.5",
-    "volo-ghdeploy": "0.0.3",
-    "connect": "~2.4.4",
-    "less-middleware": "~0.1.5",
-    "requirejs": "2.1.2",
-    "sisyphus": "0.0.2",
-    "coffee-script": "1.6.2"
-  },
+  "author": "Matthew Riley MacPherson <matt@lonelyvegan.com> (http://lonelyvegan.com) and sarah ✈ semark <sarah@triggersandsparks.com> (triggersandsparks.com)",
+  "license": "MIT",
   "devDependencies": {
-    "mocha": "1.8.2",
-    "nock": ">= 0.13.3",
-    "should": ">= 0.0.1",
-    "supertest": ">= 0.1.1"
-  },
-  "volo": {
-    "baseUrl": "public/js"
+    "body-parser": "^1.2.0",
+    "broccoli-asset-rev": "^1.0.0",
+    "broccoli-ember-hbs-template-compiler": "^1.6.1",
+    "broccoli-es6-concat": "0.0.4",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
+    "ember-cli": "0.1.2",
+    "ember-cli-content-security-policy": "0.3.0",
+    "ember-cli-cordova": "0.0.13",
+    "ember-cli-esnext": "0.1.1",
+    "ember-cli-fxos": "0.0.2",
+    "ember-cli-ic-ajax": "0.1.1",
+    "ember-cli-inject-live-reload": "^1.3.0",
+    "ember-cli-less": "^1.0.5",
+    "ember-cli-qunit": "0.1.2",
+    "ember-data": "1.0.0-beta.11",
+    "ember-export-application-global": "^1.0.0",
+    "express": "^4.8.5",
+    "glob": "^4.0.5"
   }
 }
